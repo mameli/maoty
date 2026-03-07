@@ -1,0 +1,98 @@
+[
+  {
+    "artist": "War Child Records",
+    "album": "HELP(2)",
+    "genre_tags": [
+      "Indie Rock",
+      "Art Pop",
+      "Art Rock"
+    ],
+    "score": 86,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/help-2/1870313498?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1642365-various-artists-help2.php",
+    "source": "new-releases",
+    "review_count": 7,
+    "source_rank": 6
+  },
+  {
+    "artist": "Mitski",
+    "album": "Nothing's About to Happen to Me",
+    "genre_tags": [
+      "Singer-Songwriter",
+      "Chamber Pop",
+      "Americana"
+    ],
+    "score": 85,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/nothings-about-to-happen-to-me/1860622550?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1617518-mitski-nothings-about-to-happen-to-me.php",
+    "source": "must-hear",
+    "review_count": 28,
+    "source_rank": 3
+  },
+  {
+    "artist": "Ratboys",
+    "album": "Singin' To An Empty Chair",
+    "genre_tags": [
+      "Indie Rock",
+      "Alt-Country",
+      "Slacker Rock"
+    ],
+    "score": 83,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/singin-to-an-empty-chair/1844710034?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1517560-ratboys-singin-to-an-empty-chair.php",
+    "source": "must-hear",
+    "review_count": 16,
+    "source_rank": 5
+  },
+  {
+    "artist": "Joey Valence & Brae",
+    "album": "HYPERYOUTH (afterparty)",
+    "genre_tags": [
+      "East Coast Hip Hop",
+      "Hardcore Hip Hop",
+      "Pop Rap"
+    ],
+    "score": 82,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/us/album/hyperyouth-afterparty/1874348487?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1599773-joey-valence-brae-hyperyouth-afterparty.php",
+    "source": "must-hear",
+    "review_count": 1055,
+    "source_rank": 2
+  },
+  {
+    "artist": "Gorillaz",
+    "album": "The Mountain",
+    "genre_tags": [
+      "Art Pop",
+      "Neo-Psychedelia",
+      "Hindustani Classical Music"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/the-mountain/1837237742?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1460893-gorillaz-the-mountain.php",
+    "source": "must-hear",
+    "review_count": 31,
+    "source_rank": 1
+  },
+  {
+    "artist": "Jill Scott",
+    "album": "To Whom This May Concern",
+    "genre_tags": [
+      "Neo-Soul",
+      "Contemporary R&B",
+      "Spoken Word"
+    ],
+    "score": 79,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/to-whom-this-may-concern/1861385995?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1601658-jill-scott-to-whom-this-may-concern.php",
+    "source": "must-hear",
+    "review_count": 11,
+    "source_rank": 4
+  }
+]

@@ -2,35 +2,99 @@
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import profilePic from '../assets/profile.png';
+import albums from '../data/album-list.json';
 
-const albums = ['Album 1', 'Album 2', 'Album 3'];
+type Album = {
+  artist: string;
+  album: string;
+  genre_tags: string[];
+  score: number;
+  score_type: string;
+  apple_music: string;
+  aoty_url: string;
+  source: 'must-hear' | 'new-releases';
+  review_count: number | null;
+  source_rank: number;
+};
+
+const albumList = albums as Album[];
+const sourceLabel: Record<Album['source'], string> = {
+  'must-hear': 'Must Hear',
+  'new-releases': 'New Releases',
+};
 ---
 
 <Layout title="Maoty">
   <main class="min-h-screen bg-amber-50 px-6 py-10 text-gray-800">
-    <section class="mx-auto flex min-h-[calc(100vh-5rem)] w-full max-w-lg flex-col items-center justify-center gap-5 text-center">
-      <h1 class="text-6xl font-bold tracking-[0.06em] sm:text-7xl">Maoty</h1>
+    <section class="mx-auto flex w-full max-w-5xl flex-col gap-8">
+      <div class="flex flex-col items-center gap-5 text-center">
+        <h1 class="text-6xl font-bold tracking-[0.06em] sm:text-7xl">Maoty</h1>
 
-      <div class="w-36 rounded-full bg-gradient-to-br from-green-900/10 via-white/85 to-green-700/10 p-2 shadow-[0_22px_45px_-28px_rgba(20,83,45,0.95)] sm:w-44">
-        <Image
-          src={profilePic}
-          alt="Maoty profile picture"
-          width={260}
-          height={260}
-          format="webp"
-          class="block aspect-square w-full rounded-full object-cover"
-        />
+        <div class="w-36 rounded-full bg-gradient-to-br from-green-900/10 via-white/85 to-green-700/10 p-2 shadow-[0_22px_45px_-28px_rgba(20,83,45,0.95)] sm:w-44">
+          <Image
+            src={profilePic}
+            alt="Maoty profile picture"
+            width={260}
+            height={260}
+            format="webp"
+            class="block aspect-square w-full rounded-full object-cover"
+          />
+        </div>
+
+        <div class="max-w-2xl">
+          <p class="mx-auto mb-3 text-xl leading-relaxed text-gray-700 sm:text-2xl">
+            This is an auto-updated website that gathers albums from the internet
+            and filters them by the best critic scores and my music taste.
+          </p>
+          <p class="text-lg text-green-900/75 sm:text-xl">
+            {albumList.length} albums ranked with a soft genre match from my Last.fm tags.
+          </p>
+        </div>
       </div>
 
-      <div class="w-full">
-        <p class="mx-auto mb-5 max-w-md text-xl leading-relaxed text-gray-700 sm:text-2xl">
-          This is an auto-updated website that gathers albums from the internet
-          and filters them by the best critic scores and my music taste.
-        </p>
-        <p class="mb-3 text-3xl text-green-800">Albums:</p>
-        <ul class="mx-auto inline-grid gap-2 pl-6 text-left text-2xl marker:text-green-800 sm:text-[1.7rem]">
-          {albums.map((album) => <li>{album}</li>)}
-        </ul>
+      <div class="grid gap-4 md:grid-cols-2">
+        {albumList.map((album) => (
+          <article class="self-start rounded-[1.4rem] border border-green-900/10 bg-white/75 p-5">
+            <div class="mb-3 flex items-start justify-between gap-3 border-b border-green-900/10 pb-3">
+              <div>
+                <p class="text-xs uppercase tracking-[0.22em] text-green-800/70">
+                  {sourceLabel[album.source]}
+                </p>
+                <h2 class="mt-1 min-h-[4.4rem] text-3xl leading-none text-gray-900">
+                  <a href={album.aoty_url} target="_blank" rel="noreferrer" class="hover:text-green-900">
+                    {album.album}
+                  </a>
+                </h2>
+                <p class="mt-2 text-lg text-gray-700">{album.artist}</p>
+              </div>
+              <div class="pt-1 text-right text-gray-600">
+                <p class="text-2xl leading-none text-gray-900">{album.score}</p>
+                <p class="mt-1 text-[0.7rem] uppercase tracking-[0.18em] text-gray-500">
+                  {album.score_type.replace(' score', '')}
+                </p>
+              </div>
+            </div>
+
+            <div class="mb-4 flex flex-wrap gap-2">
+              {album.genre_tags.map((tag) => (
+                <span class="text-sm tracking-[0.08em] text-green-900/80">
+                  {tag}
+                </span>
+              ))}
+            </div>
+
+            <div class="flex items-center justify-end border-t border-green-900/10 pt-4">
+              <a
+                href={album.apple_music}
+                target="_blank"
+                rel="noreferrer"
+                class="text-sm uppercase tracking-[0.18em] text-green-800 transition hover:text-green-950"
+              >
+                Apple Music
+              </a>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
   </main>

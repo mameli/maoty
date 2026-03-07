@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "albums": "python3 scripts/build_album_data.py",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
