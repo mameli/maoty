@@ -8,9 +8,16 @@ output/
 # Local browser automation state and logs
 .playwright/
 .playwright-cli/
+.astro/
 
 # Local Codex/Claude helper files
 .claude/
+.node_modules_broken_*
+.package-lock.broken.*
 
 # macOS metadata
 .DS_Store
+
+# Node dependencies and Astro build output
+node_modules/
+dist/

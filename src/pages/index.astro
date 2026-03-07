@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import profilePic from '../assets/profile.png';
+
+const albums = ['Album 1', 'Album 2', 'Album 3'];
+---
+
+<Layout title="Maoty">
+  <main class="min-h-screen bg-amber-50 px-6 py-10 text-gray-800">
+    <section class="mx-auto flex min-h-[calc(100vh-5rem)] w-full max-w-lg flex-col items-center justify-center gap-5 text-center">
+      <h1 class="text-6xl font-bold tracking-[0.06em] sm:text-7xl">Maoty</h1>
+
+      <div class="w-36 rounded-full bg-gradient-to-br from-green-900/10 via-white/85 to-green-700/10 p-2 shadow-[0_22px_45px_-28px_rgba(20,83,45,0.95)] sm:w-44">
+        <Image
+          src={profilePic}
+          alt="Maoty profile picture"
+          width={260}
+          height={260}
+          format="webp"
+          class="block aspect-square w-full rounded-full object-cover"
+        />
+      </div>
+
+      <div class="w-full">
+        <p class="mx-auto mb-5 max-w-md text-xl leading-relaxed text-gray-700 sm:text-2xl">
+          This is an auto-updated website that gathers albums from the internet
+          and filters them by the best critic scores and my music taste.
+        </p>
+        <p class="mb-3 text-3xl text-green-800">Albums:</p>
+        <ul class="mx-auto inline-grid gap-2 pl-6 text-left text-2xl marker:text-green-800 sm:text-[1.7rem]">
+          {albums.map((album) => <li>{album}</li>)}
+        </ul>
+      </div>
+    </section>
+  </main>
+</Layout>
