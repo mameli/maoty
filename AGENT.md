@@ -117,7 +117,28 @@ Each album entry must contain:
 - `aoty_url`
 - `source`
 - `review_count`
+- `taste_label`
 - `source_rank`
+
+## Taste label rules
+
+The taste label is editorial and must not be computed by script.
+
+After scraping and enriching the albums, assign exactly one of these labels to each album by prompt-based judgment using the existing mixtape tag ingestion as taste context:
+
+- `It's a match`
+- `Just for you`
+- `Maybe you'll like it`
+
+Meaning:
+
+- `It's a match`: the album is strongly aligned with the recurring favorite genres and overall taste profile
+- `Just for you`: the album is a good match, even if not the clearest genre overlap
+- `Maybe you'll like it`: the album is adjacent, experimental, or less aligned by genre but still plausibly interesting
+
+Do not invent extra labels.
+Do not derive this label from a numeric formula.
+If an album already exists in `src/data/album-list.json`, preserve its existing `taste_label` unless there is a clear reason to revise it.
 
 ## Ordering rule for weekly updates
 
@@ -147,13 +168,14 @@ The album cards on the homepage must show:
 - album
 - first 3 genre tags
 - score
+- taste label
 - Apple Music link
 - source label
 
 Presentation rules:
 
 - keep the layout minimal
-- do not show any taste score
+- do not show any numeric taste score
 - do not render the score inside a button or badge-shaped element
 - keep cards visually consistent when titles wrap to one or two lines
 
@@ -173,6 +195,8 @@ This command must:
 
 Do not treat the mixtape tag browse output as part of the weekly refresh.
 
+After running `npm run albums`, manually review any newly added albums and fill in `taste_label` before rebuilding the site if the field is missing.
+
 After regenerating data, rebuild the site:
 
 ```bash
@@ -188,6 +212,7 @@ Before considering the update complete, confirm:
 - every New Releases album has `review_count > 5`
 - every album has a non-empty Apple Music link
 - every album has at least one main metadata genre tag
+- every album has one valid `taste_label`
 - newly scraped albums were inserted at the top of `src/data/album-list.json`
 - no album is duplicated by `aoty_url`
 - the homepage builds successfully
@@ -205,6 +230,7 @@ The automation output should report:
 - how many albums qualified from New Releases
 - how many albums were inserted at the top
 - whether any Apple Music fallback lookups were needed
+- whether any new albums still needed a manual `taste_label`
 - whether the build passed
 
 The automation should reuse the existing mixtape tag ingestion and must not refresh the Last.fm tag export unless that becomes a separate explicit task.

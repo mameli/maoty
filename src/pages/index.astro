@@ -14,6 +14,7 @@ type Album = {
   aoty_url: string;
   source: 'must-hear' | 'new-releases';
   review_count: number | null;
+  taste_label: "It's a match" | 'Just for you' | "Maybe you'll like it" | null;
   source_rank: number;
 };
 
@@ -47,7 +48,7 @@ const sourceLabel: Record<Album['source'], string> = {
             and filters them by the best critic scores and my music taste.
           </p>
           <p class="text-lg text-green-900/75 sm:text-xl">
-            {albumList.length} albums ranked with a soft genre match from my Last.fm tags.
+            {albumList.length} albums with a hand-picked taste note based on my Last.fm tags.
           </p>
         </div>
       </div>
@@ -83,7 +84,10 @@ const sourceLabel: Record<Album['source'], string> = {
               ))}
             </div>
 
-            <div class="flex items-center justify-end border-t border-green-900/10 pt-4">
+            <div class="flex items-center justify-between border-t border-green-900/10 pt-4">
+              <p class="text-sm tracking-[0.08em] text-green-900/70">
+                {album.taste_label}
+              </p>
               <a
                 href={album.apple_music}
                 target="_blank"

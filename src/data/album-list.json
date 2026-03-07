@@ -13,6 +13,7 @@
     "aoty_url": "https://www.albumoftheyear.org/album/1642365-various-artists-help2.php",
     "source": "new-releases",
     "review_count": 7,
+    "taste_label": "It's a match",
     "source_rank": 6
   },
   {
@@ -29,6 +30,7 @@
     "aoty_url": "https://www.albumoftheyear.org/album/1617518-mitski-nothings-about-to-happen-to-me.php",
     "source": "must-hear",
     "review_count": 28,
+    "taste_label": "Just for you",
     "source_rank": 3
   },
   {
@@ -45,6 +47,7 @@
     "aoty_url": "https://www.albumoftheyear.org/album/1517560-ratboys-singin-to-an-empty-chair.php",
     "source": "must-hear",
     "review_count": 16,
+    "taste_label": "It's a match",
     "source_rank": 5
   },
   {
@@ -61,6 +64,7 @@
     "aoty_url": "https://www.albumoftheyear.org/album/1599773-joey-valence-brae-hyperyouth-afterparty.php",
     "source": "must-hear",
     "review_count": 1055,
+    "taste_label": "Just for you",
     "source_rank": 2
   },
   {
@@ -77,6 +81,7 @@
     "aoty_url": "https://www.albumoftheyear.org/album/1460893-gorillaz-the-mountain.php",
     "source": "must-hear",
     "review_count": 31,
+    "taste_label": "Maybe you'll like it",
     "source_rank": 1
   },
   {
@@ -93,6 +98,7 @@
     "aoty_url": "https://www.albumoftheyear.org/album/1601658-jill-scott-to-whom-this-may-concern.php",
     "source": "must-hear",
     "review_count": 11,
+    "taste_label": "Just for you",
     "source_rank": 4
   }
 ]

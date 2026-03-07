@@ -220,6 +220,13 @@ def load_mixtape_rows() -> list[dict[str, Any]]:
     return json.loads(MIXTAPE_PATH.read_text())
 
 
+def load_existing_album_data() -> dict[str, dict[str, Any]]:
+    if not ALBUM_DATA_PATH.exists():
+        return {}
+    rows = json.loads(ALBUM_DATA_PATH.read_text())
+    return {row["aoty_url"]: row for row in rows if row.get("aoty_url")}
+
+
 def build_tag_profile(rows: list[dict[str, Any]]) -> tuple[Counter[str], Counter[str]]:
     frequency = Counter()
     weighted = Counter()
@@ -326,6 +333,7 @@ def choose_score(row: dict[str, Any], *, source: str) -> tuple[int, str, int | N
 
 
 def collect_albums() -> list[dict[str, Any]]:
+    existing_album_data = load_existing_album_data()
     must_hear_rows = extract_album_rows(MUST_HEAR_URL)
     new_release_rows = extract_album_rows(NEW_RELEASES_URL)
 
@@ -374,6 +382,7 @@ def collect_albums() -> list[dict[str, Any]]:
                 "aoty_url": url,
                 "source": source,
                 "review_count": review_count,
+                "taste_label": existing_album_data.get(url, {}).get("taste_label"),
                 "source_rank": int(row["source_rank"]),
             }
         )
