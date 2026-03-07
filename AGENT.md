@@ -18,11 +18,6 @@ Update the website with the latest Album of the Year picks, keep the newest qual
 - Use `playwright-cli` with a real headed Chromium session.
 - Reuse the same session if Cloudflare has already been passed.
 - Read the live DOM from the loaded page. Do not rely on search snippets.
-- If Chromium is missing, install it with:
-
-```bash
-playwright-cli install-browser
-```
 
 ## Friday collection rules
 
