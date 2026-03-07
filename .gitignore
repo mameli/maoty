@@ -1,0 +1,16 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+
+# Generated scrape outputs
+output/
+
+# Local browser automation state and logs
+.playwright/
+.playwright-cli/
+
+# Local Codex/Claude helper files
+.claude/
+
+# macOS metadata
+.DS_Store
