@@ -16,9 +16,22 @@ type Album = {
   review_count: number | null;
   taste_label: "It's a match" | 'Just for you' | "Maybe you'll like it" | null;
   source_rank: number;
+  batch_date?: string | null;
 };
 
-const albumList = albums as Album[];
+const albumList = (albums as Album[])
+  .map((album, index) => ({ album, index }))
+  .sort((left, right) => {
+    const leftTime = left.album.batch_date ? Date.parse(left.album.batch_date) : Number.NEGATIVE_INFINITY;
+    const rightTime = right.album.batch_date ? Date.parse(right.album.batch_date) : Number.NEGATIVE_INFINITY;
+
+    if (leftTime !== rightTime) {
+      return rightTime - leftTime;
+    }
+
+    return left.index - right.index;
+  })
+  .map(({ album }) => album);
 const sourceLabel: Record<Album['source'], string> = {
   'must-hear': 'Must Hear',
   'new-releases': 'New Releases',

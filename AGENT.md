@@ -129,17 +129,53 @@ Each album entry must contain:
 
 The taste label is editorial and must not be computed by script.
 
-After scraping and enriching the albums, assign exactly one of these labels to each album by prompt-based judgment using the existing mixtape tag ingestion as taste context:
+After scraping and enriching the albums, assign exactly one of these labels to each album by editorial judgment using the existing mixtape tag ingestion as taste context:
 
 - `It's a match`
 - `Just for you`
 - `Maybe you'll like it`
 
-Meaning:
+Base the decision primarily on genre and scene alignment with the mixtape tag profile in `output/mameli_mixtape_tags_browse.md`.
 
-- `It's a match`: the album is strongly aligned with the recurring favorite genres and overall taste profile
-- `Just for you`: the album is a good match, even if not the clearest genre overlap
-- `Maybe you'll like it`: the album is adjacent, experimental, or less aligned by genre but still plausibly interesting
+Strong recurring preference signals currently include:
+
+- `indie`
+- `indie rock`
+- `hip-hop`
+- `rap`
+- `rnb`
+- `singer-songwriter`
+- `electronic`
+- `pop`
+- `neo-soul` as a secondary positive signal
+
+Use the first 3 album genre tags plus general artist fit to decide the label.
+Do not label from score alone.
+High score does not imply stronger taste fit.
+
+Rubric:
+
+- `It's a match`
+  - Use when the album sits clearly inside one or more core lanes from the mixtape profile.
+  - Typical examples: indie rock, singer-songwriter, hip-hop, rap, rnb, electronic, neo-soul records that feel directly compatible with the recurring listening taste.
+  - This should be reserved for the clearest fits, not just albums that look good or well reviewed.
+
+- `Just for you`
+  - Use when the album still feels like a real recommendation for this taste, but the overlap is less direct or more mixed.
+  - Good for albums with one strong matching signal plus one or two less central traits.
+  - This is the middle label for "likely interesting" albums that are not obvious slam-dunks.
+
+- `Maybe you'll like it`
+  - Use when the album is adjacent, exploratory, or harder to map to the core profile.
+  - Default here for records driven by peripheral traits such as art pop, psychedelia, experimental detours, niche regional styles, or other tags that are only weakly represented in the mixtape profile.
+  - Example: a record tagged `Art Pop`, `Neo-Psychedelia`, and `Hindustani Classical Music` should usually land here unless there is unusually strong outside context for a better fit.
+
+Decision guidance:
+
+- Prefer the stricter label when unsure.
+- If only one tag overlaps with the taste profile and the rest are peripheral, avoid `It's a match`.
+- If the album feels more "interesting detour" than "natural extension," use `Maybe you'll like it`.
+- Use `Just for you` only when the record feels genuinely recommended, not merely plausible.
 
 Do not invent extra labels.
 Do not derive this label from a numeric formula.

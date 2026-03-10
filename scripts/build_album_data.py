@@ -8,6 +8,7 @@ import subprocess
 import sys
 import time
 from collections import Counter
+from datetime import date
 from pathlib import Path
 from typing import Any
 
@@ -287,6 +288,27 @@ def load_existing_album_data() -> dict[str, dict[str, Any]]:
     }
 
 
+def parse_batch_date(value: Any) -> date | None:
+    if not isinstance(value, str) or not value.strip():
+        return None
+    try:
+        return date.fromisoformat(value)
+    except ValueError:
+        return None
+
+
+def sort_album_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    indexed_rows = list(enumerate(rows))
+    indexed_rows.sort(
+        key=lambda entry: (
+            parse_batch_date(entry[1].get("batch_date")) is None,
+            -(parse_batch_date(entry[1].get("batch_date")) or date.min).toordinal(),
+            entry[0],
+        )
+    )
+    return [row for _, row in indexed_rows]
+
+
 def build_tag_profile(rows: list[dict[str, Any]]) -> tuple[Counter[str], Counter[str]]:
     frequency = Counter()
     weighted = Counter()
@@ -394,6 +416,7 @@ def choose_score(row: dict[str, Any], *, source: str) -> tuple[int, str, int | N
 
 def collect_albums() -> list[dict[str, Any]]:
     existing_album_data = load_existing_album_data()
+    batch_date = date.today().isoformat()
     must_hear_rows = extract_album_rows(MUST_HEAR_URL)
     new_release_rows = extract_album_rows(NEW_RELEASES_URL)
 
@@ -446,6 +469,7 @@ def collect_albums() -> list[dict[str, Any]]:
                 "review_count": review_count,
                 "taste_label": existing_album_data.get(url, {}).get("taste_label"),
                 "source_rank": int(row["source_rank"]),
+                "batch_date": batch_date,
             }
         )
 
@@ -454,7 +478,7 @@ def collect_albums() -> list[dict[str, Any]]:
 
 def merge_album_data(new_albums: list[dict[str, Any]]) -> list[dict[str, Any]]:
     existing_albums = dedupe_albums(load_existing_album_rows())
-    return dedupe_albums(new_albums + existing_albums)
+    return sort_album_rows(dedupe_albums(new_albums + existing_albums))
 
 
 def write_album_data(albums: list[dict[str, Any]]) -> None:

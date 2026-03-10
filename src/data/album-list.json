@@ -14,7 +14,8 @@
     "source": "new-releases",
     "review_count": 7,
     "taste_label": "It's a match",
-    "source_rank": 13
+    "source_rank": 13,
+    "batch_date": "2026-03-10"
   },
   {
     "artist": "Gorillaz",
@@ -30,8 +31,9 @@
     "aoty_url": "https://www.albumoftheyear.org/album/1460893-gorillaz-the-mountain.php",
     "source": "must-hear",
     "review_count": 31,
-    "taste_label": "Just for you",
-    "source_rank": 1
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 1,
+    "batch_date": "2026-03-10"
   },
   {
     "artist": "Joey Valence & Brae",
@@ -48,7 +50,8 @@
     "source": "must-hear",
     "review_count": 1112,
     "taste_label": "It's a match",
-    "source_rank": 2
+    "source_rank": 2,
+    "batch_date": "2026-03-10"
   },
   {
     "artist": "Mitski",
@@ -65,7 +68,8 @@
     "source": "must-hear",
     "review_count": 28,
     "taste_label": "It's a match",
-    "source_rank": 3
+    "source_rank": 3,
+    "batch_date": "2026-03-10"
   },
   {
     "artist": "Jill Scott",
@@ -82,7 +86,8 @@
     "source": "must-hear",
     "review_count": 11,
     "taste_label": "Just for you",
-    "source_rank": 4
+    "source_rank": 4,
+    "batch_date": "2026-03-10"
   },
   {
     "artist": "Ratboys",
@@ -99,6 +104,7 @@
     "source": "must-hear",
     "review_count": 16,
     "taste_label": "It's a match",
-    "source_rank": 5
+    "source_rank": 5,
+    "batch_date": "2026-03-10"
   }
 ]
