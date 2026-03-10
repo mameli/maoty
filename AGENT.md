@@ -15,9 +15,19 @@ Update the website with the latest Album of the Year picks, keep the newest qual
 
 ## Browser requirements
 
-- Use `playwright-cli` with a real headed Chromium session.
-- Reuse the same session if Cloudflare has already been passed.
+- Use `playwright-cli` with the named session `aoty`.
+- Use a persistent Chromium profile stored at `.playwright/aoty-profile`.
+- Reuse the same signed-in session if Cloudflare has already been passed.
+- If the `aoty` session is already open, attach to it instead of opening a fresh browser.
 - Read the live DOM from the loaded page. Do not rely on search snippets.
+
+Open or restore the browser with:
+
+```bash
+playwright-cli -s aoty open about:blank --headed --persistent --profile .playwright/aoty-profile
+```
+
+Sign in manually only when the saved profile is no longer authenticated.
 
 ## Friday collection rules
 
@@ -184,6 +194,7 @@ npm run albums
 
 This command must:
 
+- reuse the `aoty` Playwright session and `.playwright/aoty-profile`
 - scrape the current Friday album batch from AOTY
 - enrich each album page with Apple Music and genre tags
 - update `src/data/album-list.json`

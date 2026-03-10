@@ -16,6 +16,8 @@ ROOT = Path(__file__).resolve().parent.parent
 MIXTAPE_PATH = ROOT / "output" / "mameli_mixtape_first50_artists_with_tags.json"
 TAG_BROWSE_PATH = ROOT / "output" / "mameli_mixtape_tags_browse.md"
 ALBUM_DATA_PATH = ROOT / "src" / "data" / "album-list.json"
+PLAYWRIGHT_SESSION = "aoty"
+PLAYWRIGHT_PROFILE_DIR = ROOT / ".playwright" / "aoty-profile"
 APPLE_SCRIPT = (
     Path("/Users/filippomameli/.codex/skills/apple-music-album-linker/scripts")
     / "find_apple_music_album.py"
@@ -175,7 +177,7 @@ def run_command(args: list[str], *, timeout: int = 120) -> str:
 
 
 def run_playwright(args: list[str], *, timeout: int = 120) -> str:
-    return run_command(["playwright-cli", *args], timeout=timeout)
+    return run_command(["playwright-cli", "-s", PLAYWRIGHT_SESSION, *args], timeout=timeout)
 
 
 def eval_playwright(js: str, *, timeout: int = 120) -> Any:
@@ -183,8 +185,36 @@ def eval_playwright(js: str, *, timeout: int = 120) -> Any:
     return parse_cli_result(output)
 
 
-def open_browser() -> None:
-    run_playwright(["open", "about:blank", "--headed"], timeout=120)
+def session_is_open() -> bool:
+    output = run_command(["playwright-cli", "list"], timeout=30)
+    match = re.search(
+        rf"(?ms)^- {re.escape(PLAYWRIGHT_SESSION)}:\n(?P<details>(?:  - .*\n?)*)",
+        output,
+    )
+    if not match:
+        return False
+
+    status_match = re.search(r"(?m)^  - status: (\w+)$", match.group("details"))
+    return bool(status_match and status_match.group(1) == "open")
+
+
+def open_browser() -> bool:
+    if session_is_open():
+        return False
+
+    PLAYWRIGHT_PROFILE_DIR.parent.mkdir(parents=True, exist_ok=True)
+    run_playwright(
+        [
+            "open",
+            "about:blank",
+            "--headed",
+            "--persistent",
+            "--profile",
+            str(PLAYWRIGHT_PROFILE_DIR),
+        ],
+        timeout=120,
+    )
+    return True
 
 
 def close_browser() -> None:
@@ -220,11 +250,41 @@ def load_mixtape_rows() -> list[dict[str, Any]]:
     return json.loads(MIXTAPE_PATH.read_text())
 
 
-def load_existing_album_data() -> dict[str, dict[str, Any]]:
+def normalize_aoty_url(url: Any) -> str | None:
+    if not isinstance(url, str):
+        return None
+    normalized = url.strip()
+    return normalized or None
+
+
+def load_existing_album_rows() -> list[dict[str, Any]]:
     if not ALBUM_DATA_PATH.exists():
-        return {}
+        return []
     rows = json.loads(ALBUM_DATA_PATH.read_text())
-    return {row["aoty_url"]: row for row in rows if row.get("aoty_url")}
+    return [row for row in rows if normalize_aoty_url(row.get("aoty_url"))]
+
+
+def dedupe_albums(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    unique_rows: list[dict[str, Any]] = []
+    seen_urls: set[str] = set()
+
+    for row in rows:
+        url = normalize_aoty_url(row.get("aoty_url"))
+        if not url or url in seen_urls:
+            continue
+        seen_urls.add(url)
+        normalized_row = dict(row)
+        normalized_row["aoty_url"] = url
+        unique_rows.append(normalized_row)
+
+    return unique_rows
+
+
+def load_existing_album_data() -> dict[str, dict[str, Any]]:
+    return {
+        row["aoty_url"]: row
+        for row in dedupe_albums(load_existing_album_rows())
+    }
 
 
 def build_tag_profile(rows: list[dict[str, Any]]) -> tuple[Counter[str], Counter[str]]:
@@ -346,14 +406,16 @@ def collect_albums() -> list[dict[str, Any]]:
         and int(row.get("critic_count") or 0) > 5
     ]
 
-    selected: list[tuple[str, dict[str, Any]]] = [("must-hear", row) for row in must_hear]
-    selected.extend(("new-releases", row) for row in new_releases)
+    selected: list[tuple[str, dict[str, Any]]] = [("new-releases", row) for row in new_releases]
+    selected.extend(("must-hear", row) for row in must_hear)
 
     albums: list[dict[str, Any]] = []
     seen_urls: set[str] = set()
 
     for source, row in selected:
-        url = row["aoty_url"]
+        url = normalize_aoty_url(row["aoty_url"])
+        if not url:
+            continue
         if url in seen_urls:
             continue
         seen_urls.add(url)
@@ -387,14 +449,12 @@ def collect_albums() -> list[dict[str, Any]]:
             }
         )
 
-    albums.sort(
-        key=lambda album: (
-            -album["score"],
-            0 if album["source"] == "must-hear" else 1,
-            album["source_rank"],
-        )
-    )
-    return albums
+    return dedupe_albums(albums)
+
+
+def merge_album_data(new_albums: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    existing_albums = dedupe_albums(load_existing_album_rows())
+    return dedupe_albums(new_albums + existing_albums)
 
 
 def write_album_data(albums: list[dict[str, Any]]) -> None:
@@ -412,13 +472,14 @@ def main() -> int:
     frequency, weighted = build_tag_profile(mixtape_rows)
     write_tag_browse(mixtape_rows, frequency, weighted)
 
-    open_browser()
+    opened_browser = open_browser()
     try:
         albums = collect_albums()
     finally:
-        close_browser()
+        if opened_browser:
+            close_browser()
 
-    write_album_data(albums)
+    write_album_data(merge_album_data(albums))
     print(f"Wrote {TAG_BROWSE_PATH}")
     print(f"Wrote {ALBUM_DATA_PATH}")
     return 0
