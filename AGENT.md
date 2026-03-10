@@ -230,6 +230,14 @@ If this workflow is automated later, the automation should run every Friday in t
 1. `npm run albums`
 2. `npm run build`
 
+If `npm run build` passes and a commit is created, the automation should push with basic retry handling for transient network failures:
+
+1. run `git push`
+2. if push fails with a DNS or temporary network error (for example `Could not resolve hostname github.com`), wait briefly and retry `git push` once
+3. if retry still fails, run `ssh -T git@github.com` once to distinguish auth issues from transient networking and report the exact blocker
+
+Do not create extra commits while retrying push.
+
 The automation output should report:
 
 - how many albums were scraped from Must Hear
@@ -238,5 +246,7 @@ The automation output should report:
 - whether any Apple Music fallback lookups were needed
 - whether any new albums still needed a manual `taste_label`
 - whether the build passed
+- whether git commit succeeded
+- whether git push succeeded (or the exact blocker after retry/SSH check)
 
 The automation should reuse the existing mixtape tag ingestion and must not refresh the Last.fm tag export unless that becomes a separate explicit task.
