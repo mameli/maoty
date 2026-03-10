@@ -7,6 +7,7 @@ import albums from '../data/album-list.json';
 type Album = {
   artist: string;
   album: string;
+  cover_url?: string | null;
   genre_tags: string[];
   score: number;
   score_type: string;
@@ -66,8 +67,28 @@ const sourceLabel: Record<Album['source'], string> = {
       <div class="grid gap-4 md:grid-cols-2">
         {albumList.map((album) => (
           <article class="self-start rounded-[1.4rem] border border-green-900/10 bg-white/75 p-5">
-            <div class="mb-3 flex items-start justify-between gap-3 border-b border-green-900/10 pb-3">
-              <div>
+            <div class="mb-3 flex items-start gap-4 border-b border-green-900/10 pb-3">
+              {album.cover_url ? (
+                <div class="relative h-28 w-28 shrink-0 overflow-hidden rounded-2xl bg-gradient-to-br from-amber-100 via-white to-green-100 shadow-[0_20px_30px_-24px_rgba(20,83,45,0.9)]">
+                  <img
+                    src={album.cover_url}
+                    alt={`${album.artist} - ${album.album} cover`}
+                    loading="lazy"
+                    referrerpolicy="no-referrer"
+                    onerror="this.classList.add('hidden'); if (this.nextElementSibling) this.nextElementSibling.classList.remove('hidden');"
+                    class="absolute inset-0 h-full w-full object-cover"
+                  />
+                  <div class="hidden h-full w-full items-center justify-center text-center text-xs uppercase tracking-[0.18em] text-green-900/55">
+                    No cover
+                  </div>
+                </div>
+              ) : (
+                <div class="flex h-28 w-28 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-100 via-white to-green-100 text-center text-xs uppercase tracking-[0.18em] text-green-900/55">
+                  No cover
+                </div>
+              )}
+
+              <div class="min-w-0 flex-1">
                 <p class="text-xs uppercase tracking-[0.22em] text-green-800/70">
                   {sourceLabel[album.source]}
                 </p>
@@ -78,6 +99,7 @@ const sourceLabel: Record<Album['source'], string> = {
                 </h2>
                 <p class="mt-2 text-lg text-gray-700">{album.artist}</p>
               </div>
+
               <div class="pt-1 text-right text-gray-600">
                 <p class="text-2xl leading-none text-gray-900">{album.score}</p>
                 <p class="mt-1 text-[0.7rem] uppercase tracking-[0.18em] text-gray-500">

@@ -54,6 +54,7 @@ For every selected album, open the album page and collect:
 
 - `artist`
 - `album`
+- `cover_url`
 - `genre_tags`
 - `score`
 - `score_type`
@@ -65,6 +66,9 @@ For every selected album, open the album page and collect:
 
 Album page rules:
 
+- Cover art:
+  - prefer `meta[property="og:image"]`
+  - fallback to `meta[name="twitter:image"]` or the main album image
 - Apple Music link:
   - use the first link matching `music.apple.com` or `geo.music.apple.com`
 - Genre tags:
@@ -115,6 +119,7 @@ Each album entry must contain:
 
 - `artist`
 - `album`
+- `cover_url`
 - `genre_tags`
 - `score`
 - `score_type`
@@ -205,6 +210,7 @@ The homepage reads from:
 
 The album cards on the homepage must show:
 
+- cover art
 - artist
 - album
 - first 3 genre tags

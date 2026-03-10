@@ -2,6 +2,7 @@
   {
     "artist": "War Child Records",
     "album": "HELP(2)",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1642365-help2_151347.jpg",
     "genre_tags": [
       "Indie Rock",
       "Art Rock",
@@ -20,6 +21,7 @@
   {
     "artist": "Gorillaz",
     "album": "The Mountain",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1460893-the-mountain_162157.jpg",
     "genre_tags": [
       "Art Pop",
       "Neo-Psychedelia",
@@ -38,6 +40,7 @@
   {
     "artist": "Joey Valence & Brae",
     "album": "HYPERYOUTH (afterparty)",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1599773-hyperyouth-afterparty_071816.jpg",
     "genre_tags": [
       "East Coast Hip Hop",
       "Hardcore Hip Hop",
@@ -56,6 +59,7 @@
   {
     "artist": "Mitski",
     "album": "Nothing's About to Happen to Me",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1617518-nothings-about-to-happen-to-me_130138.jpg",
     "genre_tags": [
       "Singer-Songwriter",
       "Chamber Pop",
@@ -74,6 +78,7 @@
   {
     "artist": "Jill Scott",
     "album": "To Whom This May Concern",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1601658-to-whom-this-may-concern_224719.jpg",
     "genre_tags": [
       "Neo-Soul",
       "Contemporary R&B",
@@ -92,6 +97,7 @@
   {
     "artist": "Ratboys",
     "album": "Singin' To An Empty Chair",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1517560-singin-to-an-empty-chair_180228.jpg",
     "genre_tags": [
       "Indie Rock",
       "Alt-Country",

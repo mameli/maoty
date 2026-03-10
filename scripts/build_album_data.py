@@ -122,6 +122,12 @@ ALBUM_DETAIL_JS = r"""
       clean(heading?.textContent) ||
       clean(titleParts.slice(1).join(" - ")) ||
       null,
+    cover_url:
+      document.querySelector('meta[property="og:image"]')?.content ||
+      document.querySelector('meta[name="twitter:image"]')?.content ||
+      document.querySelector('button img[alt]')?.currentSrc ||
+      document.querySelector('button img[alt]')?.src ||
+      null,
     apple_music:
       document.querySelector('a[href*="music.apple.com"], a[href*="geo.music.apple.com"]')
         ?.href || null,
@@ -460,6 +466,7 @@ def collect_albums() -> list[dict[str, Any]]:
             {
                 "artist": artist,
                 "album": album,
+                "cover_url": detail.get("cover_url") or existing_album_data.get(url, {}).get("cover_url"),
                 "genre_tags": genre_tags,
                 "score": score,
                 "score_type": score_type,
