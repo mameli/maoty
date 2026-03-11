@@ -40,12 +40,12 @@ const sourceLabel: Record<Album['source'], string> = {
 ---
 
 <Layout title="Maoty">
-  <main class="min-h-screen bg-amber-50 px-6 py-10 text-gray-800">
-    <section class="mx-auto flex w-full max-w-5xl flex-col gap-8">
-      <div class="flex flex-col items-center gap-5 text-center">
-        <h1 class="text-6xl font-bold tracking-[0.06em] sm:text-7xl">Maoty</h1>
+  <main class="min-h-screen bg-amber-50 px-4 py-8 text-gray-800 sm:px-6 sm:py-10">
+    <section class="mx-auto flex w-full max-w-5xl flex-col gap-6 sm:gap-8">
+      <div class="flex flex-col items-center gap-4 text-center sm:gap-5">
+        <h1 class="text-5xl font-bold tracking-[0.06em] sm:text-7xl">Maoty</h1>
 
-        <div class="w-36 rounded-full bg-gradient-to-br from-green-900/10 via-white/85 to-green-700/10 p-2 shadow-[0_22px_45px_-28px_rgba(20,83,45,0.95)] sm:w-44">
+        <div class="w-28 rounded-full bg-gradient-to-br from-green-900/10 via-white/85 to-green-700/10 p-2 shadow-[0_22px_45px_-28px_rgba(20,83,45,0.95)] sm:w-44">
           <Image
             src={profilePic}
             alt="Maoty profile picture"
@@ -57,7 +57,7 @@ const sourceLabel: Record<Album['source'], string> = {
         </div>
 
         <div class="max-w-2xl">
-          <p class="mx-auto mb-3 text-xl leading-relaxed text-gray-700 sm:text-2xl">
+          <p class="mx-auto text-lg leading-relaxed text-gray-700 sm:mb-3 sm:text-2xl">
             This is an auto-updated website that gathers new albums from the internet
             and highlights the ones I want to keep an eye on.
           </p>
@@ -66,10 +66,10 @@ const sourceLabel: Record<Album['source'], string> = {
 
       <div class="grid gap-4 md:grid-cols-2">
         {albumList.map((album) => (
-          <article class="self-start rounded-[1.4rem] border border-green-900/10 bg-white/75 p-5">
-            <div class="mb-3 flex items-start gap-4 border-b border-green-900/10 pb-3">
+          <article class="self-start rounded-[1.4rem] border border-green-900/10 bg-white/75 p-4 sm:p-5">
+            <div class="mb-3 grid grid-cols-[6.25rem_minmax(0,1fr)_auto] items-start gap-3 border-b border-green-900/10 pb-3 sm:grid-cols-[7rem_minmax(0,1fr)_auto] sm:gap-4">
               {album.cover_url ? (
-                <div class="relative h-28 w-28 shrink-0 overflow-hidden rounded-2xl bg-gradient-to-br from-amber-100 via-white to-green-100 shadow-[0_20px_30px_-24px_rgba(20,83,45,0.9)]">
+                <div class="relative h-25 w-25 shrink-0 overflow-hidden rounded-2xl bg-gradient-to-br from-amber-100 via-white to-green-100 shadow-[0_20px_30px_-24px_rgba(20,83,45,0.9)] sm:h-28 sm:w-28">
                   <img
                     src={album.cover_url}
                     alt={`${album.artist} - ${album.album} cover`}
@@ -83,7 +83,7 @@ const sourceLabel: Record<Album['source'], string> = {
                   </div>
                 </div>
               ) : (
-                <div class="flex h-28 w-28 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-100 via-white to-green-100 text-center text-xs uppercase tracking-[0.18em] text-green-900/55">
+                <div class="flex h-25 w-25 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-100 via-white to-green-100 text-center text-xs uppercase tracking-[0.18em] text-green-900/55 sm:h-28 sm:w-28">
                   No cover
                 </div>
               )}
@@ -92,16 +92,16 @@ const sourceLabel: Record<Album['source'], string> = {
                 <p class="text-xs uppercase tracking-[0.22em] text-green-800/70">
                   {sourceLabel[album.source]}
                 </p>
-                <h2 class="mt-1 min-h-[4.4rem] text-3xl leading-none text-gray-900">
+                <h2 class="mt-1 min-h-[2.7rem] text-2xl leading-none text-gray-900 sm:min-h-[3.7rem] sm:text-3xl">
                   <a href={album.aoty_url} target="_blank" rel="noreferrer" class="hover:text-green-900">
                     {album.album}
                   </a>
                 </h2>
-                <p class="mt-2 text-lg text-gray-700">{album.artist}</p>
+                <p class="mt-1 text-base text-gray-700 sm:mt-1 sm:text-lg">{album.artist}</p>
               </div>
 
               <div class="pt-1 text-right text-gray-600">
-                <p class="text-2xl leading-none text-gray-900">{album.score}</p>
+                <p class="text-xl leading-none text-gray-900 sm:text-2xl">{album.score}</p>
                 <p class="mt-1 text-[0.7rem] uppercase tracking-[0.18em] text-gray-500">
                   {album.score_type.replace(' score', '')}
                 </p>
@@ -110,21 +110,21 @@ const sourceLabel: Record<Album['source'], string> = {
 
             <div class="mb-4 flex flex-wrap gap-2">
               {album.genre_tags.map((tag) => (
-                <span class="text-sm tracking-[0.08em] text-green-900/80">
+                <span class="text-[0.82rem] tracking-[0.08em] text-green-900/80 sm:text-sm">
                   {tag}
                 </span>
               ))}
             </div>
 
-            <div class="flex items-center justify-between border-t border-green-900/10 pt-4">
-              <p class="text-sm tracking-[0.08em] text-green-900/70">
+            <div class="flex items-start justify-between gap-4 border-t border-green-900/10 pt-4">
+              <p class="min-w-0 text-sm tracking-[0.08em] text-green-900/70">
                 {album.taste_label}
               </p>
               <a
                 href={album.apple_music}
                 target="_blank"
                 rel="noreferrer"
-                class="text-sm uppercase tracking-[0.18em] text-green-800 transition hover:text-green-950"
+                class="shrink-0 text-right text-sm uppercase tracking-[0.18em] text-green-800 transition hover:text-green-950"
               >
                 Apple Music
               </a>
