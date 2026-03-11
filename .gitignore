@@ -2,9 +2,6 @@
 __pycache__/
 *.py[cod]
 
-# Generated scrape outputs
-output/
-
 # Local browser automation state and logs
 .playwright/
 .playwright-cli/
