@@ -231,7 +231,7 @@ Presentation rules:
 Primary refresh command:
 
 ```bash
-npm run albums
+bun run albums
 ```
 
 This command must:
@@ -243,12 +243,12 @@ This command must:
 
 Do not treat the mixtape tag browse output as part of the weekly refresh.
 
-After running `npm run albums`, manually review any newly added albums and fill in `taste_label` before rebuilding the site if the field is missing.
+After running `bun run albums`, manually review any newly added albums and fill in `taste_label` before rebuilding the site if the field is missing.
 
 After regenerating data, rebuild the site:
 
 ```bash
-npm run build
+bun run build
 ```
 
 ## Validation checklist
@@ -269,10 +269,10 @@ Before considering the update complete, confirm:
 
 If this workflow is automated later, the automation should run every Friday in this workspace and execute:
 
-1. `npm run albums`
-2. `npm run build`
+1. `bun run albums`
+2. `bun run build`
 
-If `npm run build` passes and a commit is created, the automation should push with basic retry handling for transient network failures:
+If `bun run build` passes and a commit is created, the automation should push with basic retry handling for transient network failures:
 
 1. run `git push`
 2. if push fails with a DNS or temporary network error (for example `Could not resolve hostname github.com`), wait briefly and retry `git push` once
