@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 import subprocess
 import sys
@@ -19,10 +20,10 @@ TAG_BROWSE_PATH = ROOT / "output" / "mameli_mixtape_tags_browse.md"
 ALBUM_DATA_PATH = ROOT / "src" / "data" / "album-list.json"
 PLAYWRIGHT_SESSION = "aoty"
 PLAYWRIGHT_PROFILE_DIR = ROOT / ".playwright" / "aoty-profile"
-APPLE_SCRIPT = (
-    Path("/Users/filippomameli/.codex/skills/apple-music-album-linker/scripts")
-    / "find_apple_music_album.py"
-)
+APPLE_SCRIPT_CANDIDATES = [
+    Path(os.environ.get("HOME", "")) / ".codex/skills/apple-music-album-linker/scripts/find_apple_music_album.py",
+    Path("/Users/filippomameli/.codex/skills/apple-music-album-linker/scripts/find_apple_music_album.py"),
+]
 
 MUST_HEAR_URL = "https://www.albumoftheyear.org/must-hear/"
 NEW_RELEASES_URL = "https://www.albumoftheyear.org/releases/"
@@ -181,6 +182,13 @@ def run_command(args: list[str], *, timeout: int = 120) -> str:
         details = result.stdout or result.stderr
         raise RuntimeError(f"Command failed: {' '.join(args)}\n{details}")
     return result.stdout
+
+
+def resolve_apple_script() -> Path | None:
+    for candidate in APPLE_SCRIPT_CANDIDATES:
+        if candidate.exists():
+            return candidate
+    return None
 
 
 def run_playwright(args: list[str], *, timeout: int = 120) -> str:
@@ -382,11 +390,17 @@ def fetch_album_detail(url: str) -> dict[str, Any]:
 def lookup_apple_music(artist: str, album: str) -> str | None:
     if not artist or not album:
         return None
+    apple_script = resolve_apple_script()
+    if apple_script is None:
+        raise FileNotFoundError(
+            "Missing Apple Music skill script. Checked: "
+            + ", ".join(str(path) for path in APPLE_SCRIPT_CANDIDATES)
+        )
 
     output = run_command(
         [
             "python3",
-            str(APPLE_SCRIPT),
+            str(apple_script),
             "--artist",
             artist,
             "--album",
@@ -420,7 +434,7 @@ def choose_score(row: dict[str, Any], *, source: str) -> tuple[int, str, int | N
     return int(row["critic_score"]), "critic score", row.get("critic_count")
 
 
-def collect_albums() -> list[dict[str, Any]]:
+def collect_albums() -> tuple[list[dict[str, Any]], dict[str, int]]:
     existing_album_data = load_existing_album_data()
     batch_date = date.today().isoformat()
     must_hear_rows = extract_album_rows(MUST_HEAR_URL)
@@ -437,6 +451,11 @@ def collect_albums() -> list[dict[str, Any]]:
 
     selected: list[tuple[str, dict[str, Any]]] = [("new-releases", row) for row in new_releases]
     selected.extend(("must-hear", row) for row in must_hear)
+    stats = {
+        "must_hear_scraped": len(must_hear),
+        "new_releases_qualified": len(new_releases),
+        "apple_fallback_lookups": 0,
+    }
 
     albums: list[dict[str, Any]] = []
     seen_urls: set[str] = set()
@@ -455,7 +474,10 @@ def collect_albums() -> list[dict[str, Any]]:
         artist = detail.get("artist") or row.get("artist")
         album = detail.get("album") or row.get("album")
         genre_tags = [tag for tag in detail.get("genre_tags", []) if tag][:3]
-        apple_music = detail.get("apple_music") or lookup_apple_music(artist, album)
+        apple_music = detail.get("apple_music")
+        if not apple_music:
+            stats["apple_fallback_lookups"] += 1
+            apple_music = lookup_apple_music(artist, album)
 
         if not apple_music:
             raise RuntimeError(f"Missing Apple Music link for {artist} - {album}")
@@ -480,7 +502,7 @@ def collect_albums() -> list[dict[str, Any]]:
             }
         )
 
-    return dedupe_albums(albums)
+    return dedupe_albums(albums), stats
 
 
 def merge_album_data(new_albums: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -496,8 +518,6 @@ def write_album_data(albums: list[dict[str, Any]]) -> None:
 def main() -> int:
     if not MIXTAPE_PATH.exists():
         raise FileNotFoundError(f"Missing mixtape export: {MIXTAPE_PATH}")
-    if not APPLE_SCRIPT.exists():
-        raise FileNotFoundError(f"Missing Apple Music skill script: {APPLE_SCRIPT}")
 
     mixtape_rows = load_mixtape_rows()
     frequency, weighted = build_tag_profile(mixtape_rows)
@@ -505,12 +525,13 @@ def main() -> int:
 
     opened_browser = open_browser()
     try:
-        albums = collect_albums()
+        albums, stats = collect_albums()
     finally:
         if opened_browser:
             close_browser()
 
     write_album_data(merge_album_data(albums))
+    print(json.dumps({"refresh_stats": stats}))
     print(f"Wrote {TAG_BROWSE_PATH}")
     print(f"Wrote {ALBUM_DATA_PATH}")
     return 0

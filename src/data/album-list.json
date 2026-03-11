@@ -6,7 +6,7 @@
     "genre_tags": [
       "Indie Rock",
       "Art Rock",
-      "Art Pop"
+      "Indie Folk"
     ],
     "score": 86,
     "score_type": "critic score",
@@ -15,8 +15,27 @@
     "source": "new-releases",
     "review_count": 7,
     "taste_label": "It's a match",
-    "source_rank": 13,
-    "batch_date": "2026-03-10"
+    "source_rank": 17,
+    "batch_date": "2026-03-11"
+  },
+  {
+    "artist": "slayr",
+    "album": "Half Blood (BloodLuxe)",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1572710-half-blood-bloodluxe_233054.jpg",
+    "genre_tags": [
+      "Rage",
+      "Digicore",
+      "Pop Rap"
+    ],
+    "score": 86,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/us/album/half-blood-bloodluxe/1882124562?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1572710-slayr-half-blood-bloodluxe.php",
+    "source": "must-hear",
+    "review_count": 3245,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 1,
+    "batch_date": "2026-03-11"
   },
   {
     "artist": "Gorillaz",
@@ -34,8 +53,8 @@
     "source": "must-hear",
     "review_count": 31,
     "taste_label": "Maybe you'll like it",
-    "source_rank": 1,
-    "batch_date": "2026-03-10"
+    "source_rank": 3,
+    "batch_date": "2026-03-11"
   },
   {
     "artist": "Joey Valence & Brae",
@@ -51,10 +70,10 @@
     "apple_music": "https://geo.music.apple.com/us/album/hyperyouth-afterparty/1874348487?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1599773-joey-valence-brae-hyperyouth-afterparty.php",
     "source": "must-hear",
-    "review_count": 1112,
+    "review_count": 1116,
     "taste_label": "It's a match",
-    "source_rank": 2,
-    "batch_date": "2026-03-10"
+    "source_rank": 4,
+    "batch_date": "2026-03-11"
   },
   {
     "artist": "Mitski",
@@ -72,8 +91,8 @@
     "source": "must-hear",
     "review_count": 28,
     "taste_label": "It's a match",
-    "source_rank": 3,
-    "batch_date": "2026-03-10"
+    "source_rank": 5,
+    "batch_date": "2026-03-11"
   },
   {
     "artist": "Jill Scott",

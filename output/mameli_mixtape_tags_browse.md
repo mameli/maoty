@@ -23,8 +23,8 @@ Total artists processed: 50
 | soul | 4 |
 | experimental | 4 |
 | lo-fi | 3 |
-| folk | 3 |
 | indie folk | 3 |
+| folk | 3 |
 | alternative rnb | 2 |
 | neo-soul | 2 |
 | downtempo | 2 |
@@ -34,50 +34,50 @@ Total artists processed: 50
 | dubstep | 2 |
 | emo | 2 |
 | female vocalists | 2 |
-| electro-pop | 1 |
 | synth-pop | 1 |
+| electro-pop | 1 |
 | japanese | 1 |
 | kanye west | 1 |
 | instrumental hip-hop | 1 |
 | experimental rap | 1 |
 | experimental hip-hop | 1 |
-| ofwgkta | 1 |
 | underground hip-hop | 1 |
+| ofwgkta | 1 |
 | italian pop | 1 |
 | italian indie | 1 |
 | bedroom pop | 1 |
 | wsum 91 7 fm madison | 1 |
 | folk rock | 1 |
-| australian | 1 |
 | psychedelic rock | 1 |
+| australian | 1 |
 | all | 1 |
 | palermo | 1 |
-| itpop | 1 |
 | electronica | 1 |
+| itpop | 1 |
 | diesagiowave | 1 |
 | post-punk | 1 |
 | british | 1 |
+| post-hardcore | 1 |
+| hardcore | 1 |
 | hardcore punk | 1 |
 | punk | 1 |
-| hardcore | 1 |
-| post-hardcore | 1 |
+| peter | 1 |
 | art pop | 1 |
 | electropop | 1 |
-| peter | 1 |
 | west coast | 1 |
 | conscious hip-hop | 1 |
 | ambient | 1 |
-| icelandic | 1 |
 | post-rock | 1 |
-| future garage | 1 |
+| icelandic | 1 |
 | uk garage | 1 |
+| future garage | 1 |
 | uk bass | 1 |
 | eurovision | 1 |
 | brunori sas-2009-volume 1 | 1 |
 | cantautore | 1 |
+| psytrance | 1 |
 | darkpsy | 1 |
 | psychedelic trance | 1 |
-| psytrance | 1 |
 | dark psy | 1 |
 | trap | 1 |
 | canzone napoletana | 1 |
@@ -85,8 +85,8 @@ Total artists processed: 50
 | canadian | 1 |
 | pop rock | 1 |
 | grime | 1 |
-| midwest emo | 1 |
 | math rock | 1 |
+| midwest emo | 1 |
 | jazz pop | 1 |
 | acoustic | 1 |
 | grunge | 1 |
