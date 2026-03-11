@@ -63,6 +63,46 @@ The album build is not fully self-contained. It expects:
 
 If any of those are missing, `scripts/build_album_data.py` will fail early.
 
+### Create the `aoty` Playwright session
+
+`scripts/build_album_data.py` is hard-coded to use:
+
+- session name: `aoty`
+- profile directory: `.playwright/aoty-profile`
+
+Create that session once from the repo root:
+
+```bash
+playwright-cli -s=aoty open about:blank --headed --persistent --profile .playwright/aoty-profile
+```
+
+What this does:
+
+- `-s=aoty` gives the browser session the exact name the script expects
+- `--persistent` stores cookies and browser storage on disk instead of keeping them only in memory
+- `--profile .playwright/aoty-profile` keeps that persistent profile inside this repo
+- `--headed` opens a visible browser so you can complete any login or Cloudflare challenge manually
+
+Recommended first-run flow:
+
+1. Run the command above.
+2. In the opened browser, visit [Album of the Year](https://www.albumoftheyear.org/) and complete any login or anti-bot challenge if needed.
+3. Leave the browser open and run `bun run albums`, or close it and reuse the saved profile later.
+
+Useful session commands:
+
+```bash
+playwright-cli list
+playwright-cli -s=aoty open about:blank --headed --persistent --profile .playwright/aoty-profile
+playwright-cli -s=aoty close
+```
+
+Notes:
+
+- The script checks whether the `aoty` session is already open and will attach to it if available.
+- If the session is closed, the saved profile at `.playwright/aoty-profile` is what preserves cookies between runs.
+- If Album of the Year starts returning `Just a moment...`, reopen the same `aoty` session headed and refresh manually before rerunning the build.
+
 ## Last.fm scraper
 
 Use the standalone scraper to create or refresh the Last.fm export:
