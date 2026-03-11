@@ -1,0 +1,16 @@
+# Exported Codex automation definition for sharing/importing.
+
+version = 1
+id = "maoty-friday-refresh"
+name = "Maoty Friday Refresh"
+prompt = """
+Follow ./AGENT.md as the source of truth for the weekly Maoty album refresh. Use `playwright-cli` with the named session `aoty` and the persistent profile at `.playwright/aoty-profile`; if the `aoty` session is already open, attach to it instead of opening a fresh browser, and sign in manually only if the saved profile is no longer authenticated. Run `npm run albums`, review ./src/data/album-list.json for any newly added albums missing `taste_label`, assign exactly one of `It's a match`, `Just for you`, or `Maybe you'll like it` using the existing mixtape taste context, then run `npm run build`. Reuse the existing mixtape tag inputs and do not refresh the Last.fm export. If the build passes and there are repo changes from the refresh, create a normal git commit with a concise message describing the Maoty Friday refresh and push the current branch to its remote.
+
+Push handling requirement: run `git push`; if it fails with DNS/temporary network resolution errors (for example `Could not resolve hostname github.com`), wait briefly and retry `git push` once. If retry still fails, run `ssh -T git@github.com` once to distinguish authentication from network issues, then report the exact blocker. Do not guess.
+
+If there are no changes, report that no commit was needed. If the build fails, do not commit or push. Report in the inbox: how many albums were scraped from Must Hear, how many qualified from New Releases, how many albums were inserted at the top, whether any Apple Music fallback lookups were needed, whether any new albums still needed a manual `taste_label`, whether the build passed, whether commit succeeded, and whether push succeeded. If the run is blocked by Cloudflare, browser interaction, authentication, git push, or any other runtime issue, report the blocker explicitly instead of guessing.
+"""
+status = "ACTIVE"
+rrule = "FREQ=WEEKLY;BYDAY=FR;BYHOUR=9;BYMINUTE=0"
+execution_environment = "local"
+cwds = ["~/Projects/maoty"]
