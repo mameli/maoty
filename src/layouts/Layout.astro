@@ -27,7 +27,26 @@ const { title = 'Maoty' } = Astro.props;
     <script is:inline>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js');
+          let removedServiceWorker = false;
+
+          navigator.serviceWorker
+            .getRegistrations()
+            .then((registrations) => {
+              removedServiceWorker = registrations.length > 0;
+
+              return Promise.all(registrations.map((registration) => registration.unregister()));
+            })
+            .then(() => caches.keys())
+            .then((cacheNames) => Promise.all(cacheNames.map((cacheName) => caches.delete(cacheName))))
+            .then(() => {
+              if (!removedServiceWorker || sessionStorage.getItem('maoty-sw-cleanup') === 'done') {
+                return;
+              }
+
+              sessionStorage.setItem('maoty-sw-cleanup', 'done');
+              window.location.reload();
+            })
+            .catch(() => {});
         });
       }
     </script>
