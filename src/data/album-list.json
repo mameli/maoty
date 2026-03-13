@@ -1,5 +1,43 @@
 [
   {
+    "artist": "James Blake",
+    "album": "Trying Times",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1636079-trying-times_183603.jpg",
+    "genre_tags": [
+      "Alternative R&B",
+      "Art Pop",
+      "Glitch Pop"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/gb/album/trying-times/1862353780?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1636079-james-blake-trying-times.php",
+    "source": "new-releases",
+    "review_count": 7,
+    "taste_label": "Just for you",
+    "source_rank": 1,
+    "batch_date": "2026-03-13"
+  },
+  {
+    "artist": "slayr",
+    "album": "Half Blood (BloodLuxe)",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1572710-half-blood-bloodluxe_233054.jpg",
+    "genre_tags": [
+      "Digicore",
+      "Rage",
+      "Pop Rap"
+    ],
+    "score": 86,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/us/album/half-blood-bloodluxe/1882124562?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1572710-slayr-half-blood-bloodluxe.php",
+    "source": "must-hear",
+    "review_count": 3530,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 1,
+    "batch_date": "2026-03-13"
+  },
+  {
     "artist": "War Child Records",
     "album": "HELP(2)",
     "cover_url": "https://cdn.albumoftheyear.org/album/1642365-help2_151347.jpg",
@@ -8,34 +46,15 @@
       "Art Rock",
       "Indie Folk"
     ],
-    "score": 86,
+    "score": 87,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/us/album/help-2/1870313498?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1642365-various-artists-help2.php",
-    "source": "new-releases",
-    "review_count": 7,
-    "taste_label": "It's a match",
-    "source_rank": 17,
-    "batch_date": "2026-03-11"
-  },
-  {
-    "artist": "slayr",
-    "album": "Half Blood (BloodLuxe)",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1572710-half-blood-bloodluxe_233054.jpg",
-    "genre_tags": [
-      "Rage",
-      "Digicore",
-      "Pop Rap"
-    ],
-    "score": 86,
-    "score_type": "user score",
-    "apple_music": "https://geo.music.apple.com/us/album/half-blood-bloodluxe/1882124562?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1572710-slayr-half-blood-bloodluxe.php",
     "source": "must-hear",
-    "review_count": 3245,
-    "taste_label": "Maybe you'll like it",
-    "source_rank": 1,
-    "batch_date": "2026-03-11"
+    "review_count": 8,
+    "taste_label": "It's a match",
+    "source_rank": 2,
+    "batch_date": "2026-03-13"
   },
   {
     "artist": "Gorillaz",
@@ -54,7 +73,7 @@
     "review_count": 31,
     "taste_label": "Maybe you'll like it",
     "source_rank": 3,
-    "batch_date": "2026-03-11"
+    "batch_date": "2026-03-13"
   },
   {
     "artist": "Joey Valence & Brae",
@@ -70,10 +89,10 @@
     "apple_music": "https://geo.music.apple.com/us/album/hyperyouth-afterparty/1874348487?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1599773-joey-valence-brae-hyperyouth-afterparty.php",
     "source": "must-hear",
-    "review_count": 1116,
+    "review_count": 1130,
     "taste_label": "It's a match",
     "source_rank": 4,
-    "batch_date": "2026-03-11"
+    "batch_date": "2026-03-13"
   },
   {
     "artist": "Mitski",
@@ -92,7 +111,7 @@
     "review_count": 28,
     "taste_label": "It's a match",
     "source_rank": 5,
-    "batch_date": "2026-03-11"
+    "batch_date": "2026-03-13"
   },
   {
     "artist": "Jill Scott",
