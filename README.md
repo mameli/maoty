@@ -4,10 +4,10 @@
 
 ## What is in this repo
 
-- Astro frontend in [src/pages/index.astro](/Users/mameli/Projects/maoty/src/pages/index.astro)
-- Generated album dataset in [src/data/album-list.json](/Users/mameli/Projects/maoty/src/data/album-list.json)
-- Album aggregation script in [scripts/build_album_data.py](/Users/mameli/Projects/maoty/scripts/build_album_data.py)
-- Last.fm library scraper in [scripts/scrape_lastfm_library.py](/Users/mameli/Projects/maoty/scripts/scrape_lastfm_library.py)
+- Astro frontend in `src/pages/index.astro`
+- Generated album dataset in `src/data/album-list.json`
+- Album aggregation script in `scripts/build_album_data.py`
+- Last.fm library scraper in `scripts/scrape_lastfm_library.py`
 
 ## Local development
 
@@ -37,7 +37,7 @@ bun run preview
 
 ## Data workflow
 
-The site reads album entries from [src/data/album-list.json](/Users/mameli/Projects/maoty/src/data/album-list.json).
+The site reads album entries from `src/data/album-list.json`.
 
 To refresh that file:
 
@@ -58,7 +58,7 @@ The album build is not fully self-contained. It expects:
 - `python3`
 - `playwright-cli` available on `PATH`
 - a usable Playwright session/profile for Album of the Year scraping
-- the Apple Music helper script at `/Users/filippomameli/.codex/skills/apple-music-album-linker/scripts/find_apple_music_album.py`
+- the Apple Music helper script at `$HOME/.codex/skills/apple-music-album-linker/scripts/find_apple_music_album.py`
 - the Last.fm export file at `output/mameli_mixtape_first50_artists_with_tags.json`
 
 If any of those are missing, `scripts/build_album_data.py` will fail early.

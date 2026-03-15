@@ -22,7 +22,6 @@ PLAYWRIGHT_SESSION = "aoty"
 PLAYWRIGHT_PROFILE_DIR = ROOT / ".playwright" / "aoty-profile"
 APPLE_SCRIPT_CANDIDATES = [
     Path(os.environ.get("HOME", "")) / ".codex/skills/apple-music-album-linker/scripts/find_apple_music_album.py",
-    Path("/Users/filippomameli/.codex/skills/apple-music-album-linker/scripts/find_apple_music_album.py"),
 ]
 
 MUST_HEAR_URL = "https://www.albumoftheyear.org/must-hear/"

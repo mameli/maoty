@@ -82,7 +82,7 @@ Album page rules:
 If the album page has no Apple Music link, use the local skill script:
 
 ```bash
-python3 /Users/filippomameli/.codex/skills/apple-music-album-linker/scripts/find_apple_music_album.py --artist "ARTIST" --album "ALBUM" --json
+python3 "$HOME/.codex/skills/apple-music-album-linker/scripts/find_apple_music_album.py" --artist "ARTIST" --album "ALBUM" --json
 ```
 
 Fallback rules:
