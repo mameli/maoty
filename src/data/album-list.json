@@ -4,19 +4,38 @@
     "album": "Trying Times",
     "cover_url": "https://cdn.albumoftheyear.org/album/1636079-trying-times_183603.jpg",
     "genre_tags": [
-      "Alternative R&B",
       "Art Pop",
-      "Glitch Pop"
+      "Alternative R&B",
+      "UK Bass"
     ],
     "score": 81,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/gb/album/trying-times/1862353780?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1636079-james-blake-trying-times.php",
-    "source": "new-releases",
-    "review_count": 7,
+    "source": "must-hear",
+    "review_count": 14,
     "taste_label": "Just for you",
     "source_rank": 1,
-    "batch_date": "2026-03-13"
+    "batch_date": "2026-03-20"
+  },
+  {
+    "artist": "heavensouls",
+    "album": "westside trapped",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1654056-westside-trapped_034422.jpg",
+    "genre_tags": [
+      "Afrobeat",
+      "Jazz-Funk",
+      "Sound Collage"
+    ],
+    "score": 80,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/us/album/westside-trapped/1883512527?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1654056-heavensouls-westside-trapped.php",
+    "source": "must-hear",
+    "review_count": 936,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 2,
+    "batch_date": "2026-03-20"
   },
   {
     "artist": "slayr",
@@ -27,15 +46,52 @@
       "Rage",
       "Pop Rap"
     ],
-    "score": 86,
-    "score_type": "user score",
+    "score": 67,
+    "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/us/album/half-blood-bloodluxe/1882124562?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1572710-slayr-half-blood-bloodluxe.php",
     "source": "must-hear",
-    "review_count": 3530,
+    "review_count": 1,
     "taste_label": "Maybe you'll like it",
-    "source_rank": 1,
-    "batch_date": "2026-03-13"
+    "source_rank": 3,
+    "batch_date": "2026-03-20"
+  },
+  {
+    "artist": "Gorillaz",
+    "album": "The Mountain",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1460893-the-mountain_162157.jpg",
+    "genre_tags": [
+      "Art Pop",
+      "Neo-Psychedelia",
+      "Hindustani Classical Music"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/the-mountain/1837237742?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1460893-gorillaz-the-mountain.php",
+    "source": "must-hear",
+    "review_count": 33,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 4,
+    "batch_date": "2026-03-20"
+  },
+  {
+    "artist": "Bill Callahan",
+    "album": "My Days of 58",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1536087-my-days-of-58.jpg",
+    "genre_tags": [
+      "Singer-Songwriter",
+      "Americana"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/my-days-of-58/1846471021?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1536087-bill-callahan-my-days-of-58.php",
+    "source": "must-hear",
+    "review_count": 15,
+    "taste_label": "It's a match",
+    "source_rank": 5,
+    "batch_date": "2026-03-20"
   },
   {
     "artist": "War Child Records",
@@ -54,25 +110,6 @@
     "review_count": 8,
     "taste_label": "It's a match",
     "source_rank": 2,
-    "batch_date": "2026-03-13"
-  },
-  {
-    "artist": "Gorillaz",
-    "album": "The Mountain",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1460893-the-mountain_162157.jpg",
-    "genre_tags": [
-      "Art Pop",
-      "Neo-Psychedelia",
-      "Hindustani Classical Music"
-    ],
-    "score": 81,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/us/album/the-mountain/1837237742?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1460893-gorillaz-the-mountain.php",
-    "source": "must-hear",
-    "review_count": 31,
-    "taste_label": "Maybe you'll like it",
-    "source_rank": 3,
     "batch_date": "2026-03-13"
   },
   {
