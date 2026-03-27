@@ -1,5 +1,100 @@
 [
   {
+    "artist": "RAYE",
+    "album": "THIS MUSIC MAY CONTAIN HOPE.",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1471943-this-music-may-contain-hope_195812.jpg",
+    "genre_tags": [
+      "Pop Soul",
+      "Contemporary R&B",
+      "Alt-Pop"
+    ],
+    "score": 91,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/gb/album/this-music-may-contain-hope/1871085677?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1471943-raye-this-music-may-contain-hope.php",
+    "source": "new-releases",
+    "review_count": 11,
+    "taste_label": "Just for you",
+    "source_rank": 3,
+    "batch_date": "2026-03-27"
+  },
+  {
+    "artist": "Robyn",
+    "album": "Sexistential",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1514161-sexistential_165341.jpg",
+    "genre_tags": [
+      "Dance-Pop",
+      "Synthpop",
+      "Electropop"
+    ],
+    "score": 83,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/tr/album/sexistential/1852752613?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1514161-robyn-sexistential.php",
+    "source": "new-releases",
+    "review_count": 23,
+    "taste_label": "Just for you",
+    "source_rank": 4,
+    "batch_date": "2026-03-27"
+  },
+  {
+    "artist": "The Twilight Sad",
+    "album": "IT\u2019S THE LONG GOODBYE",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1607155-its-the-long-goodbye_102433.jpg",
+    "genre_tags": [
+      "Post-Punk Revival",
+      "Darkwave",
+      "Shoegaze"
+    ],
+    "score": 87,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/its-the-long-goodbye/1858940948?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1607155-the-twilight-sad-its-the-long-goodbye.php",
+    "source": "new-releases",
+    "review_count": 11,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 21,
+    "batch_date": "2026-03-27"
+  },
+  {
+    "artist": "underscores",
+    "album": "U",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1701933-u_172807.jpg",
+    "genre_tags": [
+      "Electropop",
+      "Dance-Pop",
+      "Electronic Dance Music"
+    ],
+    "score": 88,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/u/1878382378?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1701933-underscores-u.php",
+    "source": "must-hear",
+    "review_count": 10,
+    "taste_label": "Just for you",
+    "source_rank": 2,
+    "batch_date": "2026-03-27"
+  },
+  {
+    "artist": "Neurosis",
+    "album": "An Undying Love for a Burning World",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1734755-an-undying-love-for-a-burning-world_143414.jpg",
+    "genre_tags": [
+      "Atmospheric Sludge Metal",
+      "Doom Metal",
+      "Post-Rock"
+    ],
+    "score": 90,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/nz/album/an-undying-love-for-a-burning-world/1882105289?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1734755-neurosis-an-undying-love-for-a-burning-world.php",
+    "source": "must-hear",
+    "review_count": 5,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 3,
+    "batch_date": "2026-03-27"
+  },
+  {
     "artist": "James Blake",
     "album": "Trying Times",
     "cover_url": "https://cdn.albumoftheyear.org/album/1636079-trying-times_183603.jpg",
@@ -8,15 +103,15 @@
       "Alternative R&B",
       "UK Bass"
     ],
-    "score": 81,
+    "score": 79,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/gb/album/trying-times/1862353780?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1636079-james-blake-trying-times.php",
     "source": "must-hear",
-    "review_count": 14,
+    "review_count": 18,
     "taste_label": "Just for you",
-    "source_rank": 1,
-    "batch_date": "2026-03-20"
+    "source_rank": 4,
+    "batch_date": "2026-03-27"
   },
   {
     "artist": "heavensouls",
@@ -32,10 +127,10 @@
     "apple_music": "https://geo.music.apple.com/us/album/westside-trapped/1883512527?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1654056-heavensouls-westside-trapped.php",
     "source": "must-hear",
-    "review_count": 936,
+    "review_count": 1193,
     "taste_label": "Maybe you'll like it",
-    "source_rank": 2,
-    "batch_date": "2026-03-20"
+    "source_rank": 5,
+    "batch_date": "2026-03-27"
   },
   {
     "artist": "slayr",
