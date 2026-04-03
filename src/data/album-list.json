@@ -1,22 +1,60 @@
 [
   {
+    "artist": "smokedope2016",
+    "album": "THE COMEDOWN",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1195798-the-comedown_150600.jpg",
+    "genre_tags": [
+      "Cloud Rap",
+      "Wave",
+      "Emo Rap"
+    ],
+    "score": 74,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/the-comedown/1885079319?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1195798-smokedope2016-the-comedown.php",
+    "source": "must-hear",
+    "review_count": 1,
+    "taste_label": "Just for you",
+    "source_rank": 1,
+    "batch_date": "2026-04-03"
+  },
+  {
+    "artist": "Slayyyter",
+    "album": "WOR$T GIRL IN AMERICA",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1460350-wort-girl-in-america_034044.jpg",
+    "genre_tags": [
+      "Electroclash",
+      "Electropop",
+      "Dance-Pop"
+    ],
+    "score": 79,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/wor%24t-girl-in-america/1867530577?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1460350-slayyyter-wort-girl-in-america.php",
+    "source": "must-hear",
+    "review_count": 8,
+    "taste_label": "Just for you",
+    "source_rank": 2,
+    "batch_date": "2026-04-03"
+  },
+  {
     "artist": "RAYE",
     "album": "THIS MUSIC MAY CONTAIN HOPE.",
     "cover_url": "https://cdn.albumoftheyear.org/album/1471943-this-music-may-contain-hope_195812.jpg",
     "genre_tags": [
       "Pop Soul",
       "Contemporary R&B",
-      "Alt-Pop"
+      "Classical Crossover"
     ],
-    "score": 91,
+    "score": 84,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/gb/album/this-music-may-contain-hope/1871085677?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1471943-raye-this-music-may-contain-hope.php",
-    "source": "new-releases",
-    "review_count": 11,
+    "source": "must-hear",
+    "review_count": 18,
     "taste_label": "Just for you",
     "source_rank": 3,
-    "batch_date": "2026-03-27"
+    "batch_date": "2026-04-03"
   },
   {
     "artist": "Robyn",
@@ -31,11 +69,30 @@
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/tr/album/sexistential/1852752613?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1514161-robyn-sexistential.php",
-    "source": "new-releases",
-    "review_count": 23,
+    "source": "must-hear",
+    "review_count": 28,
     "taste_label": "Just for you",
     "source_rank": 4,
-    "batch_date": "2026-03-27"
+    "batch_date": "2026-04-03"
+  },
+  {
+    "artist": "underscores",
+    "album": "U",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1701933-u_172807.jpg",
+    "genre_tags": [
+      "Electropop",
+      "Dance-Pop",
+      "Electronic Dance Music"
+    ],
+    "score": 88,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/u/1878382378?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1701933-underscores-u.php",
+    "source": "must-hear",
+    "review_count": 10,
+    "taste_label": "Just for you",
+    "source_rank": 5,
+    "batch_date": "2026-04-03"
   },
   {
     "artist": "The Twilight Sad",
@@ -54,25 +111,6 @@
     "review_count": 11,
     "taste_label": "Maybe you'll like it",
     "source_rank": 21,
-    "batch_date": "2026-03-27"
-  },
-  {
-    "artist": "underscores",
-    "album": "U",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1701933-u_172807.jpg",
-    "genre_tags": [
-      "Electropop",
-      "Dance-Pop",
-      "Electronic Dance Music"
-    ],
-    "score": 88,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/us/album/u/1878382378?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1701933-underscores-u.php",
-    "source": "must-hear",
-    "review_count": 10,
-    "taste_label": "Just for you",
-    "source_rank": 2,
     "batch_date": "2026-03-27"
   },
   {
