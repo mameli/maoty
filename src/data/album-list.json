@@ -1,5 +1,81 @@
 [
   {
+    "artist": "My New Band Believe",
+    "album": "My New Band Believe",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1686949-my-new-band-believe_135047.jpg",
+    "genre_tags": [
+      "Chamber Folk",
+      "Progressive Folk",
+      "Avant-Folk"
+    ],
+    "score": 84,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/my-new-band-believe/1866890640?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1686949-my-new-band-believe-my-new-band-believe.php",
+    "source": "new-releases",
+    "review_count": 10,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 1,
+    "batch_date": "2026-04-10"
+  },
+  {
+    "artist": "Holly Humberstone",
+    "album": "Cruel World",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1642078-cruel-world_131314.jpg",
+    "genre_tags": [
+      "Bedroom Pop",
+      "Indie Pop",
+      "Alt-Pop"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/au/album/cruel-world/1859629846?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1642078-holly-humberstone-cruel-world.php",
+    "source": "new-releases",
+    "review_count": 8,
+    "taste_label": "Just for you",
+    "source_rank": 2,
+    "batch_date": "2026-04-10"
+  },
+  {
+    "artist": "Angine de Poitrine",
+    "album": "Vol.II",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1557730-volii_210909.jpg",
+    "genre_tags": [
+      "Avant-Prog",
+      "Math Rock",
+      "Jam Band"
+    ],
+    "score": 84,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/vol-ii/1876355936?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1557730-angine-de-poitrine-volii.php",
+    "source": "must-hear",
+    "review_count": 8,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 1,
+    "batch_date": "2026-04-10"
+  },
+  {
+    "artist": "Tiffany Day",
+    "album": "HALO",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1608192-halo_184812.jpg",
+    "genre_tags": [
+      "Electropop",
+      "Electro House",
+      "Dance-Pop"
+    ],
+    "score": 82,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/us/album/halo/1872819106?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1608192-tiffany-day-halo.php",
+    "source": "must-hear",
+    "review_count": 3276,
+    "taste_label": "Just for you",
+    "source_rank": 2,
+    "batch_date": "2026-04-10"
+  },
+  {
     "artist": "smokedope2016",
     "album": "THE COMEDOWN",
     "cover_url": "https://cdn.albumoftheyear.org/album/1195798-the-comedown_150600.jpg",
@@ -15,8 +91,8 @@
     "source": "must-hear",
     "review_count": 1,
     "taste_label": "Just for you",
-    "source_rank": 1,
-    "batch_date": "2026-04-03"
+    "source_rank": 3,
+    "batch_date": "2026-04-10"
   },
   {
     "artist": "Slayyyter",
@@ -25,7 +101,7 @@
     "genre_tags": [
       "Electroclash",
       "Electropop",
-      "Dance-Pop"
+      "Electro-Industrial"
     ],
     "score": 79,
     "score_type": "critic score",
@@ -34,8 +110,8 @@
     "source": "must-hear",
     "review_count": 8,
     "taste_label": "Just for you",
-    "source_rank": 2,
-    "batch_date": "2026-04-03"
+    "source_rank": 4,
+    "batch_date": "2026-04-10"
   },
   {
     "artist": "RAYE",
@@ -46,15 +122,15 @@
       "Contemporary R&B",
       "Classical Crossover"
     ],
-    "score": 84,
+    "score": 83,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/gb/album/this-music-may-contain-hope/1871085677?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1471943-raye-this-music-may-contain-hope.php",
     "source": "must-hear",
-    "review_count": 18,
+    "review_count": 19,
     "taste_label": "Just for you",
-    "source_rank": 3,
-    "batch_date": "2026-04-03"
+    "source_rank": 5,
+    "batch_date": "2026-04-10"
   },
   {
     "artist": "Robyn",
