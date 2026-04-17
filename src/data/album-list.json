@@ -1,5 +1,24 @@
 [
   {
+    "artist": "drug bug",
+    "album": "Hell for a Basement",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1755639-hell-for-a-basement_195726.jpg",
+    "genre_tags": [
+      "Indie Rock",
+      "Chamber Pop",
+      "Noise Pop"
+    ],
+    "score": 84,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/es/album/hell-for-a-basement/1892970507?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1755639-drug-bug-hell-for-a-basement.php",
+    "source": "must-hear",
+    "review_count": 1428,
+    "taste_label": "It's a match",
+    "source_rank": 1,
+    "batch_date": "2026-04-17"
+  },
+  {
     "artist": "My New Band Believe",
     "album": "My New Band Believe",
     "cover_url": "https://cdn.albumoftheyear.org/album/1686949-my-new-band-believe_135047.jpg",
@@ -12,11 +31,68 @@
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/us/album/my-new-band-believe/1866890640?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1686949-my-new-band-believe-my-new-band-believe.php",
-    "source": "new-releases",
-    "review_count": 10,
+    "source": "must-hear",
+    "review_count": 17,
     "taste_label": "Maybe you'll like it",
-    "source_rank": 1,
-    "batch_date": "2026-04-10"
+    "source_rank": 2,
+    "batch_date": "2026-04-17"
+  },
+  {
+    "artist": "Tiffany Day",
+    "album": "HALO",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1608192-halo_184812.jpg",
+    "genre_tags": [
+      "Electropop",
+      "Electro House",
+      "Dance-Pop"
+    ],
+    "score": 60,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/halo/1872819106?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1608192-tiffany-day-halo.php",
+    "source": "must-hear",
+    "review_count": 2,
+    "taste_label": "Just for you",
+    "source_rank": 3,
+    "batch_date": "2026-04-17"
+  },
+  {
+    "artist": "Slayyyter",
+    "album": "WOR$T GIRL IN AMERICA",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1460350-wort-girl-in-america_034044.jpg",
+    "genre_tags": [
+      "Electroclash",
+      "Electropop",
+      "Dance-Pop"
+    ],
+    "score": 79,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/wor%24t-girl-in-america/1867530577?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1460350-slayyyter-wort-girl-in-america.php",
+    "source": "must-hear",
+    "review_count": 8,
+    "taste_label": "Just for you",
+    "source_rank": 4,
+    "batch_date": "2026-04-17"
+  },
+  {
+    "artist": "RAYE",
+    "album": "THIS MUSIC MAY CONTAIN HOPE.",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1471943-this-music-may-contain-hope_195812.jpg",
+    "genre_tags": [
+      "Pop Soul",
+      "Contemporary R&B",
+      "Classical Crossover"
+    ],
+    "score": 83,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/gb/album/this-music-may-contain-hope/1871085677?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1471943-raye-this-music-may-contain-hope.php",
+    "source": "must-hear",
+    "review_count": 20,
+    "taste_label": "Just for you",
+    "source_rank": 5,
+    "batch_date": "2026-04-17"
   },
   {
     "artist": "Holly Humberstone",
@@ -57,25 +133,6 @@
     "batch_date": "2026-04-10"
   },
   {
-    "artist": "Tiffany Day",
-    "album": "HALO",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1608192-halo_184812.jpg",
-    "genre_tags": [
-      "Electropop",
-      "Electro House",
-      "Dance-Pop"
-    ],
-    "score": 82,
-    "score_type": "user score",
-    "apple_music": "https://geo.music.apple.com/us/album/halo/1872819106?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1608192-tiffany-day-halo.php",
-    "source": "must-hear",
-    "review_count": 3276,
-    "taste_label": "Just for you",
-    "source_rank": 2,
-    "batch_date": "2026-04-10"
-  },
-  {
     "artist": "smokedope2016",
     "album": "THE COMEDOWN",
     "cover_url": "https://cdn.albumoftheyear.org/album/1195798-the-comedown_150600.jpg",
@@ -92,44 +149,6 @@
     "review_count": 1,
     "taste_label": "Just for you",
     "source_rank": 3,
-    "batch_date": "2026-04-10"
-  },
-  {
-    "artist": "Slayyyter",
-    "album": "WOR$T GIRL IN AMERICA",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1460350-wort-girl-in-america_034044.jpg",
-    "genre_tags": [
-      "Electroclash",
-      "Electropop",
-      "Electro-Industrial"
-    ],
-    "score": 79,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/us/album/wor%24t-girl-in-america/1867530577?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1460350-slayyyter-wort-girl-in-america.php",
-    "source": "must-hear",
-    "review_count": 8,
-    "taste_label": "Just for you",
-    "source_rank": 4,
-    "batch_date": "2026-04-10"
-  },
-  {
-    "artist": "RAYE",
-    "album": "THIS MUSIC MAY CONTAIN HOPE.",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1471943-this-music-may-contain-hope_195812.jpg",
-    "genre_tags": [
-      "Pop Soul",
-      "Contemporary R&B",
-      "Classical Crossover"
-    ],
-    "score": 83,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/gb/album/this-music-may-contain-hope/1871085677?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1471943-raye-this-music-may-contain-hope.php",
-    "source": "must-hear",
-    "review_count": 19,
-    "taste_label": "Just for you",
-    "source_rank": 5,
     "batch_date": "2026-04-10"
   },
   {
