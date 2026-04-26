@@ -1,22 +1,96 @@
 [
   {
+    "artist": "At The Gates",
+    "album": "The Ghost of a Future Dead",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1688816-the-ghost-of-a-future-dead_182436.jpg",
+    "genre_tags": [
+      "Melodic Death Metal"
+    ],
+    "score": 88,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/the-ghost-of-a-future-dead/1873364809?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1688816-at-the-gates-the-ghost-of-a-future-dead.php",
+    "source": "new-releases",
+    "review_count": 6,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 10,
+    "batch_date": "2026-04-26"
+  },
+  {
+    "artist": "Carla dal Forno",
+    "album": "Confession",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1709697-confession_140236.jpg",
+    "genre_tags": [
+      "Minimal Wave",
+      "Ethereal Wave",
+      "Ambient"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/confession/1875260543?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1709697-carla-dal-forno-confession.php",
+    "source": "new-releases",
+    "review_count": 6,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 29,
+    "batch_date": "2026-04-26"
+  },
+  {
+    "artist": "Blu & Exile",
+    "album": "Time Heals Everything",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1730148-time-heals-everything_170551.jpg",
+    "genre_tags": [
+      "Boom Bap",
+      "West Coast Hip Hop",
+      "Conscious Hip Hop"
+    ],
+    "score": 70,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/album/time-heals-everything/1883967654?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1730148-blu-exile-time-heals-everything.php",
+    "source": "must-hear",
+    "review_count": 1,
+    "taste_label": "It's a match",
+    "source_rank": 1,
+    "batch_date": "2026-04-26"
+  },
+  {
+    "artist": "Magdalena Bay",
+    "album": "Nice Day: A Collection of Singles",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1540341-nice-day-a-collection-of-singles_172403.jpg",
+    "genre_tags": [
+      "Neo-Psychedelia",
+      "Indie Rock",
+      "Progressive Pop"
+    ],
+    "score": 91,
+    "score_type": "user score",
+    "apple_music": null,
+    "aoty_url": "https://www.albumoftheyear.org/album/1540341-magdalena-bay-nice-day-a-collection-of-singles.php",
+    "source": "must-hear",
+    "review_count": 1923,
+    "taste_label": "Just for you",
+    "source_rank": 2,
+    "batch_date": "2026-04-26"
+  },
+  {
     "artist": "drug bug",
     "album": "Hell for a Basement",
     "cover_url": "https://cdn.albumoftheyear.org/album/1755639-hell-for-a-basement_195726.jpg",
     "genre_tags": [
       "Indie Rock",
       "Chamber Pop",
-      "Noise Pop"
+      "Art Rock"
     ],
-    "score": 84,
+    "score": 83,
     "score_type": "user score",
     "apple_music": "https://geo.music.apple.com/es/album/hell-for-a-basement/1892970507?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1755639-drug-bug-hell-for-a-basement.php",
     "source": "must-hear",
-    "review_count": 1428,
+    "review_count": 2531,
     "taste_label": "It's a match",
-    "source_rank": 1,
-    "batch_date": "2026-04-17"
+    "source_rank": 3,
+    "batch_date": "2026-04-26"
   },
   {
     "artist": "My New Band Believe",
@@ -34,8 +108,27 @@
     "source": "must-hear",
     "review_count": 17,
     "taste_label": "Maybe you'll like it",
-    "source_rank": 2,
-    "batch_date": "2026-04-17"
+    "source_rank": 4,
+    "batch_date": "2026-04-26"
+  },
+  {
+    "artist": "Laufey",
+    "album": "A Matter of Time: The Final Hour",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1697088-a-matter-of-time-the-final-hour_151749.jpg",
+    "genre_tags": [
+      "Traditional Pop",
+      "Jazz Pop",
+      "Singer-Songwriter"
+    ],
+    "score": 82,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/us/album/a-matter-of-time-the-final-hour/1873116455?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1697088-laufey-a-matter-of-time-the-final-hour.php",
+    "source": "must-hear",
+    "review_count": 547,
+    "taste_label": "Just for you",
+    "source_rank": 5,
+    "batch_date": "2026-04-26"
   },
   {
     "artist": "Tiffany Day",
@@ -54,7 +147,7 @@
     "review_count": 2,
     "taste_label": "Just for you",
     "source_rank": 3,
-    "batch_date": "2026-04-17"
+    "batch_date": "2026-04-18"
   },
   {
     "artist": "Slayyyter",
@@ -73,7 +166,7 @@
     "review_count": 8,
     "taste_label": "Just for you",
     "source_rank": 4,
-    "batch_date": "2026-04-17"
+    "batch_date": "2026-04-18"
   },
   {
     "artist": "RAYE",
@@ -92,7 +185,7 @@
     "review_count": 20,
     "taste_label": "Just for you",
     "source_rank": 5,
-    "batch_date": "2026-04-17"
+    "batch_date": "2026-04-18"
   },
   {
     "artist": "Holly Humberstone",
@@ -191,7 +284,7 @@
   },
   {
     "artist": "The Twilight Sad",
-    "album": "IT\u2019S THE LONG GOODBYE",
+    "album": "IT’S THE LONG GOODBYE",
     "cover_url": "https://cdn.albumoftheyear.org/album/1607155-its-the-long-goodbye_102433.jpg",
     "genre_tags": [
       "Post-Punk Revival",
