@@ -396,18 +396,23 @@ def lookup_apple_music(artist: str, album: str) -> str | None:
             + ", ".join(str(path) for path in APPLE_SCRIPT_CANDIDATES)
         )
 
-    output = run_command(
-        [
-            "python3",
-            str(apple_script),
-            "--artist",
-            artist,
-            "--album",
-            album,
-            "--json",
-        ],
-        timeout=60,
-    )
+    try:
+        output = run_command(
+            [
+                "python3",
+                str(apple_script),
+                "--artist",
+                artist,
+                "--album",
+                album,
+                "--json",
+            ],
+            timeout=60,
+        )
+    except RuntimeError as error:
+        print(f"Warning: Apple Music lookup failed for {artist} - {album}: {error}", file=sys.stderr)
+        return None
+
     payload = json.loads(output)
     match_quality = payload.get("match_quality")
     if match_quality == "exact":
@@ -454,6 +459,7 @@ def collect_albums() -> tuple[list[dict[str, Any]], dict[str, int]]:
         "must_hear_scraped": len(must_hear),
         "new_releases_qualified": len(new_releases),
         "apple_fallback_lookups": 0,
+        "missing_apple_music_links": 0,
     }
 
     albums: list[dict[str, Any]] = []
@@ -479,7 +485,7 @@ def collect_albums() -> tuple[list[dict[str, Any]], dict[str, int]]:
             apple_music = lookup_apple_music(artist, album)
 
         if not apple_music:
-            raise RuntimeError(f"Missing Apple Music link for {artist} - {album}")
+            stats["missing_apple_music_links"] += 1
         if not genre_tags:
             raise RuntimeError(f"Missing genre tags for {artist} - {album}")
 

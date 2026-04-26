@@ -11,7 +11,7 @@ type Album = {
   genre_tags: string[];
   score: number;
   score_type: string;
-  apple_music: string;
+  apple_music?: string | null;
   aoty_url: string;
   source: 'must-hear' | 'new-releases';
   review_count: number | null;
@@ -120,14 +120,20 @@ const sourceLabel: Record<Album['source'], string> = {
               <p class="min-w-0 text-sm tracking-[0.08em] text-green-900/70">
                 {album.taste_label}
               </p>
-              <a
-                href={album.apple_music}
-                target="_blank"
-                rel="noreferrer"
-                class="shrink-0 text-right text-sm uppercase tracking-[0.18em] text-green-800 transition hover:text-green-950"
-              >
-                Apple Music
-              </a>
+              {album.apple_music ? (
+                <a
+                  href={album.apple_music}
+                  target="_blank"
+                  rel="noreferrer"
+                  class="shrink-0 text-right text-sm uppercase tracking-[0.18em] text-green-800 transition hover:text-green-950"
+                >
+                  Apple Music
+                </a>
+              ) : (
+                <span class="shrink-0 text-right text-sm uppercase tracking-[0.18em] text-green-900/35">
+                  No Apple link
+                </span>
+              )}
             </div>
           </article>
         ))}
