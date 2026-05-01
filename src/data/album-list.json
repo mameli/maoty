@@ -1,5 +1,138 @@
 [
   {
+    "artist": "American Football",
+    "album": "American Football",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1688844-american-football_140216.jpg",
+    "genre_tags": [
+      "Post-Rock",
+      "Midwest Emo",
+      "Dream Pop"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/gb/album/american-football-lp4/1866725716?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1688844-american-football-american-football.php",
+    "source": "new-releases",
+    "review_count": 6,
+    "taste_label": "It's a match",
+    "source_rank": 3,
+    "batch_date": "2026-05-01"
+  },
+  {
+    "artist": "Kacey Musgraves",
+    "album": "Middle of Nowhere",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1718821-middle-of-nowhere_160907.jpg",
+    "genre_tags": [
+      "Contemporary Country",
+      "Country Pop",
+      "Tejano Music"
+    ],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/br/album/middle-of-nowhere/1883176984?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1718821-kacey-musgraves-middle-of-nowhere.php",
+    "source": "new-releases",
+    "review_count": 13,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 6,
+    "batch_date": "2026-05-01"
+  },
+  {
+    "artist": "KNEECAP",
+    "album": "FENIAN",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1654108-fenian_104936.jpg",
+    "genre_tags": [
+      "Conscious Hip Hop",
+      "Political Hip Hop",
+      "Drum and Bass"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/fenian/1862223497?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1654108-kneecap-fenian.php",
+    "source": "new-releases",
+    "review_count": 16,
+    "taste_label": "It's a match",
+    "source_rank": 10,
+    "batch_date": "2026-05-01"
+  },
+  {
+    "artist": "東京酒吐座 [Tokyo Shoegazer]",
+    "album": "Remains",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1635691-remains_005443.jpg",
+    "genre_tags": [
+      "Shoegaze",
+      "Dream Pop",
+      "Noise Rock"
+    ],
+    "score": 80,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/es/album/remains/1892314245?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1635691-tokyo-shoegazer-remains.php",
+    "source": "must-hear",
+    "review_count": 943,
+    "taste_label": "Just for you",
+    "source_rank": 2,
+    "batch_date": "2026-05-01"
+  },
+  {
+    "artist": "Blu & Exile",
+    "album": "Time Heals Everything",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1730148-time-heals-everything_170551.jpg",
+    "genre_tags": [
+      "Boom Bap",
+      "West Coast Hip Hop",
+      "Conscious Hip Hop"
+    ],
+    "score": 70,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/album/time-heals-everything/1883967654?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1730148-blu-exile-time-heals-everything.php",
+    "source": "must-hear",
+    "review_count": 1,
+    "taste_label": "It's a match",
+    "source_rank": 3,
+    "batch_date": "2026-05-01"
+  },
+  {
+    "artist": "Magdalena Bay",
+    "album": "Nice Day: A Collection of Singles",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1540341-nice-day-a-collection-of-singles_172403.jpg",
+    "genre_tags": [
+      "Neo-Psychedelia",
+      "Indie Rock",
+      "Progressive Pop"
+    ],
+    "score": 91,
+    "score_type": "user score",
+    "apple_music": null,
+    "aoty_url": "https://www.albumoftheyear.org/album/1540341-magdalena-bay-nice-day-a-collection-of-singles.php",
+    "source": "must-hear",
+    "review_count": 2025,
+    "taste_label": "Just for you",
+    "source_rank": 4,
+    "batch_date": "2026-05-01"
+  },
+  {
+    "artist": "drug bug",
+    "album": "Hell for a Basement",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1755639-hell-for-a-basement_195726.jpg",
+    "genre_tags": [
+      "Indie Rock",
+      "Chamber Pop",
+      "Art Rock"
+    ],
+    "score": 82,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/es/album/hell-for-a-basement/1892970507?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1755639-drug-bug-hell-for-a-basement.php",
+    "source": "must-hear",
+    "review_count": 2751,
+    "taste_label": "It's a match",
+    "source_rank": 5,
+    "batch_date": "2026-05-01"
+  },
+  {
     "artist": "At The Gates",
     "album": "The Ghost of a Future Dead",
     "cover_url": "https://cdn.albumoftheyear.org/album/1688816-the-ghost-of-a-future-dead_182436.jpg",
@@ -33,63 +166,6 @@
     "review_count": 6,
     "taste_label": "Maybe you'll like it",
     "source_rank": 29,
-    "batch_date": "2026-04-26"
-  },
-  {
-    "artist": "Blu & Exile",
-    "album": "Time Heals Everything",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1730148-time-heals-everything_170551.jpg",
-    "genre_tags": [
-      "Boom Bap",
-      "West Coast Hip Hop",
-      "Conscious Hip Hop"
-    ],
-    "score": 70,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/album/time-heals-everything/1883967654?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1730148-blu-exile-time-heals-everything.php",
-    "source": "must-hear",
-    "review_count": 1,
-    "taste_label": "It's a match",
-    "source_rank": 1,
-    "batch_date": "2026-04-26"
-  },
-  {
-    "artist": "Magdalena Bay",
-    "album": "Nice Day: A Collection of Singles",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1540341-nice-day-a-collection-of-singles_172403.jpg",
-    "genre_tags": [
-      "Neo-Psychedelia",
-      "Indie Rock",
-      "Progressive Pop"
-    ],
-    "score": 91,
-    "score_type": "user score",
-    "apple_music": null,
-    "aoty_url": "https://www.albumoftheyear.org/album/1540341-magdalena-bay-nice-day-a-collection-of-singles.php",
-    "source": "must-hear",
-    "review_count": 1923,
-    "taste_label": "Just for you",
-    "source_rank": 2,
-    "batch_date": "2026-04-26"
-  },
-  {
-    "artist": "drug bug",
-    "album": "Hell for a Basement",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1755639-hell-for-a-basement_195726.jpg",
-    "genre_tags": [
-      "Indie Rock",
-      "Chamber Pop",
-      "Art Rock"
-    ],
-    "score": 83,
-    "score_type": "user score",
-    "apple_music": "https://geo.music.apple.com/es/album/hell-for-a-basement/1892970507?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1755639-drug-bug-hell-for-a-basement.php",
-    "source": "must-hear",
-    "review_count": 2531,
-    "taste_label": "It's a match",
-    "source_rank": 3,
     "batch_date": "2026-04-26"
   },
   {
