@@ -1,5 +1,138 @@
 [
   {
+    "artist": "Aldous Harding",
+    "album": "Train on the Island",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1709944-train-on-the-island_164438.jpg",
+    "genre_tags": [
+      "Singer-Songwriter",
+      "Chamber Folk",
+      "Indie Folk"
+    ],
+    "score": 82,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/jp/album/train-on-the-island/1876846303?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1709944-aldous-harding-train-on-the-island.php",
+    "source": "new-releases",
+    "review_count": 11,
+    "taste_label": "It's a match",
+    "source_rank": 5,
+    "batch_date": "2026-05-08"
+  },
+  {
+    "artist": "The Lemon Twigs",
+    "album": "Look For Your Mind!",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1720258-look-for-your-mind_121751.jpg",
+    "genre_tags": [
+      "Sunshine Pop",
+      "Psychedelic Rock",
+      "Baroque Pop"
+    ],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/nz/album/look-for-your-mind/1876938155?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1720258-the-lemon-twigs-look-for-your-mind.php",
+    "source": "new-releases",
+    "review_count": 9,
+    "taste_label": "Just for you",
+    "source_rank": 7,
+    "batch_date": "2026-05-08"
+  },
+  {
+    "artist": "KNEECAP",
+    "album": "FENIAN",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1654108-fenian_104937.jpg",
+    "genre_tags": [
+      "Political Hip Hop",
+      "Conscious Hip Hop",
+      "Grime"
+    ],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/fenian/1862223497?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1654108-kneecap-fenian.php",
+    "source": "must-hear",
+    "review_count": 20,
+    "taste_label": "It's a match",
+    "source_rank": 1,
+    "batch_date": "2026-05-08"
+  },
+  {
+    "artist": "東京酒吐座 [Tokyo Shoegazer]",
+    "album": "Remains",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1635691-remains_005443.jpg",
+    "genre_tags": [
+      "Shoegaze",
+      "Noise Rock",
+      "Post-Rock"
+    ],
+    "score": 80,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/es/album/remains/1892314245?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1635691-tokyo-shoegazer-remains.php",
+    "source": "must-hear",
+    "review_count": 1201,
+    "taste_label": "Just for you",
+    "source_rank": 2,
+    "batch_date": "2026-05-08"
+  },
+  {
+    "artist": "Blu & Exile",
+    "album": "Time Heals Everything",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1730148-time-heals-everything_170551.jpg",
+    "genre_tags": [
+      "Boom Bap",
+      "West Coast Hip Hop",
+      "Conscious Hip Hop"
+    ],
+    "score": 70,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/album/time-heals-everything/1883967654?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1730148-blu-exile-time-heals-everything.php",
+    "source": "must-hear",
+    "review_count": 1,
+    "taste_label": "It's a match",
+    "source_rank": 3,
+    "batch_date": "2026-05-08"
+  },
+  {
+    "artist": "Magdalena Bay",
+    "album": "Nice Day: A Collection of Singles",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1540341-nice-day-a-collection-of-singles_172403.jpg",
+    "genre_tags": [
+      "Neo-Psychedelia",
+      "Indie Rock",
+      "Progressive Pop"
+    ],
+    "score": 91,
+    "score_type": "user score",
+    "apple_music": null,
+    "aoty_url": "https://www.albumoftheyear.org/album/1540341-magdalena-bay-nice-day-a-collection-of-singles.php",
+    "source": "must-hear",
+    "review_count": 2105,
+    "taste_label": "Just for you",
+    "source_rank": 4,
+    "batch_date": "2026-05-08"
+  },
+  {
+    "artist": "ROSALÍA",
+    "album": "LUX (Complete Works)",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1778080-lux-complete-works_212439.jpg",
+    "genre_tags": [
+      "Art Pop",
+      "Classical Crossover",
+      "Orchestral"
+    ],
+    "score": 88,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/us/album/lux-complete-works/1893474283?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1778080-rosalia-lux-complete-works.php",
+    "source": "must-hear",
+    "review_count": 516,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 5,
+    "batch_date": "2026-05-08"
+  },
+  {
     "artist": "American Football",
     "album": "American Football",
     "cover_url": "https://cdn.albumoftheyear.org/album/1688844-american-football_140216.jpg",
@@ -35,82 +168,6 @@
     "review_count": 13,
     "taste_label": "Maybe you'll like it",
     "source_rank": 6,
-    "batch_date": "2026-05-01"
-  },
-  {
-    "artist": "KNEECAP",
-    "album": "FENIAN",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1654108-fenian_104936.jpg",
-    "genre_tags": [
-      "Conscious Hip Hop",
-      "Political Hip Hop",
-      "Drum and Bass"
-    ],
-    "score": 81,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/us/album/fenian/1862223497?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1654108-kneecap-fenian.php",
-    "source": "new-releases",
-    "review_count": 16,
-    "taste_label": "It's a match",
-    "source_rank": 10,
-    "batch_date": "2026-05-01"
-  },
-  {
-    "artist": "東京酒吐座 [Tokyo Shoegazer]",
-    "album": "Remains",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1635691-remains_005443.jpg",
-    "genre_tags": [
-      "Shoegaze",
-      "Dream Pop",
-      "Noise Rock"
-    ],
-    "score": 80,
-    "score_type": "user score",
-    "apple_music": "https://geo.music.apple.com/es/album/remains/1892314245?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1635691-tokyo-shoegazer-remains.php",
-    "source": "must-hear",
-    "review_count": 943,
-    "taste_label": "Just for you",
-    "source_rank": 2,
-    "batch_date": "2026-05-01"
-  },
-  {
-    "artist": "Blu & Exile",
-    "album": "Time Heals Everything",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1730148-time-heals-everything_170551.jpg",
-    "genre_tags": [
-      "Boom Bap",
-      "West Coast Hip Hop",
-      "Conscious Hip Hop"
-    ],
-    "score": 70,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/album/time-heals-everything/1883967654?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1730148-blu-exile-time-heals-everything.php",
-    "source": "must-hear",
-    "review_count": 1,
-    "taste_label": "It's a match",
-    "source_rank": 3,
-    "batch_date": "2026-05-01"
-  },
-  {
-    "artist": "Magdalena Bay",
-    "album": "Nice Day: A Collection of Singles",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1540341-nice-day-a-collection-of-singles_172403.jpg",
-    "genre_tags": [
-      "Neo-Psychedelia",
-      "Indie Rock",
-      "Progressive Pop"
-    ],
-    "score": 91,
-    "score_type": "user score",
-    "apple_music": null,
-    "aoty_url": "https://www.albumoftheyear.org/album/1540341-magdalena-bay-nice-day-a-collection-of-singles.php",
-    "source": "must-hear",
-    "review_count": 2025,
-    "taste_label": "Just for you",
-    "source_rank": 4,
     "batch_date": "2026-05-01"
   },
   {
