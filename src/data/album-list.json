@@ -1,22 +1,116 @@
 [
   {
+    "artist": "Kevin Morby",
+    "album": "Little Wide Open",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1677209-little-wide-open_150757.jpg",
+    "genre_tags": [
+      "Folk Rock",
+      "Singer-Songwriter"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/little-wide-open/1870715298?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1677209-kevin-morby-little-wide-open.php",
+    "source": "new-releases",
+    "review_count": 10,
+    "taste_label": "It's a match",
+    "source_rank": 12,
+    "batch_date": "2026-05-15"
+  },
+  {
     "artist": "Aldous Harding",
     "album": "Train on the Island",
     "cover_url": "https://cdn.albumoftheyear.org/album/1709944-train-on-the-island_164438.jpg",
     "genre_tags": [
       "Singer-Songwriter",
-      "Chamber Folk",
-      "Indie Folk"
+      "Indie Folk",
+      "Chamber Pop"
     ],
-    "score": 82,
+    "score": 83,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/jp/album/train-on-the-island/1876846303?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1709944-aldous-harding-train-on-the-island.php",
-    "source": "new-releases",
-    "review_count": 11,
+    "source": "must-hear",
+    "review_count": 19,
+    "taste_label": "It's a match",
+    "source_rank": 1,
+    "batch_date": "2026-05-15"
+  },
+  {
+    "artist": "KNEECAP",
+    "album": "FENIAN",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1654108-fenian_104937.jpg",
+    "genre_tags": [
+      "Political Hip Hop",
+      "Conscious Hip Hop",
+      "Grime"
+    ],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/fenian/1862223497?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1654108-kneecap-fenian.php",
+    "source": "must-hear",
+    "review_count": 22,
+    "taste_label": "It's a match",
+    "source_rank": 2,
+    "batch_date": "2026-05-15"
+  },
+  {
+    "artist": "Kacey Musgraves",
+    "album": "Middle of Nowhere",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1718821-middle-of-nowhere_154332.jpg",
+    "genre_tags": [
+      "Contemporary Country",
+      "Country Pop",
+      "Tejano Music"
+    ],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/br/album/middle-of-nowhere/1883176984?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1718821-kacey-musgraves-middle-of-nowhere.php",
+    "source": "must-hear",
+    "review_count": 22,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 3,
+    "batch_date": "2026-05-15"
+  },
+  {
+    "artist": "\u6771\u4eac\u9152\u5410\u5ea7 [Tokyo Shoegazer]",
+    "album": "Remains",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1635691-remains_005443.jpg",
+    "genre_tags": [
+      "Shoegaze",
+      "Dream Pop",
+      "Noise Rock"
+    ],
+    "score": 80,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/es/album/remains/1892314245?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1635691-tokyo-shoegazer-remains.php",
+    "source": "must-hear",
+    "review_count": 1384,
+    "taste_label": "Just for you",
+    "source_rank": 4,
+    "batch_date": "2026-05-15"
+  },
+  {
+    "artist": "Blu & Exile",
+    "album": "Time Heals Everything",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1730148-time-heals-everything_170551.jpg",
+    "genre_tags": [
+      "Boom Bap",
+      "West Coast Hip Hop",
+      "Conscious Hip Hop"
+    ],
+    "score": 70,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/album/time-heals-everything/1883967654?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1730148-blu-exile-time-heals-everything.php",
+    "source": "must-hear",
+    "review_count": 1,
     "taste_label": "It's a match",
     "source_rank": 5,
-    "batch_date": "2026-05-08"
+    "batch_date": "2026-05-15"
   },
   {
     "artist": "The Lemon Twigs",
@@ -35,63 +129,6 @@
     "review_count": 9,
     "taste_label": "Just for you",
     "source_rank": 7,
-    "batch_date": "2026-05-08"
-  },
-  {
-    "artist": "KNEECAP",
-    "album": "FENIAN",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1654108-fenian_104937.jpg",
-    "genre_tags": [
-      "Political Hip Hop",
-      "Conscious Hip Hop",
-      "Grime"
-    ],
-    "score": 80,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/us/album/fenian/1862223497?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1654108-kneecap-fenian.php",
-    "source": "must-hear",
-    "review_count": 20,
-    "taste_label": "It's a match",
-    "source_rank": 1,
-    "batch_date": "2026-05-08"
-  },
-  {
-    "artist": "東京酒吐座 [Tokyo Shoegazer]",
-    "album": "Remains",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1635691-remains_005443.jpg",
-    "genre_tags": [
-      "Shoegaze",
-      "Noise Rock",
-      "Post-Rock"
-    ],
-    "score": 80,
-    "score_type": "user score",
-    "apple_music": "https://geo.music.apple.com/es/album/remains/1892314245?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1635691-tokyo-shoegazer-remains.php",
-    "source": "must-hear",
-    "review_count": 1201,
-    "taste_label": "Just for you",
-    "source_rank": 2,
-    "batch_date": "2026-05-08"
-  },
-  {
-    "artist": "Blu & Exile",
-    "album": "Time Heals Everything",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1730148-time-heals-everything_170551.jpg",
-    "genre_tags": [
-      "Boom Bap",
-      "West Coast Hip Hop",
-      "Conscious Hip Hop"
-    ],
-    "score": 70,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/album/time-heals-everything/1883967654?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1730148-blu-exile-time-heals-everything.php",
-    "source": "must-hear",
-    "review_count": 1,
-    "taste_label": "It's a match",
-    "source_rank": 3,
     "batch_date": "2026-05-08"
   },
   {
@@ -114,7 +151,7 @@
     "batch_date": "2026-05-08"
   },
   {
-    "artist": "ROSALÍA",
+    "artist": "ROSAL\u00cdA",
     "album": "LUX (Complete Works)",
     "cover_url": "https://cdn.albumoftheyear.org/album/1778080-lux-complete-works_212439.jpg",
     "genre_tags": [
@@ -149,25 +186,6 @@
     "review_count": 6,
     "taste_label": "It's a match",
     "source_rank": 3,
-    "batch_date": "2026-05-01"
-  },
-  {
-    "artist": "Kacey Musgraves",
-    "album": "Middle of Nowhere",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1718821-middle-of-nowhere_160907.jpg",
-    "genre_tags": [
-      "Contemporary Country",
-      "Country Pop",
-      "Tejano Music"
-    ],
-    "score": 80,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/br/album/middle-of-nowhere/1883176984?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1718821-kacey-musgraves-middle-of-nowhere.php",
-    "source": "new-releases",
-    "review_count": 13,
-    "taste_label": "Maybe you'll like it",
-    "source_rank": 6,
     "batch_date": "2026-05-01"
   },
   {
@@ -417,7 +435,7 @@
   },
   {
     "artist": "The Twilight Sad",
-    "album": "IT’S THE LONG GOODBYE",
+    "album": "IT\u2019S THE LONG GOODBYE",
     "cover_url": "https://cdn.albumoftheyear.org/album/1607155-its-the-long-goodbye_102433.jpg",
     "genre_tags": [
       "Post-Punk Revival",
