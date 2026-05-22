@@ -1,21 +1,79 @@
 [
   {
-    "artist": "Kevin Morby",
-    "album": "Little Wide Open",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1677209-little-wide-open_150757.jpg",
+    "artist": "Ed O'Brien",
+    "album": "Blue Morpho",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1725169-blue-morpho_151516.jpg",
     "genre_tags": [
-      "Folk Rock",
-      "Singer-Songwriter"
+      "Art Rock",
+      "Chamber Folk",
+      "Jazz-Rock"
     ],
-    "score": 81,
+    "score": 82,
     "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/us/album/little-wide-open/1870715298?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1677209-kevin-morby-little-wide-open.php",
+    "apple_music": "https://geo.music.apple.com/us/album/blue-morpho/1874551790?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1725169-ed-obrien-blue-morpho.php",
     "source": "new-releases",
-    "review_count": 10,
+    "review_count": 11,
+    "taste_label": "Just for you",
+    "source_rank": 8,
+    "batch_date": "2026-05-22"
+  },
+  {
+    "artist": "Genesis Owusu",
+    "album": "REDSTAR WU & THE WORLDWIDE SCOURGE",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1706527-redstar-wu-the-worldwide-scourge_160421.jpg",
+    "genre_tags": [
+      "Political Hip Hop",
+      "Neo-Soul",
+      "Conscious Hip Hop"
+    ],
+    "score": 84,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/redstar-wu-the-worldwide-scourge/1887196431?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1706527-genesis-owusu-redstar-wu-the-worldwide-scourge.php",
+    "source": "must-hear",
+    "review_count": 7,
     "taste_label": "It's a match",
-    "source_rank": 12,
-    "batch_date": "2026-05-15"
+    "source_rank": 1,
+    "batch_date": "2026-05-22"
+  },
+  {
+    "artist": "leroy",
+    "album": "status update music",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1797235-status-update-music_012818.jpg",
+    "genre_tags": [
+      "Dariacore",
+      "Hard Dance",
+      "Brostep"
+    ],
+    "score": 85,
+    "score_type": "user score",
+    "apple_music": null,
+    "aoty_url": "https://www.albumoftheyear.org/album/1797235-leroy-status-update-music.php",
+    "source": "must-hear",
+    "review_count": 2523,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 2,
+    "batch_date": "2026-05-22"
+  },
+  {
+    "artist": "Kenny Mason",
+    "album": "BULLDAWG",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1679045-bulldawg_041638.jpg",
+    "genre_tags": [
+      "Southern Hip Hop",
+      "Trap",
+      "Rap Rock"
+    ],
+    "score": 77,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/au/album/bulldawg/1894315301?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1679045-kenny-mason-bulldawg.php",
+    "source": "must-hear",
+    "review_count": 1,
+    "taste_label": "It's a match",
+    "source_rank": 3,
+    "batch_date": "2026-05-22"
   },
   {
     "artist": "Aldous Harding",
@@ -31,10 +89,10 @@
     "apple_music": "https://geo.music.apple.com/jp/album/train-on-the-island/1876846303?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1709944-aldous-harding-train-on-the-island.php",
     "source": "must-hear",
-    "review_count": 19,
+    "review_count": 20,
     "taste_label": "It's a match",
-    "source_rank": 1,
-    "batch_date": "2026-05-15"
+    "source_rank": 4,
+    "batch_date": "2026-05-22"
   },
   {
     "artist": "KNEECAP",
@@ -52,7 +110,25 @@
     "source": "must-hear",
     "review_count": 22,
     "taste_label": "It's a match",
-    "source_rank": 2,
+    "source_rank": 5,
+    "batch_date": "2026-05-22"
+  },
+  {
+    "artist": "Kevin Morby",
+    "album": "Little Wide Open",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1677209-little-wide-open_150757.jpg",
+    "genre_tags": [
+      "Folk Rock",
+      "Singer-Songwriter"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/little-wide-open/1870715298?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1677209-kevin-morby-little-wide-open.php",
+    "source": "new-releases",
+    "review_count": 10,
+    "taste_label": "It's a match",
+    "source_rank": 12,
     "batch_date": "2026-05-15"
   },
   {
@@ -75,7 +151,7 @@
     "batch_date": "2026-05-15"
   },
   {
-    "artist": "\u6771\u4eac\u9152\u5410\u5ea7 [Tokyo Shoegazer]",
+    "artist": "東京酒吐座 [Tokyo Shoegazer]",
     "album": "Remains",
     "cover_url": "https://cdn.albumoftheyear.org/album/1635691-remains_005443.jpg",
     "genre_tags": [
@@ -151,7 +227,7 @@
     "batch_date": "2026-05-08"
   },
   {
-    "artist": "ROSAL\u00cdA",
+    "artist": "ROSALÍA",
     "album": "LUX (Complete Works)",
     "cover_url": "https://cdn.albumoftheyear.org/album/1778080-lux-complete-works_212439.jpg",
     "genre_tags": [
@@ -435,7 +511,7 @@
   },
   {
     "artist": "The Twilight Sad",
-    "album": "IT\u2019S THE LONG GOODBYE",
+    "album": "IT’S THE LONG GOODBYE",
     "cover_url": "https://cdn.albumoftheyear.org/album/1607155-its-the-long-goodbye_102433.jpg",
     "genre_tags": [
       "Post-Punk Revival",
