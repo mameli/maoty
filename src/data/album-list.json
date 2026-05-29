@@ -1,5 +1,134 @@
 [
   {
+    "artist": "Paul McCartney",
+    "album": "The Boys of Dungeon Lane",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1742568-the-boys-of-dungeon-lane_150207.jpg",
+    "genre_tags": [
+      "Singer-Songwriter",
+      "Pop Rock",
+      "Baroque Pop"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/fi/album/the-boys-of-dungeon-lane/1887402919?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1742568-paul-mccartney-the-boys-of-dungeon-lane.php",
+    "source": "new-releases",
+    "review_count": 19,
+    "taste_label": "It's a match",
+    "source_rank": 5,
+    "batch_date": "2026-05-29"
+  },
+  {
+    "artist": "Iceage",
+    "album": "For Love of Grace & The Hereafter",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1763278-for-love-of-grace-the-hereafter_160827.jpg",
+    "genre_tags": [
+      "Post-Punk Revival"
+    ],
+    "score": 82,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/for-love-of-grace-the-hereafter/1880484160?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1763278-iceage-for-love-of-grace-the-hereafter.php",
+    "source": "new-releases",
+    "review_count": 13,
+    "taste_label": "Just for you",
+    "source_rank": 7,
+    "batch_date": "2026-05-29"
+  },
+  {
+    "artist": "Kurt Vile",
+    "album": "Philadelphia's been good to me",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1763157-philadelphias-been-good-to-me_141144.jpg",
+    "genre_tags": [
+      "Indie Folk"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/philadelphias-been-good-to-me/1884970572?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1763157-kurt-vile-philadelphias-been-good-to-me.php",
+    "source": "new-releases",
+    "review_count": 10,
+    "taste_label": "It's a match",
+    "source_rank": 15,
+    "batch_date": "2026-05-29"
+  },
+  {
+    "artist": "Genesis Owusu",
+    "album": "REDSTAR WU & THE WORLDWIDE SCOURGE",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1706527-redstar-wu-the-worldwide-scourge_160421.jpg",
+    "genre_tags": [
+      "Political Hip Hop",
+      "Neo-Soul",
+      "Conscious Hip Hop"
+    ],
+    "score": 83,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/redstar-wu-the-worldwide-scourge/1887196431?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1706527-genesis-owusu-redstar-wu-the-worldwide-scourge.php",
+    "source": "must-hear",
+    "review_count": 8,
+    "taste_label": "It's a match",
+    "source_rank": 2,
+    "batch_date": "2026-05-29"
+  },
+  {
+    "artist": "leroy",
+    "album": "status update music",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1797235-status-update-music_012818.jpg",
+    "genre_tags": [
+      "Dariacore",
+      "Hard Dance",
+      "Brostep"
+    ],
+    "score": 75,
+    "score_type": "critic score",
+    "apple_music": null,
+    "aoty_url": "https://www.albumoftheyear.org/album/1797235-leroy-status-update-music.php",
+    "source": "must-hear",
+    "review_count": 2,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 3,
+    "batch_date": "2026-05-29"
+  },
+  {
+    "artist": "Panopticon",
+    "album": "Det hjemsøkte hjertet",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1590468-det-hjemsokte-hjertet_214606.jpg",
+    "genre_tags": [
+      "Atmospheric Black Metal",
+      "Post-Metal",
+      "Symphonic Metal"
+    ],
+    "score": 100,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/det-hjems%C3%B8kte-hjertet/1879842657?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1590468-panopticon-det-hjemsokte-hjertet.php",
+    "source": "must-hear",
+    "review_count": 1,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 4,
+    "batch_date": "2026-05-29"
+  },
+  {
+    "artist": "Aldous Harding",
+    "album": "Train on the Island",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1709944-train-on-the-island_164438.jpg",
+    "genre_tags": [
+      "Singer-Songwriter",
+      "Indie Folk",
+      "Chamber Pop"
+    ],
+    "score": 83,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/jp/album/train-on-the-island/1876846303?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1709944-aldous-harding-train-on-the-island.php",
+    "source": "must-hear",
+    "review_count": 20,
+    "taste_label": "It's a match",
+    "source_rank": 5,
+    "batch_date": "2026-05-29"
+  },
+  {
     "artist": "Ed O'Brien",
     "album": "Blue Morpho",
     "cover_url": "https://cdn.albumoftheyear.org/album/1725169-blue-morpho_151516.jpg",
@@ -19,44 +148,6 @@
     "batch_date": "2026-05-22"
   },
   {
-    "artist": "Genesis Owusu",
-    "album": "REDSTAR WU & THE WORLDWIDE SCOURGE",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1706527-redstar-wu-the-worldwide-scourge_160421.jpg",
-    "genre_tags": [
-      "Political Hip Hop",
-      "Neo-Soul",
-      "Conscious Hip Hop"
-    ],
-    "score": 84,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/us/album/redstar-wu-the-worldwide-scourge/1887196431?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1706527-genesis-owusu-redstar-wu-the-worldwide-scourge.php",
-    "source": "must-hear",
-    "review_count": 7,
-    "taste_label": "It's a match",
-    "source_rank": 1,
-    "batch_date": "2026-05-22"
-  },
-  {
-    "artist": "leroy",
-    "album": "status update music",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1797235-status-update-music_012818.jpg",
-    "genre_tags": [
-      "Dariacore",
-      "Hard Dance",
-      "Brostep"
-    ],
-    "score": 85,
-    "score_type": "user score",
-    "apple_music": null,
-    "aoty_url": "https://www.albumoftheyear.org/album/1797235-leroy-status-update-music.php",
-    "source": "must-hear",
-    "review_count": 2523,
-    "taste_label": "Maybe you'll like it",
-    "source_rank": 2,
-    "batch_date": "2026-05-22"
-  },
-  {
     "artist": "Kenny Mason",
     "album": "BULLDAWG",
     "cover_url": "https://cdn.albumoftheyear.org/album/1679045-bulldawg_041638.jpg",
@@ -73,25 +164,6 @@
     "review_count": 1,
     "taste_label": "It's a match",
     "source_rank": 3,
-    "batch_date": "2026-05-22"
-  },
-  {
-    "artist": "Aldous Harding",
-    "album": "Train on the Island",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1709944-train-on-the-island_164438.jpg",
-    "genre_tags": [
-      "Singer-Songwriter",
-      "Indie Folk",
-      "Chamber Pop"
-    ],
-    "score": 83,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/jp/album/train-on-the-island/1876846303?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1709944-aldous-harding-train-on-the-island.php",
-    "source": "must-hear",
-    "review_count": 20,
-    "taste_label": "It's a match",
-    "source_rank": 4,
     "batch_date": "2026-05-22"
   },
   {
