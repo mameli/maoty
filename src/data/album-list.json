@@ -1,39 +1,155 @@
 [
   {
+    "artist": "Vince Staples",
+    "album": "Cry Baby",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1792171-cry-baby_042756.jpg",
+    "genre_tags": [
+      "Political Hip Hop",
+      "Rap Rock",
+      "West Coast Hip Hop"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/cry-baby/1887627836?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1792171-vince-staples-cry-baby.php",
+    "source": "new-releases",
+    "review_count": 6,
+    "taste_label": "It's a match",
+    "source_rank": 1,
+    "batch_date": "2026-06-05"
+  },
+  {
+    "artist": "Death Cab for Cutie",
+    "album": "I Built You A Tower",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1728734-i-built-you-a-tower_160624.jpg",
+    "genre_tags": [
+      "Indie Rock",
+      "Indie Pop",
+      "Post-Punk Revival"
+    ],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/i-built-you-a-tower/1878362451?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1728734-death-cab-for-cutie-i-built-you-a-tower.php",
+    "source": "new-releases",
+    "review_count": 13,
+    "taste_label": "It's a match",
+    "source_rank": 6,
+    "batch_date": "2026-06-05"
+  },
+  {
+    "artist": "SLIFT",
+    "album": "Fantasia",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1749939-fantasia_121911.jpg",
+    "genre_tags": [
+      "Psychedelic Rock",
+      "Space Rock",
+      "Heavy Psych"
+    ],
+    "score": 83,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/nz/album/fantasia/1881769864?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1749939-slift-fantasia.php",
+    "source": "new-releases",
+    "review_count": 7,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 19,
+    "batch_date": "2026-06-05"
+  },
+  {
+    "artist": "Kim Petras",
+    "album": "Detour",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1415073-detour_161933.jpg",
+    "genre_tags": [
+      "Electropop",
+      "Electronic Dance Music",
+      "Hyperpop"
+    ],
+    "score": 73,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/gb/album/detour/6771896253?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1415073-kim-petras-detour.php",
+    "source": "must-hear",
+    "review_count": 2,
+    "taste_label": "Just for you",
+    "source_rank": 1,
+    "batch_date": "2026-06-05"
+  },
+  {
     "artist": "Paul McCartney",
     "album": "The Boys of Dungeon Lane",
     "cover_url": "https://cdn.albumoftheyear.org/album/1742568-the-boys-of-dungeon-lane_150207.jpg",
     "genre_tags": [
-      "Singer-Songwriter",
       "Pop Rock",
+      "Singer-Songwriter",
       "Baroque Pop"
     ],
-    "score": 81,
+    "score": 82,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/fi/album/the-boys-of-dungeon-lane/1887402919?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1742568-paul-mccartney-the-boys-of-dungeon-lane.php",
-    "source": "new-releases",
-    "review_count": 19,
+    "source": "must-hear",
+    "review_count": 23,
     "taste_label": "It's a match",
-    "source_rank": 5,
-    "batch_date": "2026-05-29"
+    "source_rank": 2,
+    "batch_date": "2026-06-05"
   },
   {
     "artist": "Iceage",
     "album": "For Love of Grace & The Hereafter",
     "cover_url": "https://cdn.albumoftheyear.org/album/1763278-for-love-of-grace-the-hereafter_160827.jpg",
     "genre_tags": [
-      "Post-Punk Revival"
+      "Post-Punk Revival",
+      "Indie Rock",
+      "Jangle Pop"
     ],
-    "score": 82,
+    "score": 83,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/us/album/for-love-of-grace-the-hereafter/1880484160?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1763278-iceage-for-love-of-grace-the-hereafter.php",
-    "source": "new-releases",
-    "review_count": 13,
+    "source": "must-hear",
+    "review_count": 21,
     "taste_label": "Just for you",
-    "source_rank": 7,
-    "batch_date": "2026-05-29"
+    "source_rank": 3,
+    "batch_date": "2026-06-05"
+  },
+  {
+    "artist": "Boards of Canada",
+    "album": "Inferno",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1786950-inferno_135147.jpg",
+    "genre_tags": [
+      "Downtempo",
+      "IDM",
+      "Ambient"
+    ],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/inferno/1890015523?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1786950-boards-of-canada-inferno.php",
+    "source": "must-hear",
+    "review_count": 23,
+    "taste_label": "Just for you",
+    "source_rank": 4,
+    "batch_date": "2026-06-05"
+  },
+  {
+    "artist": "Ed O'Brien",
+    "album": "Blue Morpho",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1725169-blue-morpho_151516.jpg",
+    "genre_tags": [
+      "Art Rock",
+      "Chamber Pop",
+      "Chamber Folk"
+    ],
+    "score": 82,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/blue-morpho/1874551790?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1725169-ed-obrien-blue-morpho.php",
+    "source": "must-hear",
+    "review_count": 15,
+    "taste_label": "Just for you",
+    "source_rank": 5,
+    "batch_date": "2026-06-05"
   },
   {
     "artist": "Kurt Vile",
@@ -92,7 +208,7 @@
   },
   {
     "artist": "Panopticon",
-    "album": "Det hjemsøkte hjertet",
+    "album": "Det hjems\u00f8kte hjertet",
     "cover_url": "https://cdn.albumoftheyear.org/album/1590468-det-hjemsokte-hjertet_214606.jpg",
     "genre_tags": [
       "Atmospheric Black Metal",
@@ -127,25 +243,6 @@
     "taste_label": "It's a match",
     "source_rank": 5,
     "batch_date": "2026-05-29"
-  },
-  {
-    "artist": "Ed O'Brien",
-    "album": "Blue Morpho",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1725169-blue-morpho_151516.jpg",
-    "genre_tags": [
-      "Art Rock",
-      "Chamber Folk",
-      "Jazz-Rock"
-    ],
-    "score": 82,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/us/album/blue-morpho/1874551790?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1725169-ed-obrien-blue-morpho.php",
-    "source": "new-releases",
-    "review_count": 11,
-    "taste_label": "Just for you",
-    "source_rank": 8,
-    "batch_date": "2026-05-22"
   },
   {
     "artist": "Kenny Mason",
@@ -223,7 +320,7 @@
     "batch_date": "2026-05-15"
   },
   {
-    "artist": "東京酒吐座 [Tokyo Shoegazer]",
+    "artist": "\u6771\u4eac\u9152\u5410\u5ea7 [Tokyo Shoegazer]",
     "album": "Remains",
     "cover_url": "https://cdn.albumoftheyear.org/album/1635691-remains_005443.jpg",
     "genre_tags": [
@@ -299,7 +396,7 @@
     "batch_date": "2026-05-08"
   },
   {
-    "artist": "ROSALÍA",
+    "artist": "ROSAL\u00cdA",
     "album": "LUX (Complete Works)",
     "cover_url": "https://cdn.albumoftheyear.org/album/1778080-lux-complete-works_212439.jpg",
     "genre_tags": [
@@ -583,7 +680,7 @@
   },
   {
     "artist": "The Twilight Sad",
-    "album": "IT’S THE LONG GOODBYE",
+    "album": "IT\u2019S THE LONG GOODBYE",
     "cover_url": "https://cdn.albumoftheyear.org/album/1607155-its-the-long-goodbye_102433.jpg",
     "genre_tags": [
       "Post-Punk Revival",
