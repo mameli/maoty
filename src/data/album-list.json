@@ -1,5 +1,43 @@
 [
   {
+    "artist": "Olivia Rodrigo",
+    "album": "you seem pretty sad for a girl so in love",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1754822-you-seem-pretty-sad-for-a-girl-so-in-love_03141.jpg",
+    "genre_tags": [
+      "Pop Rock",
+      "Singer-Songwriter",
+      "New Wave"
+    ],
+    "score": 92,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/you-seem-pretty-sad-for-a-girl-so-in-love/1889992111?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1754822-olivia-rodrigo-you-seem-pretty-sad-for-a-girl-so-in-love.php",
+    "source": "new-releases",
+    "review_count": 7,
+    "taste_label": "It's a match",
+    "source_rank": 1,
+    "batch_date": "2026-06-12"
+  },
+  {
+    "artist": "Navy Blue",
+    "album": "Sir Render",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1786233-sir-render_153720.jpg",
+    "genre_tags": [
+      "Drumless",
+      "Abstract Hip Hop",
+      "Conscious Hip Hop"
+    ],
+    "score": 79,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/sir-render/1895825845?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1786233-navy-blue-sir-render.php",
+    "source": "must-hear",
+    "review_count": 1,
+    "taste_label": "It's a match",
+    "source_rank": 1,
+    "batch_date": "2026-06-12"
+  },
+  {
     "artist": "Vince Staples",
     "album": "Cry Baby",
     "cover_url": "https://cdn.albumoftheyear.org/album/1792171-cry-baby_042756.jpg",
@@ -12,11 +50,68 @@
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/us/album/cry-baby/1887627836?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1792171-vince-staples-cry-baby.php",
-    "source": "new-releases",
-    "review_count": 6,
+    "source": "must-hear",
+    "review_count": 11,
     "taste_label": "It's a match",
-    "source_rank": 1,
-    "batch_date": "2026-06-05"
+    "source_rank": 2,
+    "batch_date": "2026-06-12"
+  },
+  {
+    "artist": "Kim Petras",
+    "album": "Detour",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1415073-detour_161933.jpg",
+    "genre_tags": [
+      "Electropop",
+      "Electronic Dance Music",
+      "Hyperpop"
+    ],
+    "score": 72,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/gb/album/detour/6771896253?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1415073-kim-petras-detour.php",
+    "source": "must-hear",
+    "review_count": 3,
+    "taste_label": "Just for you",
+    "source_rank": 3,
+    "batch_date": "2026-06-12"
+  },
+  {
+    "artist": "Paul McCartney",
+    "album": "The Boys of Dungeon Lane",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1742568-the-boys-of-dungeon-lane_150207.jpg",
+    "genre_tags": [
+      "Pop Rock",
+      "Singer-Songwriter",
+      "Baroque Pop"
+    ],
+    "score": 82,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/fi/album/the-boys-of-dungeon-lane/1887402919?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1742568-paul-mccartney-the-boys-of-dungeon-lane.php",
+    "source": "must-hear",
+    "review_count": 25,
+    "taste_label": "It's a match",
+    "source_rank": 4,
+    "batch_date": "2026-06-12"
+  },
+  {
+    "artist": "Iceage",
+    "album": "For Love of Grace & The Hereafter",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1763278-for-love-of-grace-the-hereafter_160827.jpg",
+    "genre_tags": [
+      "Post-Punk Revival",
+      "Indie Rock",
+      "Jangle Pop"
+    ],
+    "score": 83,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/for-love-of-grace-the-hereafter/1880484160?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1763278-iceage-for-love-of-grace-the-hereafter.php",
+    "source": "must-hear",
+    "review_count": 22,
+    "taste_label": "Just for you",
+    "source_rank": 5,
+    "batch_date": "2026-06-12"
   },
   {
     "artist": "Death Cab for Cutie",
@@ -54,63 +149,6 @@
     "review_count": 7,
     "taste_label": "Maybe you'll like it",
     "source_rank": 19,
-    "batch_date": "2026-06-05"
-  },
-  {
-    "artist": "Kim Petras",
-    "album": "Detour",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1415073-detour_161933.jpg",
-    "genre_tags": [
-      "Electropop",
-      "Electronic Dance Music",
-      "Hyperpop"
-    ],
-    "score": 73,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/gb/album/detour/6771896253?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1415073-kim-petras-detour.php",
-    "source": "must-hear",
-    "review_count": 2,
-    "taste_label": "Just for you",
-    "source_rank": 1,
-    "batch_date": "2026-06-05"
-  },
-  {
-    "artist": "Paul McCartney",
-    "album": "The Boys of Dungeon Lane",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1742568-the-boys-of-dungeon-lane_150207.jpg",
-    "genre_tags": [
-      "Pop Rock",
-      "Singer-Songwriter",
-      "Baroque Pop"
-    ],
-    "score": 82,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/fi/album/the-boys-of-dungeon-lane/1887402919?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1742568-paul-mccartney-the-boys-of-dungeon-lane.php",
-    "source": "must-hear",
-    "review_count": 23,
-    "taste_label": "It's a match",
-    "source_rank": 2,
-    "batch_date": "2026-06-05"
-  },
-  {
-    "artist": "Iceage",
-    "album": "For Love of Grace & The Hereafter",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1763278-for-love-of-grace-the-hereafter_160827.jpg",
-    "genre_tags": [
-      "Post-Punk Revival",
-      "Indie Rock",
-      "Jangle Pop"
-    ],
-    "score": 83,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/us/album/for-love-of-grace-the-hereafter/1880484160?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1763278-iceage-for-love-of-grace-the-hereafter.php",
-    "source": "must-hear",
-    "review_count": 21,
-    "taste_label": "Just for you",
-    "source_rank": 3,
     "batch_date": "2026-06-05"
   },
   {
