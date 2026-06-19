@@ -1,5 +1,24 @@
 [
   {
+    "artist": "Kelsey Lu",
+    "album": "So Help Me God",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1731715-so-help-me-god_162621.jpg",
+    "genre_tags": [
+      "Art Pop",
+      "Chamber Pop",
+      "Chamber Folk"
+    ],
+    "score": 82,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/gb/album/so-help-me-god/1876521144?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1731715-kelsey-lu-so-help-me-god.php",
+    "source": "must-hear",
+    "review_count": 6,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 1,
+    "batch_date": "2026-06-19"
+  },
+  {
     "artist": "Olivia Rodrigo",
     "album": "you seem pretty sad for a girl so in love",
     "cover_url": "https://cdn.albumoftheyear.org/album/1754822-you-seem-pretty-sad-for-a-girl-so-in-love_03141.jpg",
@@ -8,15 +27,34 @@
       "Singer-Songwriter",
       "New Wave"
     ],
-    "score": 92,
+    "score": 87,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/us/album/you-seem-pretty-sad-for-a-girl-so-in-love/1889992111?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1754822-olivia-rodrigo-you-seem-pretty-sad-for-a-girl-so-in-love.php",
-    "source": "new-releases",
-    "review_count": 7,
+    "source": "must-hear",
+    "review_count": 29,
     "taste_label": "It's a match",
-    "source_rank": 1,
-    "batch_date": "2026-06-12"
+    "source_rank": 2,
+    "batch_date": "2026-06-19"
+  },
+  {
+    "artist": "Death Cab for Cutie",
+    "album": "I Built You A Tower",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1728734-i-built-you-a-tower_160624.jpg",
+    "genre_tags": [
+      "Indie Rock",
+      "Post-Punk Revival",
+      "Indie Pop"
+    ],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/i-built-you-a-tower/1878362451?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1728734-death-cab-for-cutie-i-built-you-a-tower.php",
+    "source": "must-hear",
+    "review_count": 21,
+    "taste_label": "It's a match",
+    "source_rank": 3,
+    "batch_date": "2026-06-19"
   },
   {
     "artist": "Navy Blue",
@@ -34,8 +72,8 @@
     "source": "must-hear",
     "review_count": 1,
     "taste_label": "It's a match",
-    "source_rank": 1,
-    "batch_date": "2026-06-12"
+    "source_rank": 4,
+    "batch_date": "2026-06-19"
   },
   {
     "artist": "Vince Staples",
@@ -46,15 +84,15 @@
       "Rap Rock",
       "West Coast Hip Hop"
     ],
-    "score": 81,
+    "score": 82,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/us/album/cry-baby/1887627836?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1792171-vince-staples-cry-baby.php",
     "source": "must-hear",
-    "review_count": 11,
+    "review_count": 14,
     "taste_label": "It's a match",
-    "source_rank": 2,
-    "batch_date": "2026-06-12"
+    "source_rank": 5,
+    "batch_date": "2026-06-19"
   },
   {
     "artist": "Kim Petras",
@@ -112,25 +150,6 @@
     "taste_label": "Just for you",
     "source_rank": 5,
     "batch_date": "2026-06-12"
-  },
-  {
-    "artist": "Death Cab for Cutie",
-    "album": "I Built You A Tower",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1728734-i-built-you-a-tower_160624.jpg",
-    "genre_tags": [
-      "Indie Rock",
-      "Indie Pop",
-      "Post-Punk Revival"
-    ],
-    "score": 80,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/us/album/i-built-you-a-tower/1878362451?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1728734-death-cab-for-cutie-i-built-you-a-tower.php",
-    "source": "new-releases",
-    "review_count": 13,
-    "taste_label": "It's a match",
-    "source_rank": 6,
-    "batch_date": "2026-06-05"
   },
   {
     "artist": "SLIFT",
