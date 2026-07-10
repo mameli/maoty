@@ -1,5 +1,119 @@
 [
   {
+    "artist": "Kelela",
+    "album": "new avatar",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1806319-new-avatar_151837.jpg",
+    "genre_tags": [
+      "Alternative R&B",
+      "Neo-Psychedelia",
+      "Dream Pop"
+    ],
+    "score": 82,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/kr/album/new-avatar/1888561538?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1806319-kelela-new-avatar.php",
+    "source": "new-releases",
+    "review_count": 6,
+    "taste_label": "It's a match",
+    "source_rank": 3,
+    "batch_date": "2026-07-10"
+  },
+  {
+    "artist": "drug bug",
+    "album": "Grapefruit Technique",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1903843-grapefruit-technique_174339.jpg",
+    "genre_tags": [
+      "Indie Rock",
+      "Jangle Pop",
+      "Hypnagogic Pop"
+    ],
+    "score": 82,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/us/album/grapefruit-technique-single/6787919897?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1903843-drug-bug-grapefruit-technique.php",
+    "source": "must-hear",
+    "review_count": 603,
+    "taste_label": "It's a match",
+    "source_rank": 1,
+    "batch_date": "2026-07-10"
+  },
+  {
+    "artist": "Madonna",
+    "album": "CONFESSIONS II",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1616412-confessions-ii_132631.jpg",
+    "genre_tags": [
+      "House",
+      "Dance-Pop",
+      "Progressive House"
+    ],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/confessions-ii/1892545087?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1616412-madonna-confessions-ii.php",
+    "source": "must-hear",
+    "review_count": 22,
+    "taste_label": "Just for you",
+    "source_rank": 2,
+    "batch_date": "2026-07-10"
+  },
+  {
+    "artist": "spiral staircase",
+    "album": "your inner world is deeply uninteresting",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1800199-your-inner-world-is-deeply-uninteresting_153040.jpg",
+    "genre_tags": [
+      "Noise Rock",
+      "Post-Metal",
+      "Slacker Rock"
+    ],
+    "score": 81,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/us/album/your-inner-world-is-deeply-uninteresting/6769671456?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1800199-spiral-staircase-your-inner-world-is-deeply-uninteresting.php",
+    "source": "must-hear",
+    "review_count": 602,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 3,
+    "batch_date": "2026-07-10"
+  },
+  {
+    "artist": "Paulie Swan",
+    "album": "Swans Today",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1852171-swans-today_211135.jpg",
+    "genre_tags": [
+      "Singer-Songwriter",
+      "Chamber Pop",
+      "Chamber Folk"
+    ],
+    "score": 81,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/us/album/swans-today-ep/6774607027?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1852171-paulie-swan-swans-today.php",
+    "source": "must-hear",
+    "review_count": 1676,
+    "taste_label": "It's a match",
+    "source_rank": 4,
+    "batch_date": "2026-07-10"
+  },
+  {
+    "artist": "Toby Fox",
+    "album": "DELTARUNE Chapter 5 (Original Game Soundtrack)",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1861963-deltarune-chapter-5-original-game-soundtrack_192240.jpg",
+    "genre_tags": [
+      "Digital Fusion",
+      "Sequencer & Tracker",
+      "Ambient"
+    ],
+    "score": 85,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/us/album/deltarune-chapter-5-original-game-soundtrack/6783457666?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1861963-toby-fox-deltarune-chapter-5-original-game-soundtrack.php",
+    "source": "must-hear",
+    "review_count": 572,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 5,
+    "batch_date": "2026-07-10"
+  },
+  {
     "artist": "Kelsey Lu",
     "album": "So Help Me God",
     "cover_url": "https://cdn.albumoftheyear.org/album/1731715-so-help-me-god_162621.jpg",
