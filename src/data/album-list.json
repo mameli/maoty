@@ -1,5 +1,41 @@
 [
   {
+    "artist": "Yard Act",
+    "album": "You're Gonna Need a Little Music",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1807513-youre-gonna-need-a-little-music_133919.jpg",
+    "genre_tags": [
+      "Dance-Punk",
+      "Post-Punk"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/nz/album/youre-gonna-need-a-little-music/1891450512?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1807513-yard-act-youre-gonna-need-a-little-music.php",
+    "source": "new-releases",
+    "review_count": 15,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 12,
+    "batch_date": "2026-07-17"
+  },
+  {
+    "artist": "Bring Me The Horizon",
+    "album": "Count Your Blessings | Repented",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1772638-count-your-blessings-repented_161722.jpg",
+    "genre_tags": [
+      "Deathcore",
+      "Melodic Death Metal"
+    ],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/count-your-blessings-repented/1891811086?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1772638-bring-me-the-horizon-count-your-blessings-repented.php",
+    "source": "must-hear",
+    "review_count": 2,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 2,
+    "batch_date": "2026-07-17"
+  },
+  {
     "artist": "Kelela",
     "album": "new avatar",
     "cover_url": "https://cdn.albumoftheyear.org/album/1806319-new-avatar_151837.jpg",
@@ -8,15 +44,53 @@
       "Neo-Psychedelia",
       "Dream Pop"
     ],
-    "score": 82,
+    "score": 81,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/kr/album/new-avatar/1888561538?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1806319-kelela-new-avatar.php",
-    "source": "new-releases",
-    "review_count": 6,
+    "source": "must-hear",
+    "review_count": 14,
     "taste_label": "It's a match",
     "source_rank": 3,
-    "batch_date": "2026-07-10"
+    "batch_date": "2026-07-17"
+  },
+  {
+    "artist": "Frost Children",
+    "album": "Tweaker Poem",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1881811-tweaker-poem_120140.jpg",
+    "genre_tags": [
+      "Electropop",
+      "Electronic Dance Music",
+      "Happy Hardcore"
+    ],
+    "score": 81,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/us/album/satellites/6778593156?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1881811-frost-children-tweaker-poem.php",
+    "source": "must-hear",
+    "review_count": 2353,
+    "taste_label": "Just for you",
+    "source_rank": 4,
+    "batch_date": "2026-07-17"
+  },
+  {
+    "artist": "mary in the junkyard",
+    "album": "Role Model Hermit",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1741390-role-model-hermit_173214.jpg",
+    "genre_tags": [
+      "Indie Folk",
+      "Art Rock",
+      "Indie Rock"
+    ],
+    "score": 82,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/gb/album/role-model-hermit/1880080253?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1741390-mary-in-the-junkyard-role-model-hermit.php",
+    "source": "must-hear",
+    "review_count": 15,
+    "taste_label": "It's a match",
+    "source_rank": 5,
+    "batch_date": "2026-07-17"
   },
   {
     "artist": "drug bug",
