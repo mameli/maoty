@@ -1,5 +1,81 @@
 [
   {
+    "artist": "Man/Woman/Chainsaw",
+    "album": "Cannonball",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1784617-cannonball_164858.jpg",
+    "genre_tags": [
+      "Art Rock",
+      "Indie Rock",
+      "Indie Pop"
+    ],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/gb/album/cannonball/1891859089?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1784617-manwomanchainsaw-cannonball.php",
+    "source": "new-releases",
+    "review_count": 10,
+    "taste_label": "It's a match",
+    "source_rank": 4,
+    "batch_date": "2026-08-07"
+  },
+  {
+    "artist": "TURQUOISEDEATH",
+    "album": "Soundsystem, Breathe!",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1931303-soundsystem-breathe_211222.jpg",
+    "genre_tags": [
+      "Progressive Trance",
+      "Progressive House",
+      "Uplifting Trance"
+    ],
+    "score": 80,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/us/album/soundsystem-breathe-ep/6795470852?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1931303-turquoisedeath-soundsystem-breathe.php",
+    "source": "must-hear",
+    "review_count": 814,
+    "taste_label": "Just for you",
+    "source_rank": 1,
+    "batch_date": "2026-08-07"
+  },
+  {
+    "artist": "Portraits Of Tracy",
+    "album": "Q: From Where Do Our Primal Instincts Originate? A: MTV!",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1884190-q-from-where-do-our-primal-instincts-originate-a-mtv_205519.jpg",
+    "genre_tags": [
+      "Indietronica",
+      "Noise Pop",
+      "New Rave"
+    ],
+    "score": 84,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/q-from-where-do-our-primal-instincts-originate-a-mtv-ep/6782981535?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1884190-portraits-of-tracy-q-from-where-do-our-primal-instincts-originate-a-mtv.php",
+    "source": "must-hear",
+    "review_count": 2,
+    "taste_label": "Just for you",
+    "source_rank": 2,
+    "batch_date": "2026-08-07"
+  },
+  {
+    "artist": "Yard Act",
+    "album": "You're Gonna Need a Little Music",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1807513-youre-gonna-need-a-little-music_133919.jpg",
+    "genre_tags": [
+      "Art Punk",
+      "Dance-Punk",
+      "Post-Punk Revival"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/nz/album/youre-gonna-need-a-little-music/1891450512?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1807513-yard-act-youre-gonna-need-a-little-music.php",
+    "source": "must-hear",
+    "review_count": 21,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 3,
+    "batch_date": "2026-08-07"
+  },
+  {
     "artist": "Hesse Kassel",
     "album": "Morir Saltando",
     "cover_url": "https://cdn.albumoftheyear.org/album/1872097-morir-saltando_071356.jpg",
@@ -13,10 +89,10 @@
     "apple_music": "https://geo.music.apple.com/us/album/morir-saltando/6775739502?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1872097-hesse-kassel-morir-saltando.php",
     "source": "must-hear",
-    "review_count": 804,
+    "review_count": 1079,
     "taste_label": "Maybe you'll like it",
-    "source_rank": 1,
-    "batch_date": "2026-07-26"
+    "source_rank": 4,
+    "batch_date": "2026-08-07"
   },
   {
     "artist": "Bring Me The Horizon",
@@ -33,8 +109,8 @@
     "source": "must-hear",
     "review_count": 2,
     "taste_label": "Maybe you'll like it",
-    "source_rank": 2,
-    "batch_date": "2026-07-26"
+    "source_rank": 5,
+    "batch_date": "2026-08-07"
   },
   {
     "artist": "Kelela",
@@ -92,24 +168,6 @@
     "taste_label": "It's a match",
     "source_rank": 5,
     "batch_date": "2026-07-26"
-  },
-  {
-    "artist": "Yard Act",
-    "album": "You're Gonna Need a Little Music",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1807513-youre-gonna-need-a-little-music_133919.jpg",
-    "genre_tags": [
-      "Dance-Punk",
-      "Post-Punk"
-    ],
-    "score": 81,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/nz/album/youre-gonna-need-a-little-music/1891450512?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1807513-yard-act-youre-gonna-need-a-little-music.php",
-    "source": "new-releases",
-    "review_count": 15,
-    "taste_label": "Maybe you'll like it",
-    "source_rank": 12,
-    "batch_date": "2026-07-17"
   },
   {
     "artist": "drug bug",
