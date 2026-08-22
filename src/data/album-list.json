@@ -1,5 +1,62 @@
 [
   {
+    "artist": "Westside Cowboy",
+    "album": "It Goes On",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1829565-it-goes-on_155317.jpg",
+    "genre_tags": [
+      "Indie Rock",
+      "Art Rock",
+      "Alt-Country"
+    ],
+    "score": 86,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/gb/album/it-goes-on/6767652034?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1829565-westside-cowboy-it-goes-on.php",
+    "source": "new-releases",
+    "review_count": 15,
+    "taste_label": "It's a match",
+    "source_rank": 4,
+    "batch_date": "2026-08-22"
+  },
+  {
+    "artist": "Lambchop",
+    "album": "Punching The Clown",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1807573-punching-the-clown_144031.jpg",
+    "genre_tags": [
+      "Chamber Folk",
+      "Alt-Country",
+      "Americana"
+    ],
+    "score": 82,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/punching-the-clown/1892045992?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1807573-lambchop-punching-the-clown.php",
+    "source": "new-releases",
+    "review_count": 9,
+    "taste_label": "Just for you",
+    "source_rank": 25,
+    "batch_date": "2026-08-22"
+  },
+  {
+    "artist": "Phoebe Bridgers",
+    "album": "Lost Weekend",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1884687-lost-weekend_130542.jpg",
+    "genre_tags": [
+      "Singer-Songwriter",
+      "Indie Folk",
+      "Folktronica"
+    ],
+    "score": 91,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/lost-weekend/6781051268?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1884687-phoebe-bridgers-lost-weekend.php",
+    "source": "must-hear",
+    "review_count": 32,
+    "taste_label": "It's a match",
+    "source_rank": 2,
+    "batch_date": "2026-08-22"
+  },
+  {
     "artist": "Man/Woman/Chainsaw",
     "album": "Cannonball",
     "cover_url": "https://cdn.albumoftheyear.org/album/1784617-cannonball_164858.jpg",
@@ -12,11 +69,49 @@
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/gb/album/cannonball/1891859089?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1784617-manwomanchainsaw-cannonball.php",
-    "source": "new-releases",
-    "review_count": 10,
+    "source": "must-hear",
+    "review_count": 16,
     "taste_label": "It's a match",
+    "source_rank": 3,
+    "batch_date": "2026-08-22"
+  },
+  {
+    "artist": "twenty one pilots",
+    "album": "More Than We Ever Imagined (Live in Mexico City)",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1919907-more-than-we-ever-imagined-live-from-mexico-city_003127.jpg",
+    "genre_tags": [
+      "Alternative Rock",
+      "Indie Rock",
+      "Pop Rock"
+    ],
+    "score": 83,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/nz/album/more-than-we-ever-imagined-live-in-mexico-city/6796494276?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1919907-twenty-one-pilots-more-than-we-ever-imagined-live-in-mexico-city.php",
+    "source": "must-hear",
+    "review_count": 2,
+    "taste_label": "Just for you",
     "source_rank": 4,
-    "batch_date": "2026-08-07"
+    "batch_date": "2026-08-22"
+  },
+  {
+    "artist": "Portraits Of Tracy",
+    "album": "Q: From Where Do Our Primal Instincts Originate? A: MTV!",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1884190-q-from-where-do-our-primal-instincts-originate-a-mtv_205519.jpg",
+    "genre_tags": [
+      "Indietronica",
+      "Noise Pop",
+      "New Rave"
+    ],
+    "score": 84,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/q-from-where-do-our-primal-instincts-originate-a-mtv-ep/6782981535?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1884190-portraits-of-tracy-q-from-where-do-our-primal-instincts-originate-a-mtv.php",
+    "source": "must-hear",
+    "review_count": 2,
+    "taste_label": "Just for you",
+    "source_rank": 5,
+    "batch_date": "2026-08-22"
   },
   {
     "artist": "TURQUOISEDEATH",
@@ -35,25 +130,6 @@
     "review_count": 814,
     "taste_label": "Just for you",
     "source_rank": 1,
-    "batch_date": "2026-08-07"
-  },
-  {
-    "artist": "Portraits Of Tracy",
-    "album": "Q: From Where Do Our Primal Instincts Originate? A: MTV!",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1884190-q-from-where-do-our-primal-instincts-originate-a-mtv_205519.jpg",
-    "genre_tags": [
-      "Indietronica",
-      "Noise Pop",
-      "New Rave"
-    ],
-    "score": 84,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/us/album/q-from-where-do-our-primal-instincts-originate-a-mtv-ep/6782981535?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1884190-portraits-of-tracy-q-from-where-do-our-primal-instincts-originate-a-mtv.php",
-    "source": "must-hear",
-    "review_count": 2,
-    "taste_label": "Just for you",
-    "source_rank": 2,
     "batch_date": "2026-08-07"
   },
   {

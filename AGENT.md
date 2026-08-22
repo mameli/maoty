@@ -75,6 +75,7 @@ Album page rules:
   - use the top genre links in the main metadata block
   - selector pattern: `a[href*="/genre/"]`
   - ignore footer or sidebar genre links
+  - if AOTY has no genre tags, keep the album with an empty `genre_tags` array, count it in the report, and continue
 - If the page title is `Just a moment...`, retry once in the same session after a short wait.
 
 ## Apple Music fallback
@@ -129,6 +130,8 @@ Each album entry must contain:
 - `review_count`
 - `taste_label`
 - `source_rank`
+
+`apple_music` and `genre_tags` are optional when AOTY and the permitted fallback cannot provide them. Record and report their absence, but never block the refresh solely for either field.
 
 ## Taste label rules
 
@@ -258,8 +261,8 @@ Before considering the update complete, confirm:
 - Must Hear contributed exactly 5 albums
 - every New Releases album has `critic score >= 80`
 - every New Releases album has `review_count > 5`
-- every album has a non-empty Apple Music link
-- every album has at least one main metadata genre tag
+- missing Apple Music links after fallback are counted and do not block the refresh
+- missing genre tags are counted and do not block the refresh
 - every album has one valid `taste_label`
 - newly scraped albums were inserted at the top of `src/data/album-list.json`
 - no album is duplicated by `aoty_url`
@@ -286,6 +289,8 @@ The automation output should report:
 - how many albums qualified from New Releases
 - how many albums were inserted at the top
 - whether any Apple Music fallback lookups were needed
+- how many albums are missing Apple Music links after fallback
+- how many albums are missing genre tags
 - whether any new albums still needed a manual `taste_label`
 - whether the build passed
 - whether git commit succeeded

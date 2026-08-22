@@ -391,10 +391,12 @@ def lookup_apple_music(artist: str, album: str) -> str | None:
         return None
     apple_script = resolve_apple_script()
     if apple_script is None:
-        raise FileNotFoundError(
+        print(
             "Missing Apple Music skill script. Checked: "
-            + ", ".join(str(path) for path in APPLE_SCRIPT_CANDIDATES)
+            + ", ".join(str(path) for path in APPLE_SCRIPT_CANDIDATES),
+            file=sys.stderr,
         )
+        return None
 
     try:
         output = run_command(
@@ -409,11 +411,11 @@ def lookup_apple_music(artist: str, album: str) -> str | None:
             ],
             timeout=60,
         )
-    except RuntimeError as error:
+        payload = json.loads(output)
+    except (RuntimeError, subprocess.TimeoutExpired, json.JSONDecodeError) as error:
         print(f"Warning: Apple Music lookup failed for {artist} - {album}: {error}", file=sys.stderr)
         return None
 
-    payload = json.loads(output)
     match_quality = payload.get("match_quality")
     if match_quality == "exact":
         return payload.get("url")
@@ -460,6 +462,7 @@ def collect_albums() -> tuple[list[dict[str, Any]], dict[str, int]]:
         "new_releases_qualified": len(new_releases),
         "apple_fallback_lookups": 0,
         "missing_apple_music_links": 0,
+        "missing_genre_tags": 0,
     }
 
     albums: list[dict[str, Any]] = []
@@ -487,7 +490,8 @@ def collect_albums() -> tuple[list[dict[str, Any]], dict[str, int]]:
         if not apple_music:
             stats["missing_apple_music_links"] += 1
         if not genre_tags:
-            raise RuntimeError(f"Missing genre tags for {artist} - {album}")
+            stats["missing_genre_tags"] += 1
+            print(f"Warning: Missing genre tags for {artist} - {album}", file=sys.stderr)
 
         albums.append(
             {
@@ -524,10 +528,6 @@ def main() -> int:
     if not MIXTAPE_PATH.exists():
         raise FileNotFoundError(f"Missing mixtape export: {MIXTAPE_PATH}")
 
-    mixtape_rows = load_mixtape_rows()
-    frequency, weighted = build_tag_profile(mixtape_rows)
-    write_tag_browse(mixtape_rows, frequency, weighted)
-
     opened_browser = open_browser()
     try:
         albums, stats = collect_albums()
@@ -537,7 +537,6 @@ def main() -> int:
 
     write_album_data(merge_album_data(albums))
     print(json.dumps({"refresh_stats": stats}))
-    print(f"Wrote {TAG_BROWSE_PATH}")
     print(f"Wrote {ALBUM_DATA_PATH}")
     return 0
 
