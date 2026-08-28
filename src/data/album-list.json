@@ -1,5 +1,43 @@
 [
   {
+    "artist": "Interpol",
+    "album": "This Mirror Weighs a Ton",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1861910-this-mirror-weighs-a-ton_135444.jpg",
+    "genre_tags": [
+      "Post-Punk Revival",
+      "Art Rock",
+      "Post-Rock"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/this-mirror-weighs-a-ton/6768694728?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1861910-interpol-this-mirror-weighs-a-ton.php",
+    "source": "new-releases",
+    "review_count": 12,
+    "taste_label": "It's a match",
+    "source_rank": 1,
+    "batch_date": "2026-08-28"
+  },
+  {
+    "artist": "Alabama Shakes",
+    "album": "I Must Be Dreaming",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1764043-i-must-be-dreaming.jpg",
+    "genre_tags": [
+      "Psychedelic Soul",
+      "Blues Rock",
+      "Southern Soul"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/i-must-be-dreaming/6784718868?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1764043-alabama-shakes-i-must-be-dreaming.php",
+    "source": "new-releases",
+    "review_count": 6,
+    "taste_label": "Just for you",
+    "source_rank": 12,
+    "batch_date": "2026-08-28"
+  },
+  {
     "artist": "Westside Cowboy",
     "album": "It Goes On",
     "cover_url": "https://cdn.albumoftheyear.org/album/1829565-it-goes-on_155317.jpg",
@@ -8,15 +46,91 @@
       "Art Rock",
       "Alt-Country"
     ],
-    "score": 86,
+    "score": 84,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/gb/album/it-goes-on/6767652034?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1829565-westside-cowboy-it-goes-on.php",
-    "source": "new-releases",
-    "review_count": 15,
+    "source": "must-hear",
+    "review_count": 17,
+    "taste_label": "It's a match",
+    "source_rank": 1,
+    "batch_date": "2026-08-28"
+  },
+  {
+    "artist": "Denzel Curry",
+    "album": "ii",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1943093-ii_043318.jpg",
+    "genre_tags": [
+      "Southern Hip Hop",
+      "Boom Bap",
+      "Hardcore Hip Hop"
+    ],
+    "score": 73,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/ii/6788465743?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1943093-denzel-curry-ii.php",
+    "source": "must-hear",
+    "review_count": 3,
+    "taste_label": "It's a match",
+    "source_rank": 2,
+    "batch_date": "2026-08-28"
+  },
+  {
+    "artist": "Phoebe Bridgers",
+    "album": "Lost Weekend",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1884687-lost-weekend_130542.jpg",
+    "genre_tags": [
+      "Singer-Songwriter",
+      "Indie Folk",
+      "Folktronica"
+    ],
+    "score": 91,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/lost-weekend/6781051268?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1884687-phoebe-bridgers-lost-weekend.php",
+    "source": "must-hear",
+    "review_count": 32,
+    "taste_label": "It's a match",
+    "source_rank": 3,
+    "batch_date": "2026-08-28"
+  },
+  {
+    "artist": "Man/Woman/Chainsaw",
+    "album": "Cannonball",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1784617-cannonball_164858.jpg",
+    "genre_tags": [
+      "Art Rock",
+      "Indie Rock",
+      "Indie Pop"
+    ],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/gb/album/cannonball/1891859089?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1784617-manwomanchainsaw-cannonball.php",
+    "source": "must-hear",
+    "review_count": 16,
     "taste_label": "It's a match",
     "source_rank": 4,
-    "batch_date": "2026-08-22"
+    "batch_date": "2026-08-28"
+  },
+  {
+    "artist": "twenty one pilots",
+    "album": "More Than We Ever Imagined (Live in Mexico City)",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1919907-more-than-we-ever-imagined-live-from-mexico-city_003127.jpg",
+    "genre_tags": [
+      "Alternative Rock",
+      "Indie Rock",
+      "Pop Rock"
+    ],
+    "score": 83,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/nz/album/more-than-we-ever-imagined-live-in-mexico-city/6796494276?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1919907-twenty-one-pilots-more-than-we-ever-imagined-live-in-mexico-city.php",
+    "source": "must-hear",
+    "review_count": 2,
+    "taste_label": "Just for you",
+    "source_rank": 5,
+    "batch_date": "2026-08-28"
   },
   {
     "artist": "Lambchop",
@@ -35,63 +149,6 @@
     "review_count": 9,
     "taste_label": "Just for you",
     "source_rank": 25,
-    "batch_date": "2026-08-22"
-  },
-  {
-    "artist": "Phoebe Bridgers",
-    "album": "Lost Weekend",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1884687-lost-weekend_130542.jpg",
-    "genre_tags": [
-      "Singer-Songwriter",
-      "Indie Folk",
-      "Folktronica"
-    ],
-    "score": 91,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/us/album/lost-weekend/6781051268?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1884687-phoebe-bridgers-lost-weekend.php",
-    "source": "must-hear",
-    "review_count": 32,
-    "taste_label": "It's a match",
-    "source_rank": 2,
-    "batch_date": "2026-08-22"
-  },
-  {
-    "artist": "Man/Woman/Chainsaw",
-    "album": "Cannonball",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1784617-cannonball_164858.jpg",
-    "genre_tags": [
-      "Art Rock",
-      "Indie Rock",
-      "Indie Pop"
-    ],
-    "score": 80,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/gb/album/cannonball/1891859089?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1784617-manwomanchainsaw-cannonball.php",
-    "source": "must-hear",
-    "review_count": 16,
-    "taste_label": "It's a match",
-    "source_rank": 3,
-    "batch_date": "2026-08-22"
-  },
-  {
-    "artist": "twenty one pilots",
-    "album": "More Than We Ever Imagined (Live in Mexico City)",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1919907-more-than-we-ever-imagined-live-from-mexico-city_003127.jpg",
-    "genre_tags": [
-      "Alternative Rock",
-      "Indie Rock",
-      "Pop Rock"
-    ],
-    "score": 83,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/nz/album/more-than-we-ever-imagined-live-in-mexico-city/6796494276?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1919907-twenty-one-pilots-more-than-we-ever-imagined-live-in-mexico-city.php",
-    "source": "must-hear",
-    "review_count": 2,
-    "taste_label": "Just for you",
-    "source_rank": 4,
     "batch_date": "2026-08-22"
   },
   {
