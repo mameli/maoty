@@ -15,13 +15,20 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parent.parent
+SCRIPTS_DIR = ROOT / "scripts"
+if str(SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS_DIR))
+
+from aoty_cdp import AotyCdp, AotyCdpError  # noqa: E402
+
 MIXTAPE_PATH = ROOT / "output" / "mameli_mixtape_first50_artists_with_tags.json"
 TAG_BROWSE_PATH = ROOT / "output" / "mameli_mixtape_tags_browse.md"
 ALBUM_DATA_PATH = ROOT / "src" / "data" / "album-list.json"
-PLAYWRIGHT_SESSION = "aoty"
-# AOTY scraping now runs through the dedicated Hermes Chrome profile
-# (~/.hermes/chrome-debug-default) via CDP, configured in
-# .playwright/cli.config.json (browser.cdpEndpoint = http://127.0.0.1:9222).
+# AOTY scraping drives the dedicated Hermes Chrome profile
+# (~/.hermes/chrome-debug-default) directly over the Chrome DevTools
+# Protocol (http://127.0.0.1:9222) via scripts/aoty_cdp.py — no
+# playwright / playwright-cli involved. The AOTY login (rememberMe
+# cookie) and any Cloudflare clearance live in that Chrome profile.
 APPLE_SCRIPT_CANDIDATES = [
     Path(os.environ.get("HOME", "")) / ".codex/skills/apple-music-album-linker/scripts/find_apple_music_album.py",
 ]
@@ -154,21 +161,11 @@ def normalize_tag(tag: str) -> str:
     return normalized
 
 
-def parse_cli_result(output: str) -> Any:
-    lines = output.splitlines()
-    for index, line in enumerate(lines):
-        if line.strip() != "### Result":
-            continue
-        payload_lines: list[str] = []
-        for candidate in lines[index + 1 :]:
-            if candidate.startswith("### "):
-                break
-            payload_lines.append(candidate)
-        payload = "\n".join(payload_lines).strip()
-        if not payload:
-            return None
-        return json.loads(payload)
-    raise RuntimeError(f"Could not parse Playwright output:\n{output}")
+def eval_js(js: str, *, timeout: int = 120) -> Any:
+    try:
+        return _get_cdp().evaluate(js, timeout=timeout)
+    except AotyCdpError as error:
+        raise RuntimeError(f"CDP evaluation failed: {error}") from error
 
 
 def run_command(args: list[str], *, timeout: int = 120) -> str:
@@ -192,45 +189,45 @@ def resolve_apple_script() -> Path | None:
     return None
 
 
-def run_playwright(args: list[str], *, timeout: int = 120) -> str:
-    return run_command(["playwright-cli", "-s", PLAYWRIGHT_SESSION, *args], timeout=timeout)
+_CDPM: AotyCdp | None = None
+_CDPM_OPENED = False
 
 
-def eval_playwright(js: str, *, timeout: int = 120) -> Any:
-    output = run_playwright(["eval", js], timeout=timeout)
-    return parse_cli_result(output)
-
-
-def session_is_open() -> bool:
-    output = run_command(["playwright-cli", "list"], timeout=30)
-    match = re.search(
-        rf"(?ms)^- {re.escape(PLAYWRIGHT_SESSION)}:\n(?P<details>(?:  - .*\n?)*)",
-        output,
-    )
-    if not match:
-        return False
-
-    status_match = re.search(r"(?m)^  - status: (\w+)$", match.group("details"))
-    return bool(status_match and status_match.group(1) == "open")
+def _get_cdp() -> AotyCdp:
+    global _CDPM
+    if _CDPM is None:
+        _CDPM = AotyCdp()
+        _CDPM.__enter__()
+    return _CDPM
 
 
 def open_browser() -> bool:
-    if session_is_open():
-        return False
+    """Attach over CDP, creating a dedicated tab for this process.
 
-    run_playwright(["open", "about:blank"], timeout=120)
+    Returns True (kept for signature compatibility with the old
+    playwright-based flow); the tab is closed again in main().
+    """
+    global _CDPM_OPENED
+    _get_cdp()
+    _CDPM_OPENED = True
     return True
 
 
 def close_browser() -> None:
-    try:
-        run_playwright(["close"], timeout=30)
-    except RuntimeError:
-        pass
+    global _CDPM, _CDPM_OPENED
+    if _CDPM is not None:
+        try:
+            _CDPM.__exit__(None, None, None)
+        except Exception:
+            pass
+        _CDPM = None
+    _CDPM_OPENED = False
 
 
 def goto(url: str) -> None:
-    run_playwright(["goto", url], timeout=120)
+    cdp = _get_cdp()
+    cdp.navigate(url)
+    cdp.wait_for_load()
 
 
 def wait_for_page_ready() -> None:
@@ -238,7 +235,7 @@ def wait_for_page_ready() -> None:
 
 
 def title_is_blocked() -> bool:
-    title = eval_playwright("() => document.title", timeout=30)
+    title = eval_js("() => document.title", timeout=30)
     return isinstance(title, str) and title.strip() == "Just a moment..."
 
 
@@ -361,14 +358,14 @@ def write_tag_browse(rows: list[dict[str, Any]], frequency: Counter[str], weight
 
 def extract_album_rows(url: str) -> list[dict[str, Any]]:
     ensure_page(url)
-    rows = eval_playwright(ROW_EXTRACTION_JS, timeout=60)
+    rows = eval_js(ROW_EXTRACTION_JS, timeout=60)
     # Cold loads via the CDP-attached Chrome can finish rendering after the
     # short readiness wait; retry a couple of times before failing.
     for _ in range(2):
         if isinstance(rows, list) and rows:
             break
         time.sleep(3.0)
-        rows = eval_playwright(ROW_EXTRACTION_JS, timeout=60)
+        rows = eval_js(ROW_EXTRACTION_JS, timeout=60)
     if not isinstance(rows, list):
         raise RuntimeError(f"Unexpected row payload for {url}: {rows!r}")
     return rows
@@ -376,7 +373,7 @@ def extract_album_rows(url: str) -> list[dict[str, Any]]:
 
 def fetch_album_detail(url: str) -> dict[str, Any]:
     ensure_page(url)
-    detail = eval_playwright(ALBUM_DETAIL_JS, timeout=60)
+    detail = eval_js(ALBUM_DETAIL_JS, timeout=60)
     if not isinstance(detail, dict):
         raise RuntimeError(f"Unexpected detail payload for {url}: {detail!r}")
     if detail.get("title") == "Just a moment...":

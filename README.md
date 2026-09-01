@@ -55,53 +55,46 @@ bun run albums
 
 The album build is not fully self-contained. It expects:
 
-- `python3`
-- `playwright-cli` available on `PATH`
-- a usable Playwright session/profile for Album of the Year scraping
+- `python3` with the `websocket-client` package (`python3 -m pip install --user websocket-client`)
+- the dedicated Hermes Chrome profile running with remote debugging (CDP endpoint `http://127.0.0.1:9222`, LaunchAgent `com.hermes.chrome-debug-default`)
 - the Apple Music helper script at `$HOME/.codex/skills/apple-music-album-linker/scripts/find_apple_music_album.py`
 - the Last.fm export file at `output/mameli_mixtape_first50_artists_with_tags.json`
 
 If any of those are missing, `scripts/build_album_data.py` will fail early.
 
-### Create the `aoty` Playwright session
+### AOTY scraping lane (direct CDP)
 
-`scripts/build_album_data.py` is hard-coded to use:
+`scripts/build_album_data.py` drives AOTY through `scripts/aoty_cdp.py`, which
+speaks the Chrome DevTools Protocol directly — no playwright, no playwright-cli,
+no separate browser profile in this repo.
 
-- session name: `aoty`
-- profile directory: `.playwright/aoty-profile`
+- Chrome user-data-dir: `~/.hermes/chrome-debug-default` (dedicated Hermes profile)
+- CDP endpoint: `http://127.0.0.1:9222`
+- LaunchAgent label: `com.hermes.chrome-debug-default`
+- The AOTY login (rememberMe cookie) and any Cloudflare clearance live in that Chrome profile.
 
-Create that session once from the repo root:
+`scripts/aoty_cdp.py` opens its own tab via `/json/new` (PUT), attaches a
+session, navigates, and evaluates the extraction JS via `Runtime.evaluate`.
+When the run finishes, that tab is closed again. If the CDP endpoint is
+unreachable, the helper restarts the LaunchAgent with
+`launchctl kickstart -k gui/$(id -u)/com.hermes.chrome-debug-default` and polls
+`/json/version` for readiness.
 
-```bash
-playwright-cli -s=aoty open about:blank --headed --persistent --profile .playwright/aoty-profile
-```
+First-run flow (already done on this machine):
 
-What this does:
-
-- `-s=aoty` gives the browser session the exact name the script expects
-- `--persistent` stores cookies and browser storage on disk instead of keeping them only in memory
-- `--profile .playwright/aoty-profile` keeps that persistent profile inside this repo
-- `--headed` opens a visible browser so you can complete any login or Cloudflare challenge manually
-
-Recommended first-run flow:
-
-1. Run the command above.
-2. In the opened browser, visit [Album of the Year](https://www.albumoftheyear.org/) and complete any login or anti-bot challenge if needed.
-3. Leave the browser open and run `bun run albums`, or close it and reuse the saved profile later.
-
-Useful session commands:
-
-```bash
-playwright-cli list
-playwright-cli -s=aoty open about:blank --headed --persistent --profile .playwright/aoty-profile
-playwright-cli -s=aoty close
-```
+1. Make sure the dedicated Chrome is running (LaunchAgent above; the endpoint is
+   reachable when `curl http://127.0.0.1:9222/json/version` answers).
+2. Log into Album of the Year once, manually, in that visible Chrome window
+   (cookie persistence happens in the profile itself).
+3. Run `bun run albums`.
 
 Notes:
 
-- The script checks whether the `aoty` session is already open and will attach to it if available.
-- If the session is closed, the saved profile at `.playwright/aoty-profile` is what preserves cookies between runs.
-- If Album of the Year starts returning `Just a moment...`, reopen the same `aoty` session headed and refresh manually before rerunning the build.
+- Do not launch a separate persistent Playwright profile for AOTY; the old
+  `.playwright/aoty-profile` is deprecated and must not be recreated.
+- If Album of the Year starts returning `Just a moment...`, refresh that site in
+  the dedicated Chrome window manually (passing the challenge updates the
+  profile's clearance cookie) before rerunning the build.
 
 ## Last.fm scraper
 
@@ -123,5 +116,5 @@ The scraper writes both CSV and JSON outputs to the `output/` directory.
 
 ## Troubleshooting
 
-- If the album build hangs, check that the `aoty` Playwright session is still open.
+- If the album build hangs or fails to attach, check that the dedicated Chrome CDP endpoint answers: `curl http://127.0.0.1:9222/json/version`. If not, restart it with `launchctl kickstart -k gui/$(id -u)/com.hermes.chrome-debug-default`.
 - Stale album data can be fixed by deleting `src/data/album-list.json` and rerunning `bun run albums`.
