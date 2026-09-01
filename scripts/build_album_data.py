@@ -362,6 +362,13 @@ def write_tag_browse(rows: list[dict[str, Any]], frequency: Counter[str], weight
 def extract_album_rows(url: str) -> list[dict[str, Any]]:
     ensure_page(url)
     rows = eval_playwright(ROW_EXTRACTION_JS, timeout=60)
+    # Cold loads via the CDP-attached Chrome can finish rendering after the
+    # short readiness wait; retry a couple of times before failing.
+    for _ in range(2):
+        if isinstance(rows, list) and rows:
+            break
+        time.sleep(3.0)
+        rows = eval_playwright(ROW_EXTRACTION_JS, timeout=60)
     if not isinstance(rows, list):
         raise RuntimeError(f"Unexpected row payload for {url}: {rows!r}")
     return rows
