@@ -16,18 +16,18 @@ Update the website with the latest Album of the Year picks, keep the newest qual
 ## Browser requirements
 
 - Use `playwright-cli` with the named session `aoty`.
-- Use a persistent Chromium profile stored at `.playwright/aoty-profile`.
-- Reuse the same signed-in session if Cloudflare has already been passed.
+- Attach to the dedicated Hermes Chrome profile via CDP (endpoint `http://127.0.0.1:9222`, user-data-dir `~/.hermes/chrome-debug-default`). The endpoint is configured in `.playwright/cli.config.json` (`browser.cdpEndpoint`), so a plain `playwright-cli -s aoty open about:blank` attaches to the running dedicated Chrome.
+- Make sure the dedicated Chrome is running with remote debugging (LaunchAgent `com.hermes.chrome-debug-default`); if the CDP endpoint is unreachable, start it with `launchctl kickstart -k gui/$(id -u)/com.hermes.chrome-debug-default` and wait for `http://127.0.0.1:9222/json/version` to respond.
+- Reuse the same signed-in session if Cloudflare has already been passed. The AOTY login lives in the dedicated Chrome profile itself.
 - If the `aoty` session is already open, attach to it instead of opening a fresh browser.
 - Read the live DOM from the loaded page. Do not rely on search snippets.
+- Do NOT launch a separate persistent Playwright profile for AOTY; the old `.playwright/aoty-profile` is deprecated and must not be recreated.
 
 Open or restore the browser with:
 
 ```bash
-playwright-cli -s aoty open about:blank --headed --persistent --profile .playwright/aoty-profile
+playwright-cli -s aoty open about:blank
 ```
-
-Sign in manually only when the saved profile is no longer authenticated.
 
 ## Friday collection rules
 
@@ -239,7 +239,7 @@ bun run albums
 
 This command must:
 
-- reuse the `aoty` Playwright session and `.playwright/aoty-profile`
+- reuse the `aoty` Playwright session attached to the dedicated Hermes Chrome via CDP (`http://127.0.0.1:9222`, configured in `.playwright/cli.config.json`)
 - scrape the current Friday album batch from AOTY
 - enrich each album page with Apple Music and genre tags
 - update `src/data/album-list.json`

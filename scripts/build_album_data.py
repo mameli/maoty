@@ -19,7 +19,9 @@ MIXTAPE_PATH = ROOT / "output" / "mameli_mixtape_first50_artists_with_tags.json"
 TAG_BROWSE_PATH = ROOT / "output" / "mameli_mixtape_tags_browse.md"
 ALBUM_DATA_PATH = ROOT / "src" / "data" / "album-list.json"
 PLAYWRIGHT_SESSION = "aoty"
-PLAYWRIGHT_PROFILE_DIR = ROOT / ".playwright" / "aoty-profile"
+# AOTY scraping now runs through the dedicated Hermes Chrome profile
+# (~/.hermes/chrome-debug-default) via CDP, configured in
+# .playwright/cli.config.json (browser.cdpEndpoint = http://127.0.0.1:9222).
 APPLE_SCRIPT_CANDIDATES = [
     Path(os.environ.get("HOME", "")) / ".codex/skills/apple-music-album-linker/scripts/find_apple_music_album.py",
 ]
@@ -216,18 +218,7 @@ def open_browser() -> bool:
     if session_is_open():
         return False
 
-    PLAYWRIGHT_PROFILE_DIR.parent.mkdir(parents=True, exist_ok=True)
-    run_playwright(
-        [
-            "open",
-            "about:blank",
-            "--headed",
-            "--persistent",
-            "--profile",
-            str(PLAYWRIGHT_PROFILE_DIR),
-        ],
-        timeout=120,
-    )
+    run_playwright(["open", "about:blank"], timeout=120)
     return True
 
 
