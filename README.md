@@ -1,6 +1,6 @@
 # maoty
 
-`maoty` is a small Astro site that surfaces albums worth tracking. The homepage is built from generated JSON data and is intended to be refreshed from external music sources.
+`maoty` is a small Astro site that surfaces albums worth tracking. The homepage is built from generated JSON data and is refreshed from external music sources like Last.fm and Album of the Year.
 
 ## What is in this repo
 
@@ -11,7 +11,7 @@
 
 ## Local development
 
-Install dependencies:
+Install dependencies with Bun:
 
 ```bash
 bun install
@@ -119,4 +119,9 @@ Useful flags:
 - `--max-pages` limits how many library pages are scraped
 - `--max-artists` caps the total number of artists written
 
-The scraper writes both CSV and JSON outputs.
+The scraper writes both CSV and JSON outputs to the `output/` directory.
+
+## Troubleshooting
+
+- If the album build hangs, check that the `aoty` Playwright session is still open.
+- Stale album data can be fixed by deleting `src/data/album-list.json` and rerunning `bun run albums`.
