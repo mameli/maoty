@@ -1,22 +1,79 @@
 [
   {
+    "artist": "Chat Pile",
+    "album": "Who Loves the Sun",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1860305-who-loves-the-sun_120410.jpg",
+    "genre_tags": [
+      "Sludge Metal",
+      "Noise Rock",
+      "Pigfuck"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/who-loves-the-sun/6769103496?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1860305-chat-pile-who-loves-the-sun.php",
+    "source": "new-releases",
+    "review_count": 10,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 3,
+    "batch_date": "2026-09-04"
+  },
+  {
+    "artist": "Arab Strap",
+    "album": "Half-Told Tales",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1829151-half-told-tales_094012.jpg",
+    "genre_tags": [
+      "Indietronica",
+      "Indie Rock",
+      "Post-Punk"
+    ],
+    "score": 82,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/il/album/half-told-tales/6766853324?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1829151-arab-strap-half-told-tales.php",
+    "source": "new-releases",
+    "review_count": 6,
+    "taste_label": "It's a match",
+    "source_rank": 16,
+    "batch_date": "2026-09-04"
+  },
+  {
+    "artist": "Mastodon",
+    "album": "Marrow Deep",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1850824-marrow-deep_041203.jpg",
+    "genre_tags": [
+      "Progressive Metal",
+      "Stoner Metal",
+      "Sludge Metal"
+    ],
+    "score": 77,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/marrow-deep/6781040477?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1850824-mastodon-marrow-deep.php",
+    "source": "must-hear",
+    "review_count": 16,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 1,
+    "batch_date": "2026-09-04"
+  },
+  {
     "artist": "Interpol",
     "album": "This Mirror Weighs a Ton",
     "cover_url": "https://cdn.albumoftheyear.org/album/1861910-this-mirror-weighs-a-ton_135444.jpg",
     "genre_tags": [
       "Post-Punk Revival",
       "Art Rock",
-      "Post-Rock"
+      "Dream Pop"
     ],
-    "score": 81,
+    "score": 80,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/us/album/this-mirror-weighs-a-ton/6768694728?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1861910-interpol-this-mirror-weighs-a-ton.php",
-    "source": "new-releases",
-    "review_count": 17,
+    "source": "must-hear",
+    "review_count": 21,
     "taste_label": "It's a match",
-    "source_rank": 11,
-    "batch_date": "2026-09-02"
+    "source_rank": 2,
+    "batch_date": "2026-09-04"
   },
   {
     "artist": "Westside Cowboy",
@@ -34,8 +91,8 @@
     "source": "must-hear",
     "review_count": 18,
     "taste_label": "It's a match",
-    "source_rank": 2,
-    "batch_date": "2026-09-02"
+    "source_rank": 3,
+    "batch_date": "2026-09-04"
   },
   {
     "artist": "Denzel Curry",
@@ -53,8 +110,8 @@
     "source": "must-hear",
     "review_count": 3,
     "taste_label": "It's a match",
-    "source_rank": 3,
-    "batch_date": "2026-09-02"
+    "source_rank": 4,
+    "batch_date": "2026-09-04"
   },
   {
     "artist": "Phoebe Bridgers",
@@ -72,8 +129,8 @@
     "source": "must-hear",
     "review_count": 32,
     "taste_label": "It's a match",
-    "source_rank": 4,
-    "batch_date": "2026-09-02"
+    "source_rank": 5,
+    "batch_date": "2026-09-04"
   },
   {
     "artist": "Man/Woman/Chainsaw",
