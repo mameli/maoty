@@ -1,5 +1,20 @@
 [
   {
+    "artist": "The Tubs",
+    "album": "Hard Life",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1883484-hard-life_160121.jpg",
+    "genre_tags": [],
+    "score": 85,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/gb/album/hard-life/6773860569?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1883484-the-tubs-hard-life.php",
+    "source": "new-releases",
+    "review_count": 7,
+    "taste_label": "Just for you",
+    "source_rank": 14,
+    "batch_date": "2026-09-11"
+  },
+  {
     "artist": "Chat Pile",
     "album": "Who Loves the Sun",
     "cover_url": "https://cdn.albumoftheyear.org/album/1860305-who-loves-the-sun_120410.jpg",
@@ -8,15 +23,91 @@
       "Noise Rock",
       "Pigfuck"
     ],
-    "score": 81,
+    "score": 82,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/us/album/who-loves-the-sun/6769103496?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1860305-chat-pile-who-loves-the-sun.php",
-    "source": "new-releases",
-    "review_count": 10,
+    "source": "must-hear",
+    "review_count": 18,
     "taste_label": "Maybe you'll like it",
+    "source_rank": 1,
+    "batch_date": "2026-09-11"
+  },
+  {
+    "artist": "Rebecca Black",
+    "album": "Age of the Exhibitionist",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1910708-age-of-the-exhibitionist_171151.jpg",
+    "genre_tags": [
+      "Electropop",
+      "Dance-Pop",
+      "Electro House"
+    ],
+    "score": 63,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/age-of-the-exibitionist/6783569945?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1910708-rebecca-black-age-of-the-exhibitionist.php",
+    "source": "must-hear",
+    "review_count": 4,
+    "taste_label": "Just for you",
+    "source_rank": 2,
+    "batch_date": "2026-09-11"
+  },
+  {
+    "artist": "AKRIILA",
+    "album": "lucy mir\u00f3 al mundo y not\u00f3 que est\u00e1 girando",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1785197-lucy-miro-al-mundo-y-noto-que-esta-girando_200643.jpg",
+    "genre_tags": [
+      "Indietronica",
+      "Indie Rock",
+      "Glitch Pop"
+    ],
+    "score": 83,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/us/album/lucy-mir%C3%B3-al-mundo-y-not%C3%B3-que-est%C3%A1-girando-es-mi-segundo-disco/6800933975?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1785197-akriila-lucy-miro-al-mundo-y-noto-que-esta-girando.php",
+    "source": "must-hear",
+    "review_count": 2221,
+    "taste_label": "It's a match",
     "source_rank": 3,
-    "batch_date": "2026-09-04"
+    "batch_date": "2026-09-11"
+  },
+  {
+    "artist": "Mastodon",
+    "album": "Marrow Deep",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1850824-marrow-deep_041203.jpg",
+    "genre_tags": [
+      "Progressive Metal",
+      "Stoner Metal",
+      "Sludge Metal"
+    ],
+    "score": 77,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/marrow-deep/6781040477?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1850824-mastodon-marrow-deep.php",
+    "source": "must-hear",
+    "review_count": 16,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 4,
+    "batch_date": "2026-09-11"
+  },
+  {
+    "artist": "Interpol",
+    "album": "This Mirror Weighs a Ton",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1861910-this-mirror-weighs-a-ton_135444.jpg",
+    "genre_tags": [
+      "Post-Punk Revival",
+      "Art Rock",
+      "Dream Pop"
+    ],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/this-mirror-weighs-a-ton/6768694728?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1861910-interpol-this-mirror-weighs-a-ton.php",
+    "source": "must-hear",
+    "review_count": 21,
+    "taste_label": "It's a match",
+    "source_rank": 5,
+    "batch_date": "2026-09-11"
   },
   {
     "artist": "Arab Strap",
@@ -35,44 +126,6 @@
     "review_count": 6,
     "taste_label": "It's a match",
     "source_rank": 16,
-    "batch_date": "2026-09-04"
-  },
-  {
-    "artist": "Mastodon",
-    "album": "Marrow Deep",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1850824-marrow-deep_041203.jpg",
-    "genre_tags": [
-      "Progressive Metal",
-      "Stoner Metal",
-      "Sludge Metal"
-    ],
-    "score": 77,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/us/album/marrow-deep/6781040477?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1850824-mastodon-marrow-deep.php",
-    "source": "must-hear",
-    "review_count": 16,
-    "taste_label": "Maybe you'll like it",
-    "source_rank": 1,
-    "batch_date": "2026-09-04"
-  },
-  {
-    "artist": "Interpol",
-    "album": "This Mirror Weighs a Ton",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1861910-this-mirror-weighs-a-ton_135444.jpg",
-    "genre_tags": [
-      "Post-Punk Revival",
-      "Art Rock",
-      "Dream Pop"
-    ],
-    "score": 80,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/us/album/this-mirror-weighs-a-ton/6768694728?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1861910-interpol-this-mirror-weighs-a-ton.php",
-    "source": "must-hear",
-    "review_count": 21,
-    "taste_label": "It's a match",
-    "source_rank": 2,
     "batch_date": "2026-09-04"
   },
   {
