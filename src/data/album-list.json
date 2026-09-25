@@ -1,18 +1,134 @@
 [
   {
-    "artist": "The Tubs",
-    "album": "Hard Life",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1883484-hard-life_160121.jpg",
-    "genre_tags": [],
-    "score": 85,
+    "artist": "Protomartyr",
+    "album": "Hotel Usona",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1926719-hotel-usona_135842.jpg",
+    "genre_tags": [
+      "Post-Punk",
+      "Art Rock",
+      "Gothic Rock"
+    ],
+    "score": 86,
     "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/gb/album/hard-life/6773860569?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1883484-the-tubs-hard-life.php",
+    "apple_music": "https://geo.music.apple.com/us/album/hotel-usona/6783429344?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1926719-protomartyr-hotel-usona.php",
     "source": "new-releases",
-    "review_count": 7,
+    "review_count": 6,
     "taste_label": "Just for you",
-    "source_rank": 14,
-    "batch_date": "2026-09-11"
+    "source_rank": 7,
+    "batch_date": "2026-09-25"
+  },
+  {
+    "artist": "Gilla Band",
+    "album": "Pugnello",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1903509-pugnello_215117.jpg",
+    "genre_tags": [
+      "Noise Rock",
+      "Industrial Rock",
+      "Experimental Rock"
+    ],
+    "score": 87,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/pugnello/6778540217?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1903509-gilla-band-pugnello.php",
+    "source": "new-releases",
+    "review_count": 13,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 8,
+    "batch_date": "2026-09-25"
+  },
+  {
+    "artist": "Blondshell",
+    "album": "Violins",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1886186-violins_140539.jpg",
+    "genre_tags": [
+      "Indie Rock",
+      "Alternative Rock"
+    ],
+    "score": 83,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/violins/6775592761?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1886186-blondshell-violins.php",
+    "source": "new-releases",
+    "review_count": 10,
+    "taste_label": "It's a match",
+    "source_rank": 12,
+    "batch_date": "2026-09-25"
+  },
+  {
+    "artist": "Gurriers",
+    "album": "Nobody's Coming To Save You",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1829143-nobodys-coming-to-save-you_174058.jpg",
+    "genre_tags": [
+      "Post-Punk",
+      "Noise Rock"
+    ],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/gb/album/nobodys-coming-to-save-you/1893977679?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1829143-gurriers-nobodys-coming-to-save-you.php",
+    "source": "new-releases",
+    "review_count": 8,
+    "taste_label": "Just for you",
+    "source_rank": 13,
+    "batch_date": "2026-09-25"
+  },
+  {
+    "artist": "Lucy Bedroque",
+    "album": "c",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1607077-c_193439.jpg",
+    "genre_tags": [
+      "Rage",
+      "Digicore",
+      "Experimental Hip Hop"
+    ],
+    "score": 60,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/c/6811154278?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1607077-lucy-bedroque-c.php",
+    "source": "must-hear",
+    "review_count": 1,
+    "taste_label": "Just for you",
+    "source_rank": 1,
+    "batch_date": "2026-09-25"
+  },
+  {
+    "artist": "Carly Rae Jepsen",
+    "album": "Day and Night",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1882167-day-and-night_160202.jpg",
+    "genre_tags": [
+      "Alt-Pop",
+      "Dance-Pop",
+      "Sophisti-Pop"
+    ],
+    "score": 78,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/day-and-night/6781767022?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1882167-carly-rae-jepsen-day-and-night.php",
+    "source": "must-hear",
+    "review_count": 12,
+    "taste_label": "Just for you",
+    "source_rank": 2,
+    "batch_date": "2026-09-25"
+  },
+  {
+    "artist": "Kim Petras",
+    "album": "Detour (Rare N' Deluxe)",
+    "cover_url": "https://cdn.albumoftheyear.org/album/2023489-detour-rare-n-deluxe_023707.jpg",
+    "genre_tags": [
+      "Electropop",
+      "Electronic Dance Music",
+      "Electro House"
+    ],
+    "score": 82,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/nz/album/detour-rare-n-deluxe/6805970041?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/2023489-kim-petras-detour-rare-n-deluxe.php",
+    "source": "must-hear",
+    "review_count": 1101,
+    "taste_label": "Just for you",
+    "source_rank": 3,
+    "batch_date": "2026-09-25"
   },
   {
     "artist": "Chat Pile",
@@ -28,10 +144,10 @@
     "apple_music": "https://geo.music.apple.com/us/album/who-loves-the-sun/6769103496?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1860305-chat-pile-who-loves-the-sun.php",
     "source": "must-hear",
-    "review_count": 18,
+    "review_count": 20,
     "taste_label": "Maybe you'll like it",
-    "source_rank": 1,
-    "batch_date": "2026-09-11"
+    "source_rank": 4,
+    "batch_date": "2026-09-25"
   },
   {
     "artist": "Rebecca Black",
@@ -42,15 +158,34 @@
       "Dance-Pop",
       "Electro House"
     ],
-    "score": 63,
+    "score": 69,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/us/album/age-of-the-exibitionist/6783569945?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1910708-rebecca-black-age-of-the-exhibitionist.php",
     "source": "must-hear",
-    "review_count": 4,
+    "review_count": 8,
     "taste_label": "Just for you",
-    "source_rank": 2,
-    "batch_date": "2026-09-11"
+    "source_rank": 5,
+    "batch_date": "2026-09-25"
+  },
+  {
+    "artist": "Beck",
+    "album": "Ride Lonesome",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1918294-ride-lonesome_131502.jpg",
+    "genre_tags": [
+      "Alt-Country",
+      "Singer-Songwriter",
+      "Americana"
+    ],
+    "score": 81,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/ride-lonesome/6788956584?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1918294-beck-ride-lonesome.php",
+    "source": "new-releases",
+    "review_count": 16,
+    "taste_label": "Just for you",
+    "source_rank": 13,
+    "batch_date": "2026-09-18"
   },
   {
     "artist": "AKRIILA",
@@ -61,15 +196,15 @@
       "Indie Rock",
       "Glitch Pop"
     ],
-    "score": 83,
-    "score_type": "user score",
+    "score": 75,
+    "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/us/album/lucy-mir%C3%B3-al-mundo-y-not%C3%B3-que-est%C3%A1-girando-es-mi-segundo-disco/6800933975?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1785197-akriila-lucy-miro-al-mundo-y-noto-que-esta-girando.php",
     "source": "must-hear",
-    "review_count": 2221,
+    "review_count": 1,
     "taste_label": "It's a match",
-    "source_rank": 3,
-    "batch_date": "2026-09-11"
+    "source_rank": 4,
+    "batch_date": "2026-09-18"
   },
   {
     "artist": "Mastodon",
@@ -85,9 +220,24 @@
     "apple_music": "https://geo.music.apple.com/us/album/marrow-deep/6781040477?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1850824-mastodon-marrow-deep.php",
     "source": "must-hear",
-    "review_count": 16,
+    "review_count": 18,
     "taste_label": "Maybe you'll like it",
-    "source_rank": 4,
+    "source_rank": 5,
+    "batch_date": "2026-09-18"
+  },
+  {
+    "artist": "The Tubs",
+    "album": "Hard Life",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1883484-hard-life_160121.jpg",
+    "genre_tags": [],
+    "score": 85,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/gb/album/hard-life/6773860569?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1883484-the-tubs-hard-life.php",
+    "source": "new-releases",
+    "review_count": 7,
+    "taste_label": "Just for you",
+    "source_rank": 14,
     "batch_date": "2026-09-11"
   },
   {
