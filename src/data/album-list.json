@@ -1,5 +1,152 @@
 [
   {
+    "artist": "Greg Freeman",
+    "album": "All Set The Bone",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1927846-all-set-the-bone_153952.jpg",
+    "genre_tags": [
+      "Indie Rock",
+      "Alt-Country"
+    ],
+    "score": 84,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/gb/album/all-set-the-bone/6784790284?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1927846-greg-freeman-all-set-the-bone.php",
+    "source": "new-releases",
+    "review_count": 6,
+    "taste_label": "It's a match",
+    "source_rank": 13,
+    "batch_date": "2026-10-02"
+  },
+  {
+    "artist": "The Beatles",
+    "album": "Rubber Soul (Super Deluxe)",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1940365-rubber-soul-super-deluxe_221910.jpg",
+    "genre_tags": [
+      "Pop Rock",
+      "Folk Pop",
+      "Folk Rock"
+    ],
+    "score": 95,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/rubber-soul-super-deluxe/6792047716?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1940365-the-beatles-rubber-soul-super-deluxe.php",
+    "source": "new-releases",
+    "review_count": 6,
+    "taste_label": "It's a match",
+    "source_rank": 17,
+    "batch_date": "2026-10-02"
+  },
+  {
+    "artist": "Wishy",
+    "album": "Nature's Pill",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1860313-natures-pill_122004.jpg",
+    "genre_tags": [],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/nz/album/natures-pill/1896264132?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1860313-wishy-natures-pill.php",
+    "source": "new-releases",
+    "review_count": 6,
+    "taste_label": "It's a match",
+    "source_rank": 19,
+    "batch_date": "2026-10-02"
+  },
+  {
+    "artist": "Tinashe",
+    "album": "Popstar",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1919866-popstar_132932.jpg",
+    "genre_tags": [
+      "Alternative R&B",
+      "Electronic Dance Music",
+      "Pop Rap"
+    ],
+    "score": 83,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/popstar/6789739137?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1919866-tinashe-popstar.php",
+    "source": "must-hear",
+    "review_count": 8,
+    "taste_label": "It's a match",
+    "source_rank": 1,
+    "batch_date": "2026-10-02"
+  },
+  {
+    "artist": "Gilla Band",
+    "album": "Pugnello",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1903509-pugnello_215117.jpg",
+    "genre_tags": [
+      "Industrial Rock",
+      "Noise Rock",
+      "Experimental Rock"
+    ],
+    "score": 87,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/pugnello/6778540217?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1903509-gilla-band-pugnello.php",
+    "source": "must-hear",
+    "review_count": 17,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 2,
+    "batch_date": "2026-10-02"
+  },
+  {
+    "artist": "Kim Petras",
+    "album": "Detour (Rare N' Deluxe)",
+    "cover_url": "https://cdn.albumoftheyear.org/album/2023489-detour-rare-n-deluxe_023707.jpg",
+    "genre_tags": [
+      "Electropop",
+      "Electronic Dance Music",
+      "Electro House"
+    ],
+    "score": 82,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/nz/album/detour-rare-n-deluxe/6805970041?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/2023489-kim-petras-detour-rare-n-deluxe.php",
+    "source": "must-hear",
+    "review_count": 1249,
+    "taste_label": "Just for you",
+    "source_rank": 3,
+    "batch_date": "2026-10-02"
+  },
+  {
+    "artist": "Carly Rae Jepsen",
+    "album": "Day and Night",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1882167-day-and-night_160202.jpg",
+    "genre_tags": [
+      "Dance-Pop",
+      "Alt-Pop",
+      "Sophisti-Pop"
+    ],
+    "score": 78,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/day-and-night/6781767022?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1882167-carly-rae-jepsen-day-and-night.php",
+    "source": "must-hear",
+    "review_count": 15,
+    "taste_label": "Just for you",
+    "source_rank": 4,
+    "batch_date": "2026-10-02"
+  },
+  {
+    "artist": "Lucy Bedroque",
+    "album": "c",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1607077-c_193439.jpg",
+    "genre_tags": [
+      "Rage",
+      "Digicore",
+      "Experimental Hip Hop"
+    ],
+    "score": 60,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/c/6811154278?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1607077-lucy-bedroque-c.php",
+    "source": "must-hear",
+    "review_count": 1,
+    "taste_label": "Just for you",
+    "source_rank": 5,
+    "batch_date": "2026-10-02"
+  },
+  {
     "artist": "Protomartyr",
     "album": "Hotel Usona",
     "cover_url": "https://cdn.albumoftheyear.org/album/1926719-hotel-usona_135842.jpg",
@@ -16,25 +163,6 @@
     "review_count": 6,
     "taste_label": "Just for you",
     "source_rank": 7,
-    "batch_date": "2026-09-25"
-  },
-  {
-    "artist": "Gilla Band",
-    "album": "Pugnello",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1903509-pugnello_215117.jpg",
-    "genre_tags": [
-      "Noise Rock",
-      "Industrial Rock",
-      "Experimental Rock"
-    ],
-    "score": 87,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/us/album/pugnello/6778540217?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1903509-gilla-band-pugnello.php",
-    "source": "new-releases",
-    "review_count": 13,
-    "taste_label": "Maybe you'll like it",
-    "source_rank": 8,
     "batch_date": "2026-09-25"
   },
   {
@@ -71,63 +199,6 @@
     "review_count": 8,
     "taste_label": "Just for you",
     "source_rank": 13,
-    "batch_date": "2026-09-25"
-  },
-  {
-    "artist": "Lucy Bedroque",
-    "album": "c",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1607077-c_193439.jpg",
-    "genre_tags": [
-      "Rage",
-      "Digicore",
-      "Experimental Hip Hop"
-    ],
-    "score": 60,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/us/album/c/6811154278?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1607077-lucy-bedroque-c.php",
-    "source": "must-hear",
-    "review_count": 1,
-    "taste_label": "Just for you",
-    "source_rank": 1,
-    "batch_date": "2026-09-25"
-  },
-  {
-    "artist": "Carly Rae Jepsen",
-    "album": "Day and Night",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1882167-day-and-night_160202.jpg",
-    "genre_tags": [
-      "Alt-Pop",
-      "Dance-Pop",
-      "Sophisti-Pop"
-    ],
-    "score": 78,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/us/album/day-and-night/6781767022?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1882167-carly-rae-jepsen-day-and-night.php",
-    "source": "must-hear",
-    "review_count": 12,
-    "taste_label": "Just for you",
-    "source_rank": 2,
-    "batch_date": "2026-09-25"
-  },
-  {
-    "artist": "Kim Petras",
-    "album": "Detour (Rare N' Deluxe)",
-    "cover_url": "https://cdn.albumoftheyear.org/album/2023489-detour-rare-n-deluxe_023707.jpg",
-    "genre_tags": [
-      "Electropop",
-      "Electronic Dance Music",
-      "Electro House"
-    ],
-    "score": 82,
-    "score_type": "user score",
-    "apple_music": "https://geo.music.apple.com/nz/album/detour-rare-n-deluxe/6805970041?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/2023489-kim-petras-detour-rare-n-deluxe.php",
-    "source": "must-hear",
-    "review_count": 1101,
-    "taste_label": "Just for you",
-    "source_rank": 3,
     "batch_date": "2026-09-25"
   },
   {
