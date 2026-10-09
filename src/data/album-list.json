@@ -1,5 +1,119 @@
 [
   {
+    "artist": "Cameron Winter",
+    "album": "Live at Carnegie Hall",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1984694-live-at-carnegie-hall_155411.jpg",
+    "genre_tags": [
+      "Singer-Songwriter",
+      "Americana",
+      "Piano Blues"
+    ],
+    "score": 88,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/live-at-carnegie-hall/6801645193?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1984694-cameron-winter-live-at-carnegie-hall.php",
+    "source": "new-releases",
+    "review_count": 8,
+    "taste_label": "It's a match",
+    "source_rank": 1,
+    "batch_date": "2026-10-09"
+  },
+  {
+    "artist": "Swans",
+    "album": "Newly Sentient Being",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1930239-newly-sentient-being_054851.jpg",
+    "genre_tags": [
+      "Post-Rock",
+      "Experimental Rock",
+      "Drone"
+    ],
+    "score": 89,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/us/album/newly-sentient-being-live/6792129504?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1930239-swans-newly-sentient-being.php",
+    "source": "must-hear",
+    "review_count": 900,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 1,
+    "batch_date": "2026-10-09"
+  },
+  {
+    "artist": "Dev Lemons",
+    "album": "hunting what we already killed",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1838675-hunting-what-we-already-killed_223152.jpg",
+    "genre_tags": [
+      "Neo-Psychedelia",
+      "Indie Rock",
+      "Alternative Rock"
+    ],
+    "score": 80,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/us/album/hunting-what-we-already-killed/6778074076?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1838675-dev-lemons-hunting-what-we-already-killed.php",
+    "source": "must-hear",
+    "review_count": 1331,
+    "taste_label": "Just for you",
+    "source_rank": 2,
+    "batch_date": "2026-10-09"
+  },
+  {
+    "artist": "Quadeca",
+    "album": "Life 1",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1732300-life-1_1704206aba9e143f3ad.jpg",
+    "genre_tags": [
+      "Art Pop",
+      "Indietronica",
+      "Singer-Songwriter"
+    ],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/life-1/6815153792?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1732300-quadeca-life-1.php",
+    "source": "must-hear",
+    "review_count": 3,
+    "taste_label": "Just for you",
+    "source_rank": 3,
+    "batch_date": "2026-10-09"
+  },
+  {
+    "artist": "Stevie Wonder",
+    "album": "Songs in the Key of Life (The EP)",
+    "cover_url": "https://cdn.albumoftheyear.org/album/2052960-songs-in-the-key-of-life_1223066aba5c2ac1408.jpg",
+    "genre_tags": [
+      "Progressive Soul",
+      "Smooth Soul",
+      "Funk"
+    ],
+    "score": 87,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/fi/album/songs-in-the-keys-of-life-the-ep-ep/6816198227?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/2052960-stevie-wonder-songs-in-the-key-of-life-the-ep.php",
+    "source": "must-hear",
+    "review_count": 1456,
+    "taste_label": "It's a match",
+    "source_rank": 4,
+    "batch_date": "2026-10-09"
+  },
+  {
+    "artist": "Tinashe",
+    "album": "Popstar",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1919866-popstar_132932.jpg",
+    "genre_tags": [
+      "Alternative R&B",
+      "Electronic Dance Music",
+      "Pop Rap"
+    ],
+    "score": 84,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/popstar/6789739137?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1919866-tinashe-popstar.php",
+    "source": "must-hear",
+    "review_count": 11,
+    "taste_label": "It's a match",
+    "source_rank": 5,
+    "batch_date": "2026-10-09"
+  },
+  {
     "artist": "Greg Freeman",
     "album": "All Set The Bone",
     "cover_url": "https://cdn.albumoftheyear.org/album/1927846-all-set-the-bone_153952.jpg",
@@ -49,25 +163,6 @@
     "review_count": 6,
     "taste_label": "It's a match",
     "source_rank": 19,
-    "batch_date": "2026-10-02"
-  },
-  {
-    "artist": "Tinashe",
-    "album": "Popstar",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1919866-popstar_132932.jpg",
-    "genre_tags": [
-      "Alternative R&B",
-      "Electronic Dance Music",
-      "Pop Rap"
-    ],
-    "score": 83,
-    "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/us/album/popstar/6789739137?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1919866-tinashe-popstar.php",
-    "source": "must-hear",
-    "review_count": 8,
-    "taste_label": "It's a match",
-    "source_rank": 1,
     "batch_date": "2026-10-02"
   },
   {
