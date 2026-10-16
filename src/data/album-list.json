@@ -1,5 +1,24 @@
 [
   {
+    "artist": "Fontaines D.C.",
+    "album": "Dopamine Chamber",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1977552-dopamine-chamber_091129.jpg",
+    "genre_tags": [
+      "Darkwave",
+      "Indie Rock",
+      "Crank Wave"
+    ],
+    "score": 84,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/au/album/dopamine-chamber/6792085051?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1977552-fontaines-dc-dopamine-chamber.php",
+    "source": "new-releases",
+    "review_count": 28,
+    "taste_label": "It's a match",
+    "source_rank": 1,
+    "batch_date": "2026-10-16"
+  },
+  {
     "artist": "Cameron Winter",
     "album": "Live at Carnegie Hall",
     "cover_url": "https://cdn.albumoftheyear.org/album/1984694-live-at-carnegie-hall_155411.jpg",
@@ -8,15 +27,53 @@
       "Americana",
       "Piano Blues"
     ],
-    "score": 88,
+    "score": 87,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/us/album/live-at-carnegie-hall/6801645193?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1984694-cameron-winter-live-at-carnegie-hall.php",
-    "source": "new-releases",
-    "review_count": 8,
+    "source": "must-hear",
+    "review_count": 12,
     "taste_label": "It's a match",
-    "source_rank": 1,
-    "batch_date": "2026-10-09"
+    "source_rank": 2,
+    "batch_date": "2026-10-16"
+  },
+  {
+    "artist": "heavensouls",
+    "album": "\u201ccantu\u201d of the sower",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1885198-cantu-of-the-sower_205925.jpg",
+    "genre_tags": [
+      "Epic Collage",
+      "IDM",
+      "Nu Jazz"
+    ],
+    "score": 84,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/us/album/cantu-of-the-sower/6796075558?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1885198-heavensouls-cantu-of-the-sower.php",
+    "source": "must-hear",
+    "review_count": 900,
+    "taste_label": "Just for you",
+    "source_rank": 3,
+    "batch_date": "2026-10-16"
+  },
+  {
+    "artist": "Deafheaven",
+    "album": "At Work in the Fields of the Bomb",
+    "cover_url": "https://cdn.albumoftheyear.org/album/2062170-at-work-in-the-fields-of-the-bomb_0251006ac85694e77c3.jpg",
+    "genre_tags": [
+      "Black Metal",
+      "Post-Black Metal",
+      "Dissonant Black Metal"
+    ],
+    "score": 85,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/nz/album/at-work-in-the-fields-of-the-bomb-ep/6815460687?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/2062170-deafheaven-at-work-in-the-fields-of-the-bomb.php",
+    "source": "must-hear",
+    "review_count": 3,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 4,
+    "batch_date": "2026-10-16"
   },
   {
     "artist": "Swans",
@@ -27,15 +84,15 @@
       "Experimental Rock",
       "Drone"
     ],
-    "score": 89,
-    "score_type": "user score",
+    "score": 80,
+    "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/us/album/newly-sentient-being-live/6792129504?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1930239-swans-newly-sentient-being.php",
     "source": "must-hear",
-    "review_count": 900,
+    "review_count": 1,
     "taste_label": "Maybe you'll like it",
-    "source_rank": 1,
-    "batch_date": "2026-10-09"
+    "source_rank": 5,
+    "batch_date": "2026-10-16"
   },
   {
     "artist": "Dev Lemons",
