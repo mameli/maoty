@@ -1,22 +1,37 @@
 [
   {
+    "artist": "Tony Iommi",
+    "album": "From the Dark",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1942499-from-the-dark_150621.jpg",
+    "genre_tags": [],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/gb/album/from-the-dark/6783823499?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1942499-tony-iommi-from-the-dark.php",
+    "source": "new-releases",
+    "review_count": 9,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 26,
+    "batch_date": "2026-10-23"
+  },
+  {
     "artist": "Fontaines D.C.",
     "album": "Dopamine Chamber",
     "cover_url": "https://cdn.albumoftheyear.org/album/1977552-dopamine-chamber_091129.jpg",
     "genre_tags": [
-      "Darkwave",
       "Indie Rock",
-      "Crank Wave"
+      "Darkwave",
+      "Dream Pop"
     ],
     "score": 84,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/au/album/dopamine-chamber/6792085051?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1977552-fontaines-dc-dopamine-chamber.php",
-    "source": "new-releases",
-    "review_count": 28,
+    "source": "must-hear",
+    "review_count": 35,
     "taste_label": "It's a match",
     "source_rank": 1,
-    "batch_date": "2026-10-16"
+    "batch_date": "2026-10-23"
   },
   {
     "artist": "Cameron Winter",
@@ -27,15 +42,15 @@
       "Americana",
       "Piano Blues"
     ],
-    "score": 87,
+    "score": 86,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/us/album/live-at-carnegie-hall/6801645193?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1984694-cameron-winter-live-at-carnegie-hall.php",
     "source": "must-hear",
-    "review_count": 12,
+    "review_count": 13,
     "taste_label": "It's a match",
     "source_rank": 2,
-    "batch_date": "2026-10-16"
+    "batch_date": "2026-10-23"
   },
   {
     "artist": "heavensouls",
@@ -46,15 +61,15 @@
       "IDM",
       "Nu Jazz"
     ],
-    "score": 84,
+    "score": 83,
     "score_type": "user score",
     "apple_music": "https://geo.music.apple.com/us/album/cantu-of-the-sower/6796075558?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1885198-heavensouls-cantu-of-the-sower.php",
     "source": "must-hear",
-    "review_count": 900,
+    "review_count": 1169,
     "taste_label": "Just for you",
     "source_rank": 3,
-    "batch_date": "2026-10-16"
+    "batch_date": "2026-10-23"
   },
   {
     "artist": "Deafheaven",
@@ -62,18 +77,18 @@
     "cover_url": "https://cdn.albumoftheyear.org/album/2062170-at-work-in-the-fields-of-the-bomb_0251006ac85694e77c3.jpg",
     "genre_tags": [
       "Black Metal",
-      "Post-Black Metal",
-      "Dissonant Black Metal"
+      "Dissonant Black Metal",
+      "Post-Black Metal"
     ],
-    "score": 85,
+    "score": 87,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/nz/album/at-work-in-the-fields-of-the-bomb-ep/6815460687?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/2062170-deafheaven-at-work-in-the-fields-of-the-bomb.php",
     "source": "must-hear",
-    "review_count": 3,
+    "review_count": 4,
     "taste_label": "Maybe you'll like it",
     "source_rank": 4,
-    "batch_date": "2026-10-16"
+    "batch_date": "2026-10-23"
   },
   {
     "artist": "Swans",
@@ -84,15 +99,15 @@
       "Experimental Rock",
       "Drone"
     ],
-    "score": 80,
+    "score": 75,
     "score_type": "critic score",
     "apple_music": "https://geo.music.apple.com/us/album/newly-sentient-being-live/6792129504?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1930239-swans-newly-sentient-being.php",
     "source": "must-hear",
-    "review_count": 1,
+    "review_count": 2,
     "taste_label": "Maybe you'll like it",
     "source_rank": 5,
-    "batch_date": "2026-10-16"
+    "batch_date": "2026-10-23"
   },
   {
     "artist": "Dev Lemons",
