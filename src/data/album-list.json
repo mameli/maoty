@@ -1,18 +1,98 @@
 [
   {
-    "artist": "Tony Iommi",
-    "album": "From the Dark",
-    "cover_url": "https://cdn.albumoftheyear.org/album/1942499-from-the-dark_150621.jpg",
-    "genre_tags": [],
+    "artist": "Twisted Teens",
+    "album": "The Holy Cross Tigers",
+    "cover_url": "https://cdn.albumoftheyear.org/album/2022677-the-holy-cross-tigers_051144.jpg",
+    "genre_tags": [
+      "Slacker Rock",
+      "Alt-Country",
+      "Garage Rock"
+    ],
     "score": 80,
     "score_type": "critic score",
-    "apple_music": "https://geo.music.apple.com/gb/album/from-the-dark/6783823499?uo=4&at=10l4PB&ct=albumAM",
-    "aoty_url": "https://www.albumoftheyear.org/album/1942499-tony-iommi-from-the-dark.php",
+    "apple_music": "https://geo.music.apple.com/ca/album/the-holy-cross-tigers/6797957482?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/2022677-twisted-teens-the-holy-cross-tigers.php",
     "source": "new-releases",
-    "review_count": 9,
+    "review_count": 7,
     "taste_label": "Maybe you'll like it",
-    "source_rank": 26,
-    "batch_date": "2026-10-23"
+    "source_rank": 10,
+    "batch_date": "2026-11-07"
+  },
+  {
+    "artist": "midwest, post death",
+    "album": "past curfew",
+    "cover_url": "https://cdn.albumoftheyear.org/album/2001669-past-curfew_233513.jpg",
+    "genre_tags": [
+      "Noise Pop",
+      "Emo",
+      "Slacker Rock"
+    ],
+    "score": 82,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/nz/album/past-curfew/6828495601?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/2001669-midwest-post-death-past-curfew.php",
+    "source": "must-hear",
+    "review_count": 1142,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 1,
+    "batch_date": "2026-11-07"
+  },
+  {
+    "artist": "PISS",
+    "album": "you made me / skin on linen",
+    "cover_url": "https://cdn.albumoftheyear.org/album/2010013-you-made-me-skin-on-linen_133306.jpg",
+    "genre_tags": [
+      "Noise Rock",
+      "Post-Hardcore",
+      "Interview"
+    ],
+    "score": 88,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/you-made-me-skin-on-linen/6796358325?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/2010013-piss-you-made-me-skin-on-linen.php",
+    "source": "must-hear",
+    "review_count": 12,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 2,
+    "batch_date": "2026-11-07"
+  },
+  {
+    "artist": "Michael Kiwanuka",
+    "album": "FUDGE",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1429383-fudge_1349056ab91ed146023.jpg",
+    "genre_tags": [
+      "Smooth Soul",
+      "Singer-Songwriter",
+      "Psychedelic Soul"
+    ],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/us/album/fudge/1828246469?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1429383-michael-kiwanuka-fudge.php",
+    "source": "must-hear",
+    "review_count": 18,
+    "taste_label": "It's a match",
+    "source_rank": 3,
+    "batch_date": "2026-11-07"
+  },
+  {
+    "artist": "Ol\u0113ka",
+    "album": "Human Error",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1496108-human-error_0113406adab4c4dc72e.jpg",
+    "genre_tags": [
+      "Folk Rock",
+      "Chamber Pop",
+      "Alternative Rock"
+    ],
+    "score": 82,
+    "score_type": "user score",
+    "apple_music": "https://geo.music.apple.com/us/album/human-error/6824458456?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1496108-oleka-human-error.php",
+    "source": "must-hear",
+    "review_count": 2013,
+    "taste_label": "Just for you",
+    "source_rank": 4,
+    "batch_date": "2026-11-07"
   },
   {
     "artist": "Fontaines D.C.",
@@ -28,9 +108,24 @@
     "apple_music": "https://geo.music.apple.com/au/album/dopamine-chamber/6792085051?uo=4&at=10l4PB&ct=albumAM",
     "aoty_url": "https://www.albumoftheyear.org/album/1977552-fontaines-dc-dopamine-chamber.php",
     "source": "must-hear",
-    "review_count": 35,
+    "review_count": 38,
     "taste_label": "It's a match",
-    "source_rank": 1,
+    "source_rank": 5,
+    "batch_date": "2026-11-07"
+  },
+  {
+    "artist": "Tony Iommi",
+    "album": "From the Dark",
+    "cover_url": "https://cdn.albumoftheyear.org/album/1942499-from-the-dark_150621.jpg",
+    "genre_tags": [],
+    "score": 80,
+    "score_type": "critic score",
+    "apple_music": "https://geo.music.apple.com/gb/album/from-the-dark/6783823499?uo=4&at=10l4PB&ct=albumAM",
+    "aoty_url": "https://www.albumoftheyear.org/album/1942499-tony-iommi-from-the-dark.php",
+    "source": "new-releases",
+    "review_count": 9,
+    "taste_label": "Maybe you'll like it",
+    "source_rank": 26,
     "batch_date": "2026-10-23"
   },
   {
