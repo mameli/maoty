@@ -48,8 +48,29 @@ bun run albums
 `scripts/build_album_data.py` currently does all of the following:
 
 - reads the Last.fm export at `output/mameli_mixtape_first50_artists_with_tags.json`
-- derives a tag profile summary and writes `output/mameli_mixtape_tags_browse.md`
 - opens Album of the Year pages, collects album metadata, and merges the result into `src/data/album-list.json`
+
+It preserves existing `taste_label` values and leaves the field null on albums
+that are new to the dataset, so a refresh can be reviewed before publishing.
+Pass `--dry-run` to scrape and report without writing the dataset.
+
+The tag profile summary at `output/mameli_mixtape_tags_browse.md` is a one-time
+ingestion, not part of the weekly refresh. Regenerate it only when the Last.fm
+export is intentionally refreshed.
+
+## Publishing a refresh
+
+After `bun run albums`, assign a `taste_label` to every album reported as
+needing one, then run:
+
+```bash
+scripts/publish.sh
+```
+
+The script validates the labels and rejects duplicate `aoty_url` values, runs
+`bun run build`, stages only `src/data/album-list.json`, commits, and pushes
+with one retry on a transient network error before reporting the outcome as
+JSON. `scripts/publish.sh --dry-run` validates and builds without committing.
 
 ## External prerequisites for `bun run albums`
 

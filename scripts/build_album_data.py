@@ -2,13 +2,13 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 import os
 import re
 import subprocess
 import sys
 import time
-from collections import Counter
 from datetime import date
 from pathlib import Path
 from typing import Any
@@ -310,52 +310,6 @@ def sort_album_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return [row for _, row in indexed_rows]
 
 
-def build_tag_profile(rows: list[dict[str, Any]]) -> tuple[Counter[str], Counter[str]]:
-    frequency = Counter()
-    weighted = Counter()
-
-    for row in rows:
-        scrobbles = int(row.get("scrobbles", 0))
-        tags = [normalize_tag(tag) for tag in row.get("tags", []) if normalize_tag(tag)]
-        for tag in set(tags):
-            frequency[tag] += 1
-        for rank, tag in enumerate(tags[:5]):
-            weighted[tag] += (5 - rank) * scrobbles
-
-    return frequency, weighted
-
-
-def write_tag_browse(rows: list[dict[str, Any]], frequency: Counter[str], weighted: Counter[str]) -> None:
-    TAG_BROWSE_PATH.parent.mkdir(parents=True, exist_ok=True)
-
-    lines = [
-        "# Mameli Mixtape Tags",
-        "",
-        f"Total artists processed: {len(rows)}",
-        "",
-        "## Top Tags by Artist Frequency",
-        "",
-        "| Tag | Artists |",
-        "| --- | ---: |",
-    ]
-    for tag, count in frequency.most_common():
-        lines.append(f"| {tag} | {count} |")
-
-    lines.extend(
-        [
-            "",
-            "## Top Tags by Scrobble-Weighted Preference",
-            "",
-            "| Tag | Weighted score |",
-            "| --- | ---: |",
-        ]
-    )
-    for tag, score in weighted.most_common():
-        lines.append(f"| {tag} | {score} |")
-
-    TAG_BROWSE_PATH.write_text("\n".join(lines) + "\n")
-
-
 def extract_album_rows(url: str) -> list[dict[str, Any]]:
     ensure_page(url)
     rows = eval_js(ROW_EXTRACTION_JS, timeout=60)
@@ -453,11 +407,14 @@ def collect_albums() -> tuple[list[dict[str, Any]], dict[str, int]]:
     selected: list[tuple[str, dict[str, Any]]] = [("new-releases", row) for row in new_releases]
     selected.extend(("must-hear", row) for row in must_hear)
     stats = {
+        # Batch scope: counts for the albums selected by THIS run only.
         "must_hear_scraped": len(must_hear),
         "new_releases_qualified": len(new_releases),
+        "batch_new_albums": 0,
+        "batch_refreshed_albums": 0,
         "apple_fallback_lookups": 0,
-        "missing_apple_music_links": 0,
-        "missing_genre_tags": 0,
+        "batch_missing_apple_music_links": 0,
+        "batch_missing_genre_tags": 0,
     }
 
     albums: list[dict[str, Any]] = []
@@ -471,6 +428,11 @@ def collect_albums() -> tuple[list[dict[str, Any]], dict[str, int]]:
             continue
         seen_urls.add(url)
 
+        if url in existing_album_data:
+            stats["batch_refreshed_albums"] += 1
+        else:
+            stats["batch_new_albums"] += 1
+
         score, score_type, review_count = choose_score(row, source=source)
         detail = fetch_album_detail(url)
 
@@ -483,9 +445,9 @@ def collect_albums() -> tuple[list[dict[str, Any]], dict[str, int]]:
             apple_music = lookup_apple_music(artist, album)
 
         if not apple_music:
-            stats["missing_apple_music_links"] += 1
+            stats["batch_missing_apple_music_links"] += 1
         if not genre_tags:
-            stats["missing_genre_tags"] += 1
+            stats["batch_missing_genre_tags"] += 1
             print(f"Warning: Missing genre tags for {artist} - {album}", file=sys.stderr)
 
         albums.append(
@@ -519,9 +481,65 @@ def write_album_data(albums: list[dict[str, Any]]) -> None:
     ALBUM_DATA_PATH.write_text(json.dumps(albums, indent=2) + "\n")
 
 
-def main() -> int:
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        prog="build_album_data.py",
+        description="Refresh the Maoty album dataset from Album of the Year.",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Scrape and report without writing src/data/album-list.json.",
+    )
+    return parser
+
+
+def finalize_stats(
+    albums: list[dict[str, Any]],
+    stats: dict[str, Any],
+    merged: list[dict[str, Any]],
+    *,
+    dry_run: bool,
+) -> dict[str, Any]:
+    """Add whole-file counts so the cron report is a relay, not a re-derivation."""
+    stats["batch_size"] = len(albums)
+    stats["albums_needing_taste_label"] = sum(
+        1 for album in albums if not album.get("taste_label")
+    )
+    stats["total_albums"] = len(merged)
+    stats["file_missing_apple_music_links"] = sum(
+        1 for album in merged if not album.get("apple_music")
+    )
+    stats["file_missing_genre_tags"] = sum(
+        1 for album in merged if not album.get("genre_tags")
+    )
+    stats["dry_run"] = dry_run
+    stats["off_friday"] = date.today().weekday() != 4
+    return stats
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = build_parser().parse_args(argv)
+
     if not MIXTAPE_PATH.exists():
         raise FileNotFoundError(f"Missing mixtape export: {MIXTAPE_PATH}")
+
+    if resolve_apple_script() is None:
+        print(
+            "Warning: Apple Music fallback script not found, so albums without "
+            "an AOTY Apple Music link will keep apple_music null. Checked: "
+            + ", ".join(str(path) for path in APPLE_SCRIPT_CANDIDATES),
+            file=sys.stderr,
+        )
+
+    if date.today().weekday() != 4:
+        print(
+            "Warning: today is not a Friday. The refresh re-stamps batch_date "
+            "with today's date and re-ranks the current top batch, so an "
+            "off-schedule run produces churn. Use --dry-run to inspect without "
+            "writing.",
+            file=sys.stderr,
+        )
 
     opened_browser = open_browser()
     try:
@@ -530,7 +548,15 @@ def main() -> int:
         if opened_browser:
             close_browser()
 
-    write_album_data(merge_album_data(albums))
+    merged = merge_album_data(albums)
+    stats = finalize_stats(albums, stats, merged, dry_run=args.dry_run)
+
+    if args.dry_run:
+        print(json.dumps({"refresh_stats": stats}))
+        print("Dry run: src/data/album-list.json was not written.")
+        return 0
+
+    write_album_data(merged)
     print(json.dumps({"refresh_stats": stats}))
     print(f"Wrote {ALBUM_DATA_PATH}")
     return 0

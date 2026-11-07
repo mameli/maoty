@@ -255,13 +255,22 @@ This command must:
 
 Do not treat the mixtape tag browse output as part of the weekly refresh.
 
-After running `bun run albums`, manually review any newly added albums and fill in `taste_label` before rebuilding the site if the field is missing.
+After running `bun run albums`, review the albums it reports as needing a
+`taste_label` and fill the field in before publishing. `bun run albums` also
+accepts `--dry-run`, which scrapes and reports without writing
+`src/data/album-list.json` — use it to inspect an off-schedule run without
+producing churn.
 
-After regenerating data, rebuild the site:
+Then publish with the script that owns the deterministic tail:
 
 ```bash
-bun run build
+scripts/publish.sh
 ```
+
+It validates every `taste_label` (and rejects duplicate `aoty_url` values),
+runs `bun run build`, stages only `src/data/album-list.json`, commits, pushes
+with one retry on a transient network failure, and prints a JSON report. Use
+`scripts/publish.sh --dry-run` to validate and build without committing.
 
 ## Validation checklist
 
@@ -277,32 +286,55 @@ Before considering the update complete, confirm:
 - no album is duplicated by `aoty_url`
 - the homepage builds successfully
 
-## Notes for future automation
+## Automation
 
-If this workflow is automated later, the automation should run every Friday in this workspace and execute:
+The weekly refresh runs as a scheduled job. The repository owns the
+deterministic steps; the scheduled agent owns only editorial judgment and
+relaying the report.
 
-1. `bun run albums`
-2. `bun run build`
+Agent workflow:
 
-If `bun run build` passes and a commit is created, the automation should push with basic retry handling for transient network failures:
+1. `bun run albums` — scrape, filter, enrich and merge. This preserves
+   existing `taste_label` values and leaves `taste_label` null on genuinely
+   new albums.
+2. Assign one valid `taste_label` to each album the run reports as needing one.
+3. `scripts/publish.sh` — validates labels, builds, commits and pushes, and
+   emits the report as JSON.
 
-1. run `git push`
-2. if push fails with a DNS or temporary network error (for example `Could not resolve hostname github.com`), wait briefly and retry `git push` once
-3. if retry still fails, run `ssh -T git@github.com` once to distinguish auth issues from transient networking and report the exact blocker
+`scripts/publish.sh` replaces the previous prose instructions for staging,
+commit messages, push retry and the `ssh -T git@github.com` diagnostic. Those
+rules live in the script so a run cannot skip or misreport them.
 
-Do not create extra commits while retrying push.
+The refresh re-stamps `batch_date` with today's date and re-ranks the current
+top batch, so an off-schedule run produces churn. Inspect with
+`bun run albums --dry-run` instead of running the real refresh out of schedule.
 
-The automation output should report:
+Reuse the existing mixtape tag ingestion. Do not refresh the Last.fm tag export
+unless that is a separate explicit task.
 
-- how many albums were scraped from Must Hear
-- how many albums qualified from New Releases
-- how many albums were inserted at the top
-- whether any Apple Music fallback lookups were needed
-- how many albums are missing Apple Music links after fallback
-- how many albums are missing genre tags
-- whether any new albums still needed a manual `taste_label`
-- whether the build passed
-- whether git commit succeeded
-- whether git push succeeded (or the exact blocker after retry/SSH check)
+### Report fields
 
-The automation should reuse the existing mixtape tag ingestion and must not refresh the Last.fm tag export unless that becomes a separate explicit task.
+`bun run albums` prints every count the report needs, so the agent relays them
+rather than recomputing them. Batch-scoped keys describe this run's selected
+albums; `file_`-prefixed keys describe the whole dataset.
+
+| Key | Meaning |
+| --- | --- |
+| `must_hear_scraped` | Must Hear albums taken (target: 5) |
+| `new_releases_qualified` | New Releases rows passing critic ≥ 80 and review count > 5 |
+| `batch_size` | Albums in this Friday batch |
+| `batch_new_albums` | Batch albums not previously in the dataset |
+| `batch_refreshed_albums` | Batch albums already known and re-dated into the top batch |
+| `apple_fallback_lookups` | Apple Music fallback lookups attempted |
+| `albums_needing_taste_label` | Batch albums still missing a label |
+| `batch_missing_apple_music_links` | Batch albums left without an Apple Music link |
+| `batch_missing_genre_tags` | Batch albums left without genre tags |
+| `file_missing_apple_music_links` | Whole-dataset albums without an Apple Music link |
+| `file_missing_genre_tags` | Whole-dataset albums without genre tags |
+| `total_albums` | Dataset size after merge |
+| `off_friday` | True when the run did not happen on a Friday |
+| `dry_run` | True when nothing was written |
+
+An optional Apple Music link or genre tag gap is reportable, never a blocker. A
+blocker in Cloudflare, browser interaction, authentication or git push must be
+reported explicitly instead of guessed.
